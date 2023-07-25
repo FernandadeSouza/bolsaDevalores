@@ -17,11 +17,19 @@ namespace Aula1
             InitializeComponent();
         }
 
-        private void frmInvest_Load(object sender, EventArgs e)
+        private void btnBest_Click(object sender, EventArgs e)
         {
-            string[] vetortutorial = new string[3];
-            vetortutorial[0] = " O que é a Bolsa de Valores? \n É um ambiente onde são negociados ações,títulos"
-             [1] = 
+            decimal Valor = Convert.ToDecimal(txtValor.Text);
+
+            if (Valor >= 10)
+            {
+                lblFim.Text = " O melhor investimento é...";
+            }
+
+            else
+            {
+                lblFim.Text = "O melhor investimento é...";
+            }
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace Aula1
 {
-    partial class Form1
+    partial class frmPrincipal
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -31,12 +31,12 @@ namespace Aula1
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 450);
-            this.Name = "Form1";
+            this.Name = "frmPrincipal";
             this.Text = "Form1";
             this.ResumeLayout(false);
 
