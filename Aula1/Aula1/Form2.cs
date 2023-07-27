@@ -41,7 +41,7 @@ namespace Aula1
             }
 
 
-            MessageBox.Show("Dados Salvos: " + Valor + "\n" + "Investimentos com retorno a : " + Tempo + "\n" + "Investimentos Conhecidos: " + mSkills);
+            MessageBox.Show("Dados Salvos: "+ "\n"+ "O valor a ser investido é : " + Valor + "\n" + "Investimentos com retorno a : " + Tempo + "\n" + "Investimentos Conhecidos: " + mSkills);
         }
 
       

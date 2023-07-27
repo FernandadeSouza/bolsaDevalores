@@ -79,7 +79,7 @@ namespace Aula1
             this.lblResp.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp.Location = new System.Drawing.Point(31, 111);
             this.lblResp.Name = "lblResp";
-            this.lblResp.Size = new System.Drawing.Size(703, 32);
+            this.lblResp.Size = new System.Drawing.Size(704, 32);
             this.lblResp.TabIndex = 2;
             this.lblResp.Text = "É um ambiente onde são negociados ações, títulos e outros ativos. A Bolsa funcion" +
     "a como\r\n um ponto de encontro entre as empresas e os investidores.";
@@ -101,7 +101,7 @@ namespace Aula1
             this.lblResp1.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp1.Location = new System.Drawing.Point(31, 183);
             this.lblResp1.Name = "lblResp1";
-            this.lblResp1.Size = new System.Drawing.Size(631, 32);
+            this.lblResp1.Size = new System.Drawing.Size(632, 32);
             this.lblResp1.TabIndex = 4;
             this.lblResp1.Text = "Uma empresa abre o capital e oferece ações em troca de valores. Com  isso,\r\n o in" +
     "vestidor pode ter um rendimento variável através do investimento inicial.";
@@ -134,7 +134,7 @@ namespace Aula1
             this.lblResp2.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp2.Location = new System.Drawing.Point(31, 249);
             this.lblResp2.Name = "lblResp2";
-            this.lblResp2.Size = new System.Drawing.Size(599, 48);
+            this.lblResp2.Size = new System.Drawing.Size(600, 48);
             this.lblResp2.TabIndex = 7;
             this.lblResp2.Text = "Primeiramente, deve-se criar uma conta gratuita em uma boa  corretora\r\n de valore" +
     "s; ter dinheiro para investir  e além disso, é necessário saber \r\nqual é o melho" +
@@ -192,9 +192,9 @@ namespace Aula1
             // 
             this.grbTempo.Controls.Add(this.rbCurto);
             this.grbTempo.Controls.Add(this.rbLongo);
-            this.grbTempo.Location = new System.Drawing.Point(491, 378);
+            this.grbTempo.Location = new System.Drawing.Point(483, 378);
             this.grbTempo.Name = "grbTempo";
-            this.grbTempo.Size = new System.Drawing.Size(133, 70);
+            this.grbTempo.Size = new System.Drawing.Size(201, 70);
             this.grbTempo.TabIndex = 13;
             this.grbTempo.TabStop = false;
             this.grbTempo.Text = "Tempo:";
