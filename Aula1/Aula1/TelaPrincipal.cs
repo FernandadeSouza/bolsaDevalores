@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Aula1
 {
-    public partial class Form1 : Form
+    public partial class TelaPrincipal : Form
     {
-        public Form1()
+        public TelaPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
