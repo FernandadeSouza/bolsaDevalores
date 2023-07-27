@@ -43,8 +43,8 @@ namespace Aula1
             this.lblFim = new System.Windows.Forms.Label();
             this.lblInicio = new System.Windows.Forms.Label();
             this.grbTempo = new System.Windows.Forms.GroupBox();
-            this.rbLongo = new System.Windows.Forms.RadioButton();
             this.rbCurto = new System.Windows.Forms.RadioButton();
+            this.rbLongo = new System.Windows.Forms.RadioButton();
             this.lblTempo = new System.Windows.Forms.Label();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.lblTipo = new System.Windows.Forms.Label();
@@ -56,10 +56,10 @@ namespace Aula1
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(222, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(320, 32);
+            this.lblTitulo.Size = new System.Drawing.Size(249, 31);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Investidor Iniciante ";
             // 
@@ -79,7 +79,7 @@ namespace Aula1
             this.lblResp.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp.Location = new System.Drawing.Point(31, 111);
             this.lblResp.Name = "lblResp";
-            this.lblResp.Size = new System.Drawing.Size(704, 32);
+            this.lblResp.Size = new System.Drawing.Size(703, 32);
             this.lblResp.TabIndex = 2;
             this.lblResp.Text = "É um ambiente onde são negociados ações, títulos e outros ativos. A Bolsa funcion" +
     "a como\r\n um ponto de encontro entre as empresas e os investidores.";
@@ -101,7 +101,7 @@ namespace Aula1
             this.lblResp1.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp1.Location = new System.Drawing.Point(31, 183);
             this.lblResp1.Name = "lblResp1";
-            this.lblResp1.Size = new System.Drawing.Size(632, 32);
+            this.lblResp1.Size = new System.Drawing.Size(631, 32);
             this.lblResp1.TabIndex = 4;
             this.lblResp1.Text = "Uma empresa abre o capital e oferece ações em troca de valores. Com  isso,\r\n o in" +
     "vestidor pode ter um rendimento variável através do investimento inicial.";
@@ -109,7 +109,7 @@ namespace Aula1
             // 
             // btnBest
             // 
-            this.btnBest.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBest.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBest.Location = new System.Drawing.Point(411, 608);
             this.btnBest.Name = "btnBest";
             this.btnBest.Size = new System.Drawing.Size(172, 35);
@@ -134,7 +134,7 @@ namespace Aula1
             this.lblResp2.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp2.Location = new System.Drawing.Point(31, 249);
             this.lblResp2.Name = "lblResp2";
-            this.lblResp2.Size = new System.Drawing.Size(600, 48);
+            this.lblResp2.Size = new System.Drawing.Size(599, 48);
             this.lblResp2.TabIndex = 7;
             this.lblResp2.Text = "Primeiramente, deve-se criar uma conta gratuita em uma boa  corretora\r\n de valore" +
     "s; ter dinheiro para investir  e além disso, é necessário saber \r\nqual é o melho" +
@@ -144,10 +144,10 @@ namespace Aula1
             // lblTu
             // 
             this.lblTu.AutoSize = true;
-            this.lblTu.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTu.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTu.Location = new System.Drawing.Point(28, 47);
             this.lblTu.Name = "lblTu";
-            this.lblTu.Size = new System.Drawing.Size(152, 32);
+            this.lblTu.Size = new System.Drawing.Size(113, 31);
             this.lblTu.TabIndex = 8;
             this.lblTu.Text = "Tutorial:";
             // 
@@ -181,10 +181,10 @@ namespace Aula1
             // lblInicio
             // 
             this.lblInicio.AutoSize = true;
-            this.lblInicio.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInicio.Location = new System.Drawing.Point(41, 308);
             this.lblInicio.Name = "lblInicio";
-            this.lblInicio.Size = new System.Drawing.Size(252, 32);
+            this.lblInicio.Size = new System.Drawing.Size(231, 31);
             this.lblInicio.TabIndex = 12;
             this.lblInicio.Text = "Vamos começar ?";
             // 
@@ -199,18 +199,6 @@ namespace Aula1
             this.grbTempo.TabStop = false;
             this.grbTempo.Text = "Tempo:";
             // 
-            // rbLongo
-            // 
-            this.rbLongo.AutoSize = true;
-            this.rbLongo.Location = new System.Drawing.Point(20, 19);
-            this.rbLongo.Name = "rbLongo";
-            this.rbLongo.Size = new System.Drawing.Size(85, 17);
-            this.rbLongo.TabIndex = 0;
-            this.rbLongo.TabStop = true;
-            this.rbLongo.Text = "Longo Prazo";
-            this.rbLongo.UseVisualStyleBackColor = true;
-            this.rbLongo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.rbLongo_MouseClick);
-            // 
             // rbCurto
             // 
             this.rbCurto.AutoSize = true;
@@ -221,6 +209,17 @@ namespace Aula1
             this.rbCurto.TabStop = true;
             this.rbCurto.Text = "Curto Prazo";
             this.rbCurto.UseVisualStyleBackColor = true;
+            // 
+            // rbLongo
+            // 
+            this.rbLongo.AutoSize = true;
+            this.rbLongo.Location = new System.Drawing.Point(20, 19);
+            this.rbLongo.Name = "rbLongo";
+            this.rbLongo.Size = new System.Drawing.Size(85, 17);
+            this.rbLongo.TabIndex = 0;
+            this.rbLongo.TabStop = true;
+            this.rbLongo.Text = "Longo Prazo";
+            this.rbLongo.UseVisualStyleBackColor = true;
             // 
             // lblTempo
             // 
@@ -234,7 +233,7 @@ namespace Aula1
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.Location = new System.Drawing.Point(599, 608);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(128, 35);
@@ -260,6 +259,7 @@ namespace Aula1
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(201, 26);
             this.txtTipo.TabIndex = 17;
+            this.txtTipo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtTipo_MouseClick);
             // 
             // libTipo
             // 

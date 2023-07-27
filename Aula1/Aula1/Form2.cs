@@ -20,9 +20,7 @@ namespace Aula1
         private void btnBest_Click(object sender, EventArgs e)
         {
             decimal Valor = Convert.ToDecimal(txtValor.Text);
-            string ValorInvest = Convert.ToString(" O usuário pretende investir: " + Valor + " Reais");
-
-
+            
             string Tempo = "";
             if (rbLongo.Checked)
             {
@@ -34,24 +32,19 @@ namespace Aula1
                 Tempo = "Curto Prazo";
             }
 
-
             string[] skills = new string[libTipo.Items.Count];
             string mSkills = "";
-            for (int i =0; i < libTipo.Items.Count; i++)
+            for (int i = 0; i < libTipo.Items.Count; i++)
             {
-                skills[i] = libTipo.Items[i].ToString(i);
+                skills[i] = libTipo.Items[i].ToString();
                 mSkills += " ," + skills[i];
             }
 
-            
 
-            MessageBox.Show("Dados Salvos:" + ValorInvest + Tempo+ );
+            MessageBox.Show("Dados Salvos: " + Valor + "\n" + "Investimentos com retorno a : " + Tempo + "\n" + "Investimentos Conhecidos: " + mSkills);
         }
 
-        private void rbLongo_MouseClick(object sender, MouseEventArgs e)
-        {
-            
-        }
+      
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
@@ -60,6 +53,26 @@ namespace Aula1
 
             txtValor.Text = "";
             txtTipo.Text = "";
+        }
+
+        private void txtTipo_MouseClick(object sender, MouseEventArgs e)
+        {
+            string skill = txtTipo.Text;
+            for (int i = 0; i < libTipo.Items.Count; i++);
+            {
+                string pegar = libTipo.Items.ToString();
+                if (pegar == skill)
+                {
+                    MessageBox.Show("Esse investimento já foi inserido!");
+                    return;
+                }
+
+            }
+            libTipo.Items.Add(skill);
+            txtTipo.Text = "";
+
+
+
         }
     }
 }
