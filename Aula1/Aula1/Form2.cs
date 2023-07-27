@@ -20,16 +20,46 @@ namespace Aula1
         private void btnBest_Click(object sender, EventArgs e)
         {
             decimal Valor = Convert.ToDecimal(txtValor.Text);
+            string ValorInvest = Convert.ToString(" O usuário pretende investir: " + Valor + " Reais");
 
-            if (Valor >= 10)
+
+            string Tempo = "";
+            if (rbLongo.Checked)
             {
-                lblFim.Text = " O melhor investimento é...";
+                Tempo = "Longo Prazo";
             }
 
-            else
+            else if (rbCurto.Checked)
             {
-                lblFim.Text = "O melhor investimento é...";
+                Tempo = "Curto Prazo";
             }
+
+
+            string[] skills = new string[libTipo.Items.Count];
+            string mSkills = "";
+            for (int i =0; i < libTipo.Items.Count; i++)
+            {
+                skills[i] = libTipo.Items[i].ToString(i);
+                mSkills += " ," + skills[i];
+            }
+
+            
+
+            MessageBox.Show("Dados Salvos:" + ValorInvest + Tempo+ );
+        }
+
+        private void rbLongo_MouseClick(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            rbLongo.Checked = false;
+            rbCurto.Checked = false;
+
+            txtValor.Text = "";
+            txtTipo.Text = "";
         }
     }
 }
