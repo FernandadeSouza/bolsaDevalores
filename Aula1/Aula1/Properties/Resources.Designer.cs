@@ -63,9 +63,9 @@ namespace Aula1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PASSOWORD1 {
+        internal static System.Drawing.Bitmap avatar {
             get {
-                object obj = ResourceManager.GetObject("PASSOWORD1", resourceCulture);
+                object obj = ResourceManager.GetObject("avatar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Aula1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PASSOWORD11 {
+        internal static System.Drawing.Bitmap b3 {
             get {
-                object obj = ResourceManager.GetObject("PASSOWORD11", resourceCulture);
+                object obj = ResourceManager.GetObject("b3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Aula1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PASSWORD {
+        internal static System.Drawing.Bitmap QLI4V2 {
             get {
-                object obj = ResourceManager.GetObject("PASSWORD", resourceCulture);
+                object obj = ResourceManager.GetObject("QLI4V2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
