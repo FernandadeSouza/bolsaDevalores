@@ -50,6 +50,7 @@ namespace Aula1
             this.lblTipo = new System.Windows.Forms.Label();
             this.txtTipo = new System.Windows.Forms.TextBox();
             this.libTipo = new System.Windows.Forms.ListBox();
+            this.btnSair = new System.Windows.Forms.Button();
             this.grbTempo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,7 +80,7 @@ namespace Aula1
             this.lblResp.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp.Location = new System.Drawing.Point(31, 111);
             this.lblResp.Name = "lblResp";
-            this.lblResp.Size = new System.Drawing.Size(704, 32);
+            this.lblResp.Size = new System.Drawing.Size(703, 32);
             this.lblResp.TabIndex = 2;
             this.lblResp.Text = "É um ambiente onde são negociados ações, títulos e outros ativos. A Bolsa funcion" +
     "a como\r\n um ponto de encontro entre as empresas e os investidores.";
@@ -101,7 +102,7 @@ namespace Aula1
             this.lblResp1.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp1.Location = new System.Drawing.Point(31, 183);
             this.lblResp1.Name = "lblResp1";
-            this.lblResp1.Size = new System.Drawing.Size(632, 32);
+            this.lblResp1.Size = new System.Drawing.Size(631, 32);
             this.lblResp1.TabIndex = 4;
             this.lblResp1.Text = "Uma empresa abre o capital e oferece ações em troca de valores. Com  isso,\r\n o in" +
     "vestidor pode ter um rendimento variável através do investimento inicial.";
@@ -110,7 +111,7 @@ namespace Aula1
             // btnBest
             // 
             this.btnBest.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBest.Location = new System.Drawing.Point(411, 608);
+            this.btnBest.Location = new System.Drawing.Point(34, 629);
             this.btnBest.Name = "btnBest";
             this.btnBest.Size = new System.Drawing.Size(172, 35);
             this.btnBest.TabIndex = 5;
@@ -134,7 +135,7 @@ namespace Aula1
             this.lblResp2.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp2.Location = new System.Drawing.Point(31, 249);
             this.lblResp2.Name = "lblResp2";
-            this.lblResp2.Size = new System.Drawing.Size(600, 48);
+            this.lblResp2.Size = new System.Drawing.Size(599, 48);
             this.lblResp2.TabIndex = 7;
             this.lblResp2.Text = "Primeiramente, deve-se criar uma conta gratuita em uma boa  corretora\r\n de valore" +
     "s; ter dinheiro para investir  e além disso, é necessário saber \r\nqual é o melho" +
@@ -234,9 +235,9 @@ namespace Aula1
             // btnLimpar
             // 
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(599, 608);
+            this.btnLimpar.Location = new System.Drawing.Point(384, 628);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(128, 35);
+            this.btnLimpar.Size = new System.Drawing.Size(172, 35);
             this.btnLimpar.TabIndex = 15;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
@@ -269,12 +270,24 @@ namespace Aula1
             this.libTipo.Size = new System.Drawing.Size(201, 95);
             this.libTipo.TabIndex = 18;
             // 
+            // btnSair
+            // 
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(562, 628);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(172, 35);
+            this.btnSair.TabIndex = 19;
+            this.btnSair.Text = "Finalizar";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
             // frmInvest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(739, 676);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.libTipo);
             this.Controls.Add(this.txtTipo);
             this.Controls.Add(this.lblTipo);
@@ -326,5 +339,6 @@ namespace Aula1
         private System.Windows.Forms.Label lblTipo;
         private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.ListBox libTipo;
+        private System.Windows.Forms.Button btnSair;
     }
 }

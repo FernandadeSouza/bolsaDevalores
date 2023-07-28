@@ -74,5 +74,10 @@ namespace Aula1
 
 
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
