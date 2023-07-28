@@ -5,12 +5,6 @@ VisualStudioVersion = 16.0.33214.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula1", "Aula1\Aula1.csproj", "{57B0C786-97B6-44B7-8E86-CB15D23EAA41}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IMAGES", "IMAGES", "{763358FF-7A8D-4719-B14E-E60E9886A6C5}"
-	ProjectSection(SolutionItems) = preProject
-		D:\Users\fernanda.rfsouza1\Desktop\PASSOWORD1.jpg = D:\Users\fernanda.rfsouza1\Desktop\PASSOWORD1.jpg
-		D:\Users\fernanda.rfsouza1\Desktop\PASSWORD.jpg = D:\Users\fernanda.rfsouza1\Desktop\PASSWORD.jpg
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

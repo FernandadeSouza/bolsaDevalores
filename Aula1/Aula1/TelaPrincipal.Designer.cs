@@ -86,7 +86,6 @@ namespace Aula1
             this.btnCadastrar.TabIndex = 3;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnLogin
             // 
@@ -101,7 +100,7 @@ namespace Aula1
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // TelaPrincipal
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -114,7 +113,7 @@ namespace Aula1
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pcbPrincipal);
             this.ForeColor = System.Drawing.Color.Transparent;
-            this.Name = "TelaPrincipal";
+            this.Name = "FrmLogin";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Bem-Vindo ao CODE CASH $";
             ((System.ComponentModel.ISupportInitialize)(this.pcbPrincipal)).EndInit();
