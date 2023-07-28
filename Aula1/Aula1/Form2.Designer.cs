@@ -115,7 +115,7 @@ namespace Aula1
             this.btnBest.Name = "btnBest";
             this.btnBest.Size = new System.Drawing.Size(172, 35);
             this.btnBest.TabIndex = 5;
-            this.btnBest.Text = " Investimentos";
+            this.btnBest.Text = "Dados Salvos";
             this.btnBest.UseVisualStyleBackColor = true;
             this.btnBest.Click += new System.EventHandler(this.btnBest_Click);
             // 

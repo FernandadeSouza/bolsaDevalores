@@ -37,11 +37,11 @@ namespace Aula1
             for (int i = 0; i < libTipo.Items.Count; i++)
             {
                 skills[i] = libTipo.Items[i].ToString();
-                mSkills += " ," + skills[i];
+                mSkills += skills[i] +",";
             }
 
 
-            MessageBox.Show("Dados Salvos: "+ "\n"+ "O valor a ser investido é : " + Valor + "\n" + "Investimentos com retorno a : " + Tempo + "\n" + "Investimentos Conhecidos: " + mSkills);
+            MessageBox.Show("Dados Salvos: "+ "\n"+ "O valor a ser investido é : " + Valor + " Reais "+"\n" + "O usuáriom deseja investimentos com retorno a : " + Tempo + "\n" + "Investimentos Conhecidos: " + mSkills+ "\n"+ "Sugerimos como investimentos ...");
         }
 
       
@@ -53,6 +53,7 @@ namespace Aula1
 
             txtValor.Text = "";
             txtTipo.Text = "";
+            
         }
 
         private void txtTipo_MouseClick(object sender, MouseEventArgs e)
