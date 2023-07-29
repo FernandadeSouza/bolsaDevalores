@@ -37,7 +37,7 @@ namespace Aula1
             for (int i = 0; i < libTipo.Items.Count; i++)
             {
                 skills[i] = libTipo.Items[i].ToString();
-                mSkills += skills[i] +",";
+                mSkills += skills[i] + ",";
             }
 
 
@@ -59,7 +59,7 @@ namespace Aula1
         private void txtTipo_MouseClick(object sender, MouseEventArgs e)
         {
             string skill = txtTipo.Text;
-            for (int i = 0; i < libTipo.Items.Count; i++);
+            for (int i = 0; i < libTipo.Items.Count; i++)
             {
                 string pegar = libTipo.Items.ToString();
                 if (pegar == skill)

@@ -57,10 +57,10 @@ namespace Aula1
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(222, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(249, 31);
+            this.lblTitulo.Size = new System.Drawing.Size(320, 32);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Investidor Iniciante ";
             // 
@@ -80,7 +80,7 @@ namespace Aula1
             this.lblResp.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp.Location = new System.Drawing.Point(31, 111);
             this.lblResp.Name = "lblResp";
-            this.lblResp.Size = new System.Drawing.Size(703, 32);
+            this.lblResp.Size = new System.Drawing.Size(704, 32);
             this.lblResp.TabIndex = 2;
             this.lblResp.Text = "É um ambiente onde são negociados ações, títulos e outros ativos. A Bolsa funcion" +
     "a como\r\n um ponto de encontro entre as empresas e os investidores.";
@@ -102,7 +102,7 @@ namespace Aula1
             this.lblResp1.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp1.Location = new System.Drawing.Point(31, 183);
             this.lblResp1.Name = "lblResp1";
-            this.lblResp1.Size = new System.Drawing.Size(631, 32);
+            this.lblResp1.Size = new System.Drawing.Size(632, 32);
             this.lblResp1.TabIndex = 4;
             this.lblResp1.Text = "Uma empresa abre o capital e oferece ações em troca de valores. Com  isso,\r\n o in" +
     "vestidor pode ter um rendimento variável através do investimento inicial.";
@@ -135,7 +135,7 @@ namespace Aula1
             this.lblResp2.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp2.Location = new System.Drawing.Point(31, 249);
             this.lblResp2.Name = "lblResp2";
-            this.lblResp2.Size = new System.Drawing.Size(599, 48);
+            this.lblResp2.Size = new System.Drawing.Size(600, 48);
             this.lblResp2.TabIndex = 7;
             this.lblResp2.Text = "Primeiramente, deve-se criar uma conta gratuita em uma boa  corretora\r\n de valore" +
     "s; ter dinheiro para investir  e além disso, é necessário saber \r\nqual é o melho" +
@@ -193,6 +193,7 @@ namespace Aula1
             // 
             this.grbTempo.Controls.Add(this.rbCurto);
             this.grbTempo.Controls.Add(this.rbLongo);
+            this.grbTempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbTempo.Location = new System.Drawing.Point(483, 378);
             this.grbTempo.Name = "grbTempo";
             this.grbTempo.Size = new System.Drawing.Size(201, 70);
@@ -285,7 +286,7 @@ namespace Aula1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.LightGreen;
             this.ClientSize = new System.Drawing.Size(739, 676);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.libTipo);
@@ -308,6 +309,7 @@ namespace Aula1
             this.Controls.Add(this.lblUm);
             this.Controls.Add(this.lblTitulo);
             this.Name = "frmInvest";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Investidor Iniciante ";
             this.grbTempo.ResumeLayout(false);
             this.grbTempo.PerformLayout();
