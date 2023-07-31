@@ -117,17 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pbPass.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAVdJREFUOE/llLsuBVEUQKfwAf6AaIhKLx6JRnQiWlQSlUfvEYVCJHqJ+AASIlGJ
-        9z9oSPgDUYvHWnPnjG0yg5qVrNzzPnufc+Zm/4IJ7GoVf0cnDuEw9toQWMJ3nMpr3+DkI3xCJ0Rt28P1
-        or6IjRjNBTrQ32nswEQfjuMdOmYZGxlEd3ehbhsKFvAQz9ANVjAt1o7HOIBfGMNn3M5rn1yim9i+U5Sr
-        aa6ic0fyGpimA+2IzOAD2i/pAurSdK5r5GPvcd9ChXPcbRXLxYzMNKubyyl6XNk1OrmK52aqsxgjcxPP
-        s8oBelllyptWAvP4hnExx3oMXk5kDcuUxVt6QTsScxjTNFon3WBkA19xNK8F+vERbzE92hTZFnoEPqE2
-        G8CnlV6BX1IthuyiMTIfc8L+SYyPv0yzjuoFXKH1qBGdYGNUCQ86LpboQSdr/Ax/xND9K/rTZNkHT1tf
-        NExoE+cAAAAASUVORK5CYII=
-</value>
-  </data>
 </root>

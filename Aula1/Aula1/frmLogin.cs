@@ -10,26 +10,24 @@ using System.Windows.Forms;
 
 namespace Aula1
 {
-    public partial class TelaLogin : Form
+    public partial class frmLogin : Form
     {
-        public TelaLogin()
+        public frmLogin()
         {
             InitializeComponent();
         }
-
-      
 
         private void pbPass_Click(object sender, EventArgs e)
         {
             if (txtPass.PasswordChar == '*')
             {
                 txtPass.PasswordChar = '\0'; // Mostrar a senha
-                pbPass.Image = Image.FromFile(@"..\..\Imagem\view.png");
+                pbPass.Image = Image.FromFile(@"..\..\Resources\view.png");
             }
             else
             {
                 txtPass.PasswordChar = '*'; // Ocultar a senha
-                pbPass.Image = Image.FromFile(@"..\..\Imagem\hide.png");
+                pbPass.Image = Image.FromFile(@"..\..\Resources\hide.png");
             }
         }
 
@@ -38,8 +36,8 @@ namespace Aula1
             string Email = txtEmail.Text;
             string Senha = txtPass.Text;
             // Form cadastro = new FrmCadastro;
-            Form logado = new frmInvest(); 
-            
+            Form logado = new frmInvest();
+
 
             if (Email == "")
             {
@@ -56,7 +54,7 @@ namespace Aula1
             }
             else
             {
-               // logado.Show();
+                // logado.Show();
             }
         }
     }

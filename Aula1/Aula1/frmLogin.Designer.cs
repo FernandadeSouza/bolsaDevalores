@@ -1,7 +1,7 @@
 ﻿
 namespace Aula1
 {
-    partial class TelaLogin
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,6 @@ namespace Aula1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLogin));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -100,7 +99,7 @@ namespace Aula1
             // 
             // pbPass
             // 
-            this.pbPass.Image = ((System.Drawing.Image)(resources.GetObject("pbPass.Image")));
+            this.pbPass.Image = global::Aula1.Properties.Resources.hide;
             this.pbPass.Location = new System.Drawing.Point(502, 209);
             this.pbPass.Name = "pbPass";
             this.pbPass.Size = new System.Drawing.Size(26, 19);
@@ -108,7 +107,7 @@ namespace Aula1
             this.pbPass.TabStop = false;
             this.pbPass.Click += new System.EventHandler(this.pbPass_Click);
             // 
-            // TelaLogin
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -121,7 +120,7 @@ namespace Aula1
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "TelaLogin";
+            this.Name = "frmLogin";
             this.Text = "Tela Login";
             ((System.ComponentModel.ISupportInitialize)(this.pbPass)).EndInit();
             this.ResumeLayout(false);
