@@ -19,14 +19,14 @@ namespace Aula1
 
         private void btnsignup_Click(object sender, EventArgs e)
         {
-            Form CadastroCliente = new CadastroNF();
+           /*Form CadastroCliente = new CadastroNF();
             CadastroCliente.Show();
-            WindowState = FormWindowState.Maximized;
+            WindowState = FormWindowState.Maximized;*/
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Form LoginCliente = new TelaLogin();
+            Form LoginCliente = new frmLogin();
             LoginCliente.Show();
             WindowState = FormWindowState.Maximized;
         }
