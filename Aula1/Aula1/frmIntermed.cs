@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Aula1
 {
-    public partial class InvestIntermed : Form
+    public partial class frmIntermed : Form
     {
-        public InvestIntermed()
+        public frmIntermed()
         {
             InitializeComponent();
-        }
-
-        private void InvestIntermed_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)

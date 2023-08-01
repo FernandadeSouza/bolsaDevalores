@@ -117,20 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label4.Text" xml:space="preserve">
-    <value>As ações representam uma fração do capitao social de uma empresa e elas são negociadas na bolsa de valores.
+  <data name="label8.Text" xml:space="preserve">
+    <value>As ações representam uma fração capital social de uma empresa e elas são negociadas na bolsa de valores.
 
-O rendimento de uma ação pode variar entra 2% ou mais.
+O rendimento de uma ação pode variar entre 2% ou mais.
 
 Ações são consideradas um investimento de risco, já que não existe uma garantia de rendimento, e o mercado varia bastante de acordo com as compras e vendas que acontecem na Bolsa.
+
 </value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Os Fundos de Investimentos Imobiliários (FII) são fundos compostos por investimentos do setor imobiliário. E assim como nos Fundos de Investimentos, têm o patrimonio dividido em cotas de valores iguais. Então, ao investir no setor imobiliário por meio desses papéis, você adquire pequenas partes de imóveis.
+  <data name="label9.Text" xml:space="preserve">
+    <value>Os fundos de Investimentos Imobiliários (FII) são fundos compostos por investimetos do setor imobiliário .
+E, assim como nos Fundos de investimentos, têm o patrimonio divido em cotas de valores iguais. Então, 
+ao investir no setor imobiliário por meio desses papéis, você adquire pequenas partes de imóveis.
 
 A rentabilidade média de todos os 298 FIIs analisados está em 1.3%
 
-Os fundos imobiliários são considerados uma aplicação de baixo risco e um investimento seguro. Todo ativo que gera uma renda variável está exposto a diversas ameaças. mas isso não signífica que a aplicação não tenha segurança.
+Os fundos imobiliários são considerados uma aplicação de baixo risco e um investimento seguro. Todo ativo que gera uma renda variável está exposto a diversas ameaças, mas isso não significa que a aplicação não tenha segurança.
 </value>
   </data>
 </root>
