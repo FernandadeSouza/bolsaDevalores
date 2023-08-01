@@ -19,9 +19,9 @@ namespace Aula1
 
         private void btnsignup_Click(object sender, EventArgs e)
         {
-           /*Form CadastroCliente = new CadastroNF();
+           Form CadastroCliente = new Form2();
             CadastroCliente.Show();
-            WindowState = FormWindowState.Maximized;*/
+            WindowState = FormWindowState.Maximized;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

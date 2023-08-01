@@ -16,7 +16,7 @@ namespace Aula1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new TelaPrincipal());
         }
     }
 }

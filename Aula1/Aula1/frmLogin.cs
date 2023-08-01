@@ -35,13 +35,13 @@ namespace Aula1
         {
             string Email = txtEmail.Text;
             string Senha = txtPass.Text;
-            // Form cadastro = new FrmCadastro;
-            Form logado = new frmInvest();
+            Form cadastro = new Form();
+            Form logado = new frmIntermed();
 
 
             if (Email == "")
             {
-                //cadastro.Show();
+             cadastro.Show();
             }
             else
             {
@@ -50,11 +50,11 @@ namespace Aula1
 
             if (Senha == "")
             {
-                // cadastro.Show();
+                 cadastro.Show();
             }
             else
             {
-                // logado.Show();
+                 logado.Show();
             }
         }
     }

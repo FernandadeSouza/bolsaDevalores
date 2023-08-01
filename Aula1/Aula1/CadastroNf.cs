@@ -25,9 +25,9 @@ namespace Aula1
             string email = Convert.ToString(txtData.Text);
             string senha = Convert.ToString(txtSenha.Text);
 
-            Form frmquiz = new Form1();
+            Form frmquiz = new Formquiz();
 
-            //frmquiz.show();
+            frmquiz.Show();
 
 
 
