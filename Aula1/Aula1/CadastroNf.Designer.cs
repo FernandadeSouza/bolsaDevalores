@@ -35,12 +35,14 @@ namespace Aula1
             this.dpNascimento = new System.Windows.Forms.Label();
             this.txtData = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblSenha = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnAvancar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.txt_Nascimento = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCadastro
@@ -99,16 +101,6 @@ namespace Aula1
             this.lblEmail.TabIndex = 5;
             this.lblEmail.Text = "Email";
             // 
-            // txtEmail
-            // 
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(89, 250);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(477, 31);
-            this.txtEmail.TabIndex = 6;
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
-            // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
@@ -119,6 +111,7 @@ namespace Aula1
             this.lblSenha.Size = new System.Drawing.Size(72, 25);
             this.lblSenha.TabIndex = 7;
             this.lblSenha.Text = "Senha";
+            this.lblSenha.Click += new System.EventHandler(this.lblSenha_Click);
             // 
             // txtSenha
             // 
@@ -126,6 +119,7 @@ namespace Aula1
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(88, 408);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(478, 31);
             this.txtSenha.TabIndex = 8;
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
@@ -167,20 +161,39 @@ namespace Aula1
             this.label2.Text = "Para começar, informe os dados que você vai usar\r\npara acessar sua conta CodeCash" +
     ".";
             // 
+            // txt_Nascimento
+            // 
+            this.txt_Nascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Nascimento.Location = new System.Drawing.Point(100, 260);
+            this.txt_Nascimento.Name = "txt_Nascimento";
+            this.txt_Nascimento.Size = new System.Drawing.Size(466, 29);
+            this.txt_Nascimento.TabIndex = 13;
+            this.txt_Nascimento.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(584, 408);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 29);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(933, 655);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txt_Nascimento);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAvancar);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.lblSenha);
-            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.dpNascimento);
@@ -190,6 +203,8 @@ namespace Aula1
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,11 +217,12 @@ namespace Aula1
         private System.Windows.Forms.Label dpNascimento;
         private System.Windows.Forms.TextBox txtData;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnAvancar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker txt_Nascimento;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
