@@ -82,6 +82,12 @@
     <Compile Include="FrmTelaInicial.Designer.cs">
       <DependentUpon>FrmTelaInicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroNf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroNf.Designer.cs">
+      <DependentUpon>CadastroNf.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InvestidorAvançado.resx">
       <DependentUpon>InvestidorAvançado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroNf.resx">
+      <DependentUpon>CadastroNf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -149,6 +158,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\3310653.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="image\MicrosoftTeams-image %281%29.png" />
+    <Content Include="image\MicrosoftTeams-image %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
