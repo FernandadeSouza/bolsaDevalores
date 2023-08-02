@@ -76,5 +76,10 @@ namespace Aula1
         {
             Application.Exit();
         }
+
+        private void frmInvest_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }

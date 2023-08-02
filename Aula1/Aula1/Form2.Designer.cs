@@ -340,6 +340,7 @@ namespace Aula1
             this.Name = "frmInvest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Investidor Iniciante ";
+            this.Load += new System.EventHandler(this.frmInvest_Load);
             this.grbTempo.ResumeLayout(false);
             this.grbTempo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFinalizar)).EndInit();
