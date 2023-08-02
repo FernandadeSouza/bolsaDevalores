@@ -304,9 +304,9 @@ namespace Aula1
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(483, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(442, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(279, 95);
+            this.pictureBox1.Size = new System.Drawing.Size(365, 146);
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
@@ -315,7 +315,7 @@ namespace Aula1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(772, 866);
+            this.ClientSize = new System.Drawing.Size(822, 866);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picDados);
             this.Controls.Add(this.picLimpar);
