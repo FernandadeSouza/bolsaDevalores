@@ -105,5 +105,21 @@ namespace Aula1
                 pictureBox1.Image = Image.FromFile(@"..\..\Images\hide.png");
             }
         }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtData_Validated(object sender, EventArgs e)
+        {
+            string email = txtData.Text;
+            Regex regex = new Regex(@"^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$");
+            if (!regex.IsMatch(email))
+            {
+                MessageBox.Show("Email inválido");
+                txtData.BackColor = Color.Red;
+            }
+        }
     }
 }
