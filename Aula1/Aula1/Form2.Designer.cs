@@ -29,12 +29,12 @@ namespace Aula1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInvest));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblUm = new System.Windows.Forms.Label();
             this.lblResp = new System.Windows.Forms.Label();
             this.lblDois = new System.Windows.Forms.Label();
             this.lblResp1 = new System.Windows.Forms.Label();
-            this.btnBest = new System.Windows.Forms.Button();
             this.lblTRes = new System.Windows.Forms.Label();
             this.lblResp2 = new System.Windows.Forms.Label();
             this.lblTu = new System.Windows.Forms.Label();
@@ -46,19 +46,26 @@ namespace Aula1
             this.rbCurto = new System.Windows.Forms.RadioButton();
             this.rbLongo = new System.Windows.Forms.RadioButton();
             this.lblTempo = new System.Windows.Forms.Label();
-            this.btnLimpar = new System.Windows.Forms.Button();
             this.lblTipo = new System.Windows.Forms.Label();
             this.txtTipo = new System.Windows.Forms.TextBox();
             this.libTipo = new System.Windows.Forms.ListBox();
-            this.btnSair = new System.Windows.Forms.Button();
+            this.picFinalizar = new System.Windows.Forms.PictureBox();
+            this.picLimpar = new System.Windows.Forms.PictureBox();
+            this.picDados = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grbTempo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFinalizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLimpar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(222, 9);
+            this.lblTitulo.ForeColor = System.Drawing.Color.Magenta;
+            this.lblTitulo.Location = new System.Drawing.Point(129, 56);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(320, 32);
             this.lblTitulo.TabIndex = 0;
@@ -68,7 +75,8 @@ namespace Aula1
             // 
             this.lblUm.AutoSize = true;
             this.lblUm.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUm.Location = new System.Drawing.Point(30, 90);
+            this.lblUm.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblUm.Location = new System.Drawing.Point(47, 162);
             this.lblUm.Name = "lblUm";
             this.lblUm.Size = new System.Drawing.Size(334, 21);
             this.lblUm.TabIndex = 1;
@@ -78,7 +86,8 @@ namespace Aula1
             // 
             this.lblResp.AutoSize = true;
             this.lblResp.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResp.Location = new System.Drawing.Point(31, 111);
+            this.lblResp.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblResp.Location = new System.Drawing.Point(44, 193);
             this.lblResp.Name = "lblResp";
             this.lblResp.Size = new System.Drawing.Size(704, 32);
             this.lblResp.TabIndex = 2;
@@ -90,7 +99,8 @@ namespace Aula1
             // 
             this.lblDois.AutoSize = true;
             this.lblDois.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDois.Location = new System.Drawing.Point(30, 153);
+            this.lblDois.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblDois.Location = new System.Drawing.Point(43, 237);
             this.lblDois.Name = "lblDois";
             this.lblDois.Size = new System.Drawing.Size(406, 21);
             this.lblDois.TabIndex = 3;
@@ -100,7 +110,8 @@ namespace Aula1
             // 
             this.lblResp1.AutoSize = true;
             this.lblResp1.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResp1.Location = new System.Drawing.Point(31, 183);
+            this.lblResp1.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblResp1.Location = new System.Drawing.Point(36, 273);
             this.lblResp1.Name = "lblResp1";
             this.lblResp1.Size = new System.Drawing.Size(632, 32);
             this.lblResp1.TabIndex = 4;
@@ -108,22 +119,12 @@ namespace Aula1
     "vestidor pode ter um rendimento variável através do investimento inicial.";
             this.lblResp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnBest
-            // 
-            this.btnBest.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBest.Location = new System.Drawing.Point(34, 629);
-            this.btnBest.Name = "btnBest";
-            this.btnBest.Size = new System.Drawing.Size(172, 35);
-            this.btnBest.TabIndex = 5;
-            this.btnBest.Text = "Dados Salvos";
-            this.btnBest.UseVisualStyleBackColor = true;
-            this.btnBest.Click += new System.EventHandler(this.btnBest_Click);
-            // 
             // lblTRes
             // 
             this.lblTRes.AutoSize = true;
             this.lblTRes.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTRes.Location = new System.Drawing.Point(30, 228);
+            this.lblTRes.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblTRes.Location = new System.Drawing.Point(47, 319);
             this.lblTRes.Name = "lblTRes";
             this.lblTRes.Size = new System.Drawing.Size(430, 21);
             this.lblTRes.TabIndex = 6;
@@ -133,7 +134,8 @@ namespace Aula1
             // 
             this.lblResp2.AutoSize = true;
             this.lblResp2.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResp2.Location = new System.Drawing.Point(31, 249);
+            this.lblResp2.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblResp2.Location = new System.Drawing.Point(36, 364);
             this.lblResp2.Name = "lblResp2";
             this.lblResp2.Size = new System.Drawing.Size(600, 48);
             this.lblResp2.TabIndex = 7;
@@ -146,7 +148,8 @@ namespace Aula1
             // 
             this.lblTu.AutoSize = true;
             this.lblTu.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTu.Location = new System.Drawing.Point(28, 47);
+            this.lblTu.ForeColor = System.Drawing.Color.Magenta;
+            this.lblTu.Location = new System.Drawing.Point(45, 113);
             this.lblTu.Name = "lblTu";
             this.lblTu.Size = new System.Drawing.Size(113, 31);
             this.lblTu.TabIndex = 8;
@@ -156,7 +159,8 @@ namespace Aula1
             // 
             this.lblValor.AutoSize = true;
             this.lblValor.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValor.Location = new System.Drawing.Point(43, 351);
+            this.lblValor.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblValor.Location = new System.Drawing.Point(47, 485);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(382, 21);
             this.lblValor.TabIndex = 9;
@@ -165,7 +169,7 @@ namespace Aula1
             // txtValor
             // 
             this.txtValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValor.Location = new System.Drawing.Point(483, 346);
+            this.txtValor.Location = new System.Drawing.Point(495, 485);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(201, 26);
             this.txtValor.TabIndex = 10;
@@ -174,6 +178,7 @@ namespace Aula1
             // 
             this.lblFim.AutoSize = true;
             this.lblFim.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFim.ForeColor = System.Drawing.SystemColors.Control;
             this.lblFim.Location = new System.Drawing.Point(64, 506);
             this.lblFim.Name = "lblFim";
             this.lblFim.Size = new System.Drawing.Size(0, 21);
@@ -183,18 +188,20 @@ namespace Aula1
             // 
             this.lblInicio.AutoSize = true;
             this.lblInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInicio.Location = new System.Drawing.Point(41, 308);
+            this.lblInicio.ForeColor = System.Drawing.Color.Magenta;
+            this.lblInicio.Location = new System.Drawing.Point(41, 433);
             this.lblInicio.Name = "lblInicio";
-            this.lblInicio.Size = new System.Drawing.Size(231, 31);
+            this.lblInicio.Size = new System.Drawing.Size(240, 31);
             this.lblInicio.TabIndex = 12;
-            this.lblInicio.Text = "Vamos começar ?";
+            this.lblInicio.Text = "Vamos começar ...";
             // 
             // grbTempo
             // 
             this.grbTempo.Controls.Add(this.rbCurto);
             this.grbTempo.Controls.Add(this.rbLongo);
             this.grbTempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbTempo.Location = new System.Drawing.Point(483, 378);
+            this.grbTempo.ForeColor = System.Drawing.SystemColors.Control;
+            this.grbTempo.Location = new System.Drawing.Point(495, 527);
             this.grbTempo.Name = "grbTempo";
             this.grbTempo.Size = new System.Drawing.Size(201, 70);
             this.grbTempo.TabIndex = 13;
@@ -204,6 +211,7 @@ namespace Aula1
             // rbCurto
             // 
             this.rbCurto.AutoSize = true;
+            this.rbCurto.ForeColor = System.Drawing.SystemColors.Control;
             this.rbCurto.Location = new System.Drawing.Point(20, 42);
             this.rbCurto.Name = "rbCurto";
             this.rbCurto.Size = new System.Drawing.Size(80, 17);
@@ -215,6 +223,7 @@ namespace Aula1
             // rbLongo
             // 
             this.rbLongo.AutoSize = true;
+            this.rbLongo.ForeColor = System.Drawing.SystemColors.Control;
             this.rbLongo.Location = new System.Drawing.Point(20, 19);
             this.rbLongo.Name = "rbLongo";
             this.rbLongo.Size = new System.Drawing.Size(85, 17);
@@ -227,28 +236,19 @@ namespace Aula1
             // 
             this.lblTempo.AutoSize = true;
             this.lblTempo.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTempo.Location = new System.Drawing.Point(43, 392);
+            this.lblTempo.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblTempo.Location = new System.Drawing.Point(47, 527);
             this.lblTempo.Name = "lblTempo";
             this.lblTempo.Size = new System.Drawing.Size(442, 42);
             this.lblTempo.TabIndex = 14;
             this.lblTempo.Text = "Você tem interesse em investimentos \r\nde longo ou curto prazo?";
             // 
-            // btnLimpar
-            // 
-            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(384, 628);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(172, 35);
-            this.btnLimpar.TabIndex = 15;
-            this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = true;
-            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
-            // 
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
             this.lblTipo.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.Location = new System.Drawing.Point(43, 456);
+            this.lblTipo.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblTipo.Location = new System.Drawing.Point(47, 610);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(406, 42);
             this.lblTipo.TabIndex = 16;
@@ -257,7 +257,7 @@ namespace Aula1
             // txtTipo
             // 
             this.txtTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTipo.Location = new System.Drawing.Point(483, 455);
+            this.txtTipo.Location = new System.Drawing.Point(495, 609);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(201, 26);
             this.txtTipo.TabIndex = 17;
@@ -266,33 +266,63 @@ namespace Aula1
             // libTipo
             // 
             this.libTipo.FormattingEnabled = true;
-            this.libTipo.Location = new System.Drawing.Point(483, 487);
+            this.libTipo.Location = new System.Drawing.Point(495, 641);
             this.libTipo.Name = "libTipo";
             this.libTipo.Size = new System.Drawing.Size(201, 95);
             this.libTipo.TabIndex = 18;
             // 
-            // btnSair
+            // picFinalizar
             // 
-            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(562, 628);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(172, 35);
-            this.btnSair.TabIndex = 19;
-            this.btnSair.Text = "Finalizar";
-            this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            this.picFinalizar.Image = ((System.Drawing.Image)(resources.GetObject("picFinalizar.Image")));
+            this.picFinalizar.Location = new System.Drawing.Point(534, 761);
+            this.picFinalizar.Name = "picFinalizar";
+            this.picFinalizar.Size = new System.Drawing.Size(189, 93);
+            this.picFinalizar.TabIndex = 20;
+            this.picFinalizar.TabStop = false;
+            this.picFinalizar.Click += new System.EventHandler(this.picFinalizar_Click);
+            // 
+            // picLimpar
+            // 
+            this.picLimpar.Image = ((System.Drawing.Image)(resources.GetObject("picLimpar.Image")));
+            this.picLimpar.Location = new System.Drawing.Point(333, 759);
+            this.picLimpar.Name = "picLimpar";
+            this.picLimpar.Size = new System.Drawing.Size(195, 95);
+            this.picLimpar.TabIndex = 21;
+            this.picLimpar.TabStop = false;
+            this.picLimpar.Click += new System.EventHandler(this.picLimpar_Click);
+            // 
+            // picDados
+            // 
+            this.picDados.Image = ((System.Drawing.Image)(resources.GetObject("picDados.Image")));
+            this.picDados.Location = new System.Drawing.Point(34, 742);
+            this.picDados.Name = "picDados";
+            this.picDados.Size = new System.Drawing.Size(193, 112);
+            this.picDados.TabIndex = 22;
+            this.picDados.TabStop = false;
+            this.picDados.Click += new System.EventHandler(this.picDados_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(483, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(279, 95);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
             // 
             // frmInvest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGreen;
-            this.ClientSize = new System.Drawing.Size(739, 676);
-            this.Controls.Add(this.btnSair);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(772, 866);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picDados);
+            this.Controls.Add(this.picLimpar);
+            this.Controls.Add(this.picFinalizar);
             this.Controls.Add(this.libTipo);
             this.Controls.Add(this.txtTipo);
             this.Controls.Add(this.lblTipo);
-            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.lblTempo);
             this.Controls.Add(this.grbTempo);
             this.Controls.Add(this.lblInicio);
@@ -302,7 +332,6 @@ namespace Aula1
             this.Controls.Add(this.lblTu);
             this.Controls.Add(this.lblResp2);
             this.Controls.Add(this.lblTRes);
-            this.Controls.Add(this.btnBest);
             this.Controls.Add(this.lblResp1);
             this.Controls.Add(this.lblDois);
             this.Controls.Add(this.lblResp);
@@ -313,6 +342,10 @@ namespace Aula1
             this.Text = "Investidor Iniciante ";
             this.grbTempo.ResumeLayout(false);
             this.grbTempo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFinalizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLimpar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,7 +358,6 @@ namespace Aula1
         private System.Windows.Forms.Label lblResp;
         private System.Windows.Forms.Label lblDois;
         private System.Windows.Forms.Label lblResp1;
-        private System.Windows.Forms.Button btnBest;
         private System.Windows.Forms.Label lblTRes;
         private System.Windows.Forms.Label lblResp2;
         private System.Windows.Forms.Label lblTu;
@@ -337,10 +369,12 @@ namespace Aula1
         private System.Windows.Forms.RadioButton rbCurto;
         private System.Windows.Forms.RadioButton rbLongo;
         private System.Windows.Forms.Label lblTempo;
-        private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Label lblTipo;
         private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.ListBox libTipo;
-        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.PictureBox picFinalizar;
+        private System.Windows.Forms.PictureBox picLimpar;
+        private System.Windows.Forms.PictureBox picDados;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

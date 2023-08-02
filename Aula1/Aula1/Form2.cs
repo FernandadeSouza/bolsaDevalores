@@ -17,10 +17,29 @@ namespace Aula1
             InitializeComponent();
         }
 
-        private void btnBest_Click(object sender, EventArgs e)
+     
+        private void txtTipo_MouseClick(object sender, MouseEventArgs e)
+        {
+            string skill = txtTipo.Text;
+            for (int i = 0; i < libTipo.Items.Count; i++)
+            {
+                string pegar = libTipo.Items.ToString();
+                if (pegar == skill)
+                {
+                    MessageBox.Show("Esse investimento já foi inserido!");
+                    return;
+                }
+
+            }
+            libTipo.Items.Add(skill);
+            txtTipo.Text = "";
+
+        }
+
+        private void picDados_Click(object sender, EventArgs e)
         {
             decimal Valor = Convert.ToDecimal(txtValor.Text);
-            
+
             string Tempo = "";
             if (rbLongo.Checked)
             {
@@ -41,42 +60,19 @@ namespace Aula1
             }
 
 
-            MessageBox.Show("Dados Salvos: "+ "\n"+ "O valor a ser investido é : " + Valor + " Reais "+"\n" + "O usuáriom deseja investimentos com retorno a : " + Tempo + "\n" + "Investimentos Conhecidos: " + mSkills+ "\n"+ "Sugerimos como investimentos ...");
+            MessageBox.Show("Dados Salvos: " + "\n" + "O valor a ser investido é : " + Valor + " Reais " + "\n" + "O usuáriom deseja investimentos com retorno a : " + Tempo + "\n" + "Investimentos Conhecidos: " + mSkills + "\n" + "Sugerimos como investimentos ...");
         }
 
-      
-
-        private void btnLimpar_Click(object sender, EventArgs e)
+        private void picLimpar_Click(object sender, EventArgs e)
         {
             rbLongo.Checked = false;
             rbCurto.Checked = false;
 
             txtValor.Text = "";
             txtTipo.Text = "";
-            
         }
 
-        private void txtTipo_MouseClick(object sender, MouseEventArgs e)
-        {
-            string skill = txtTipo.Text;
-            for (int i = 0; i < libTipo.Items.Count; i++)
-            {
-                string pegar = libTipo.Items.ToString();
-                if (pegar == skill)
-                {
-                    MessageBox.Show("Esse investimento já foi inserido!");
-                    return;
-                }
-
-            }
-            libTipo.Items.Add(skill);
-            txtTipo.Text = "";
-
-
-
-        }
-
-        private void btnSair_Click(object sender, EventArgs e)
+        private void picFinalizar_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
