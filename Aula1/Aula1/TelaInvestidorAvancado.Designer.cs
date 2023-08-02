@@ -51,7 +51,7 @@ namespace Aula1
             this.InvestidorAvancado.AutoSize = true;
             this.InvestidorAvancado.Font = new System.Drawing.Font("Stencil", 24F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InvestidorAvancado.ForeColor = System.Drawing.Color.Magenta;
-            this.InvestidorAvancado.Location = new System.Drawing.Point(12, 28);
+            this.InvestidorAvancado.Location = new System.Drawing.Point(18, 28);
             this.InvestidorAvancado.Name = "InvestidorAvancado";
             this.InvestidorAvancado.Size = new System.Drawing.Size(370, 38);
             this.InvestidorAvancado.TabIndex = 0;
@@ -62,7 +62,7 @@ namespace Aula1
             this.lblAvançado.AutoSize = true;
             this.lblAvançado.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAvançado.ForeColor = System.Drawing.Color.White;
-            this.lblAvançado.Location = new System.Drawing.Point(14, 76);
+            this.lblAvançado.Location = new System.Drawing.Point(20, 78);
             this.lblAvançado.Name = "lblAvançado";
             this.lblAvançado.Size = new System.Drawing.Size(454, 108);
             this.lblAvançado.TabIndex = 1;
@@ -86,7 +86,7 @@ namespace Aula1
             // 
             this.picitulo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picitulo.BackgroundImage")));
             this.picitulo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picitulo.Location = new System.Drawing.Point(487, 12);
+            this.picitulo.Location = new System.Drawing.Point(760, 28);
             this.picitulo.Name = "picitulo";
             this.picitulo.Size = new System.Drawing.Size(356, 122);
             this.picitulo.TabIndex = 5;
@@ -101,6 +101,7 @@ namespace Aula1
             this.picETF.Size = new System.Drawing.Size(163, 83);
             this.picETF.TabIndex = 6;
             this.picETF.TabStop = false;
+            this.picETF.Click += new System.EventHandler(this.picETF_Click);
             // 
             // pictureBox1
             // 
@@ -122,6 +123,7 @@ namespace Aula1
             this.PicFIIs.Size = new System.Drawing.Size(163, 83);
             this.PicFIIs.TabIndex = 8;
             this.PicFIIs.TabStop = false;
+            this.PicFIIs.Click += new System.EventHandler(this.PicFIIs_Click);
             // 
             // pictureBox3
             // 
@@ -137,13 +139,12 @@ namespace Aula1
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResult.ForeColor = System.Drawing.Color.White;
-            this.lblResult.Location = new System.Drawing.Point(872, 240);
+            this.lblResult.Location = new System.Drawing.Point(843, 248);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(53, 21);
+            this.lblResult.Size = new System.Drawing.Size(0, 27);
             this.lblResult.TabIndex = 10;
-            this.lblResult.Text = "label1";
             // 
             // TelaInvestidorAvancado
             // 
