@@ -33,6 +33,11 @@ namespace Aula1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
             string Email = txtEmail.Text;
             string Senha = txtPass.Text;
             Form cadastro = new Form();
@@ -41,7 +46,7 @@ namespace Aula1
 
             if (Email == "")
             {
-             cadastro.Show();
+                MessageBox.Show ("Preencha os dados");
             }
             else
             {
@@ -50,11 +55,11 @@ namespace Aula1
 
             if (Senha == "")
             {
-                 cadastro.Show();
+                MessageBox.Show("Preencha os dados");
             }
             else
             {
-                 logado.Show();
+                logado.Show();
             }
         }
     }
