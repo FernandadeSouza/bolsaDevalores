@@ -41,26 +41,31 @@ namespace Aula1
             string Email = txtEmail.Text;
             string Senha = txtPass.Text;
             Form cadastro = new Form();
-            Form logado = new frmIntermed();
 
 
-            if (Email == "")
-            {
-                MessageBox.Show ("Preencha os dados");
-            }
-            else
-            {
-                logado.Show();
-            }
 
-            if (Senha == "")
+            if (Email == "" || Senha == "")
             {
                 MessageBox.Show("Preencha os dados");
             }
             else
             {
-                logado.Show();
+                if (Email == "intermed@gmail.com")
+                {
+                    Form logado = new frmIntermed();
+                    logado.Show();
+                } else if (Email == "avancado@gmail.com")
+                {
+                    Form logado = new InvestidorAvançado(); 
+                    logado.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario não cadastrado");
+                }
             }
+
+            
         }
     }
 }

@@ -21,5 +21,10 @@ namespace Aula1
         {
 
         }
+
+        private void InvestidorAvançado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
