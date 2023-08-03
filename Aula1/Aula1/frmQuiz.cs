@@ -99,21 +99,11 @@ namespace Aula1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            teste(1);
-
-            if (cond1 == true)
-            {
-                tabControl1.SelectedTab = tabPage2;
-
-
-            }
-
-            else MessageBox.Show("Escolha uma das alternativas");
-
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
 
             teste(2);
@@ -127,7 +117,7 @@ namespace Aula1
 
             else MessageBox.Show("Escolha uma das alternativas");
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             teste(3);
 
@@ -142,7 +132,7 @@ namespace Aula1
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             teste(4);
 
@@ -157,36 +147,13 @@ namespace Aula1
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            teste(5);
+            teste(4);
 
             if (cond1 == true)
             {
-                if (contadorIniciante > contadorIntermediario && contadorIniciante > contadorAvancado)
-                {
-                    // Perfil Conservador
-                    label5.Text = "Seu perfil de investidor é Iniciante.";
-                }
-                else if (contadorIntermediario > contadorIniciante && contadorIntermediario > contadorAvancado)
-                {
-                    // Perfil Moderado
-                    label5.Text = "Seu perfil de investidor é Intermediario.";
-                }
-                else if (contadorAvancado > contadorIniciante && contadorAvancado > contadorIntermediario)
-                {
-                    // Perfil Agressivo
-                    label5.Text = "Seu perfil de investidor é Avançado.";
-                }
-                else
-                {
-                    // Se houver empate entre os contadores, pode-se considerar um perfil balanceado ou fazer algo personalizado.
-                    label5.Text = "Seu perfil de investidor é balanceado.";
-                }
-
-
-
-                tabControl1.SelectedTab = tabPage6;
+                tabControl1.SelectedTab = tabPage5;
 
 
             }
@@ -194,16 +161,123 @@ namespace Aula1
             else MessageBox.Show("Escolha uma das alternativas");
         }
 
+        private void picConfirmar2_Click(object sender, EventArgs e)
+        {
+            teste(2);
+
+            if (cond1 == true)
+            {
+                tabControl1.SelectedTab = tabPage3;
+
+
+            }
+
+            else MessageBox.Show("Escolha uma das alternativas");
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+          
+
+                teste(1);
+
+                if (cond1 == true)
+                {
+                    tabControl1.SelectedTab = tabPage2;
+
+
+                }
+
+                else MessageBox.Show("Escolha uma das alternativas");
+
+
+
+
+       
+
+        }
+
+        private void picConfirmar3_Click(object sender, EventArgs e)
+        {
+            
+            teste(3);
+
+            if (cond1 == true)
+            {
+                tabControl1.SelectedTab = tabPage4;
+
+
+            }
+
+            else MessageBox.Show("Escolha uma das alternativas");
+
+        }
+
+        private void picConfirmar4_Click(object sender, EventArgs e)
+        {
+
+            teste(4);
+
+            if (cond1 == true)
+            {
+                tabControl1.SelectedTab = tabPage5;
+
+
+            }
+
+            else MessageBox.Show("Escolha uma das alternativas");
+
+        }
+
+        private void picConfirmar5_Click(object sender, EventArgs e)
+        {
+            {
+                teste(5);
+
+                if (cond1 == true)
+                {
+                    tabControl1.SelectedTab = tabPage6;
+
+
+                }
+
+                else MessageBox.Show("Escolha uma das alternativas");
+            }
+
+        }
+
+        private void picReiniciar_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnReset_Click(object sender, EventArgs e)
         {
-            contadorIniciante = 0;
-            contadorIntermediario = 0;
-            contadorAvancado = 0;
+
+        }
+
+        private void picProximo_Click(object sender, EventArgs e)
+        {
+            Form iniciante = new frmInvest();
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            teste(1);
+
+            if (cond1 == true)
+            {
+                tabControl1.SelectedTab = tabPage2;
 
 
+            }
 
-            tabControl1.SelectedTab = tabPage1;
+            else MessageBox.Show("Escolha uma das alternativas");
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            label5.Text = "você é um investidor iniciante";
         }
     }
 }
-    
