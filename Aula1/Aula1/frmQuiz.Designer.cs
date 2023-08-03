@@ -27,59 +27,70 @@ namespace Aula1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formquiz));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnQuiz1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rbCQuiz1 = new System.Windows.Forms.RadioButton();
             this.rbBQuiz1 = new System.Windows.Forms.RadioButton();
             this.rbAQuiz1 = new System.Windows.Forms.RadioButton();
             this.lbQuiz = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.rbCQuiz2 = new System.Windows.Forms.RadioButton();
             this.rbBQuiz2 = new System.Windows.Forms.RadioButton();
             this.rbAQuiz2 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.rbCQuiz3 = new System.Windows.Forms.RadioButton();
             this.rbBQuiz3 = new System.Windows.Forms.RadioButton();
             this.rbAQuiz3 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.rbCQuiz4 = new System.Windows.Forms.RadioButton();
             this.rbBQuiz4 = new System.Windows.Forms.RadioButton();
             this.rbAQuiz4 = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.rbCQuiz5 = new System.Windows.Forms.RadioButton();
             this.rbBQuiz5 = new System.Windows.Forms.RadioButton();
             this.rbAQuiz5 = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.btnReset = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.picProximo = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel6 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel5.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picProximo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -99,8 +110,9 @@ namespace Aula1
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.tabPage1.Controls.Add(this.btnQuiz1);
+            this.tabPage1.BackColor = System.Drawing.Color.Black;
+            this.tabPage1.Controls.Add(this.pictureBox1);
+            this.tabPage1.Controls.Add(this.panel6);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.lbQuiz);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -110,23 +122,29 @@ namespace Aula1
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "quiz1";
             // 
-            // btnQuiz1
+            // pictureBox1
             // 
-            this.btnQuiz1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnQuiz1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnQuiz1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnQuiz1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuiz1.Location = new System.Drawing.Point(140, 260);
-            this.btnQuiz1.Name = "btnQuiz1";
-            this.btnQuiz1.Size = new System.Drawing.Size(211, 66);
-            this.btnQuiz1.TabIndex = 8;
-            this.btnQuiz1.Text = "Confirmar";
-            this.btnQuiz1.UseVisualStyleBackColor = false;
-            this.btnQuiz1.Click += new System.EventHandler(this.button1_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(140, 260);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(195, 99);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel6.BackColor = System.Drawing.Color.Black;
+            this.panel6.Location = new System.Drawing.Point(6, 8);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(954, 29);
+            this.panel6.TabIndex = 2;
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.rbCQuiz1);
             this.panel1.Controls.Add(this.rbBQuiz1);
             this.panel1.Controls.Add(this.rbAQuiz1);
@@ -139,6 +157,7 @@ namespace Aula1
             // 
             this.rbCQuiz1.AutoSize = true;
             this.rbCQuiz1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbCQuiz1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbCQuiz1.Location = new System.Drawing.Point(4, 122);
             this.rbCQuiz1.Name = "rbCQuiz1";
             this.rbCQuiz1.Size = new System.Drawing.Size(525, 24);
@@ -151,6 +170,7 @@ namespace Aula1
             // 
             this.rbBQuiz1.AutoSize = true;
             this.rbBQuiz1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbBQuiz1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbBQuiz1.Location = new System.Drawing.Point(4, 70);
             this.rbBQuiz1.Name = "rbBQuiz1";
             this.rbBQuiz1.Size = new System.Drawing.Size(387, 24);
@@ -163,6 +183,7 @@ namespace Aula1
             // 
             this.rbAQuiz1.AutoSize = true;
             this.rbAQuiz1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbAQuiz1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbAQuiz1.Location = new System.Drawing.Point(4, 13);
             this.rbAQuiz1.Name = "rbAQuiz1";
             this.rbAQuiz1.Size = new System.Drawing.Size(316, 24);
@@ -176,6 +197,7 @@ namespace Aula1
             this.lbQuiz.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbQuiz.AutoSize = true;
             this.lbQuiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQuiz.ForeColor = System.Drawing.Color.Magenta;
             this.lbQuiz.Location = new System.Drawing.Point(135, 40);
             this.lbQuiz.Name = "lbQuiz";
             this.lbQuiz.Size = new System.Drawing.Size(545, 25);
@@ -184,8 +206,8 @@ namespace Aula1
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.BackColor = System.Drawing.Color.Black;
+            this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -195,18 +217,15 @@ namespace Aula1
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "quiz2";
             // 
-            // button1
+            // pictureBox2
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(140, 260);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 66);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Confirmar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(136, 260);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(195, 99);
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.picConfirmar2_Click);
             // 
             // panel2
             // 
@@ -223,6 +242,7 @@ namespace Aula1
             // 
             this.rbCQuiz2.AutoSize = true;
             this.rbCQuiz2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.rbCQuiz2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbCQuiz2.Location = new System.Drawing.Point(4, 122);
             this.rbCQuiz2.Name = "rbCQuiz2";
             this.rbCQuiz2.Size = new System.Drawing.Size(540, 24);
@@ -235,6 +255,7 @@ namespace Aula1
             // 
             this.rbBQuiz2.AutoSize = true;
             this.rbBQuiz2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbBQuiz2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbBQuiz2.Location = new System.Drawing.Point(4, 70);
             this.rbBQuiz2.Name = "rbBQuiz2";
             this.rbBQuiz2.Size = new System.Drawing.Size(421, 24);
@@ -247,6 +268,7 @@ namespace Aula1
             // 
             this.rbAQuiz2.AutoSize = true;
             this.rbAQuiz2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbAQuiz2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbAQuiz2.Location = new System.Drawing.Point(4, 13);
             this.rbAQuiz2.Name = "rbAQuiz2";
             this.rbAQuiz2.Size = new System.Drawing.Size(392, 24);
@@ -260,6 +282,7 @@ namespace Aula1
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Magenta;
             this.label1.Location = new System.Drawing.Point(135, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(551, 25);
@@ -268,8 +291,8 @@ namespace Aula1
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.tabPage3.Controls.Add(this.button2);
+            this.tabPage3.BackColor = System.Drawing.Color.Black;
+            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Controls.Add(this.panel3);
             this.tabPage3.Controls.Add(this.label2);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
@@ -279,18 +302,15 @@ namespace Aula1
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "quiz3";
             // 
-            // button2
+            // pictureBox3
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(140, 260);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(211, 66);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Confirmar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(136, 260);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(195, 99);
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.picConfirmar3_Click);
             // 
             // panel3
             // 
@@ -307,6 +327,7 @@ namespace Aula1
             // 
             this.rbCQuiz3.AutoSize = true;
             this.rbCQuiz3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbCQuiz3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbCQuiz3.Location = new System.Drawing.Point(4, 122);
             this.rbCQuiz3.Name = "rbCQuiz3";
             this.rbCQuiz3.Size = new System.Drawing.Size(502, 24);
@@ -319,6 +340,7 @@ namespace Aula1
             // 
             this.rbBQuiz3.AutoSize = true;
             this.rbBQuiz3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbBQuiz3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbBQuiz3.Location = new System.Drawing.Point(4, 70);
             this.rbBQuiz3.Name = "rbBQuiz3";
             this.rbBQuiz3.Size = new System.Drawing.Size(456, 24);
@@ -331,6 +353,7 @@ namespace Aula1
             // 
             this.rbAQuiz3.AutoSize = true;
             this.rbAQuiz3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbAQuiz3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbAQuiz3.Location = new System.Drawing.Point(4, 13);
             this.rbAQuiz3.Name = "rbAQuiz3";
             this.rbAQuiz3.Size = new System.Drawing.Size(432, 24);
@@ -344,6 +367,7 @@ namespace Aula1
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Magenta;
             this.label2.Location = new System.Drawing.Point(135, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(603, 25);
@@ -352,8 +376,8 @@ namespace Aula1
             // 
             // tabPage4
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.tabPage4.Controls.Add(this.button3);
+            this.tabPage4.BackColor = System.Drawing.Color.Black;
+            this.tabPage4.Controls.Add(this.pictureBox4);
             this.tabPage4.Controls.Add(this.panel4);
             this.tabPage4.Controls.Add(this.label3);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
@@ -363,18 +387,15 @@ namespace Aula1
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "quiz4";
             // 
-            // button3
+            // pictureBox4
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(140, 260);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(211, 66);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Confirmar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(136, 260);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(195, 99);
+            this.pictureBox4.TabIndex = 12;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.picConfirmar4_Click);
             // 
             // panel4
             // 
@@ -391,6 +412,7 @@ namespace Aula1
             // 
             this.rbCQuiz4.AutoSize = true;
             this.rbCQuiz4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.rbCQuiz4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbCQuiz4.Location = new System.Drawing.Point(4, 122);
             this.rbCQuiz4.Name = "rbCQuiz4";
             this.rbCQuiz4.Size = new System.Drawing.Size(253, 24);
@@ -403,6 +425,7 @@ namespace Aula1
             // 
             this.rbBQuiz4.AutoSize = true;
             this.rbBQuiz4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.rbBQuiz4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbBQuiz4.Location = new System.Drawing.Point(4, 70);
             this.rbBQuiz4.Name = "rbBQuiz4";
             this.rbBQuiz4.Size = new System.Drawing.Size(286, 24);
@@ -415,6 +438,7 @@ namespace Aula1
             // 
             this.rbAQuiz4.AutoSize = true;
             this.rbAQuiz4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbAQuiz4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbAQuiz4.Location = new System.Drawing.Point(4, 13);
             this.rbAQuiz4.Name = "rbAQuiz4";
             this.rbAQuiz4.Size = new System.Drawing.Size(255, 24);
@@ -428,6 +452,7 @@ namespace Aula1
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Magenta;
             this.label3.Location = new System.Drawing.Point(135, 40);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(746, 25);
@@ -436,8 +461,8 @@ namespace Aula1
             // 
             // tabPage5
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.tabPage5.Controls.Add(this.button4);
+            this.tabPage5.BackColor = System.Drawing.Color.Black;
+            this.tabPage5.Controls.Add(this.pictureBox5);
             this.tabPage5.Controls.Add(this.panel5);
             this.tabPage5.Controls.Add(this.label4);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
@@ -447,18 +472,15 @@ namespace Aula1
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "quiz5";
             // 
-            // button4
+            // pictureBox5
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(140, 260);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(211, 66);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Confirmar";
-            this.button4.UseVisualStyleBackColor = false;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(136, 260);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(195, 99);
+            this.pictureBox5.TabIndex = 12;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.picConfirmar5_Click);
             // 
             // panel5
             // 
@@ -475,6 +497,7 @@ namespace Aula1
             // 
             this.rbCQuiz5.AutoSize = true;
             this.rbCQuiz5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.rbCQuiz5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbCQuiz5.Location = new System.Drawing.Point(4, 122);
             this.rbCQuiz5.Name = "rbCQuiz5";
             this.rbCQuiz5.Size = new System.Drawing.Size(481, 24);
@@ -487,6 +510,7 @@ namespace Aula1
             // 
             this.rbBQuiz5.AutoSize = true;
             this.rbBQuiz5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbBQuiz5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbBQuiz5.Location = new System.Drawing.Point(4, 70);
             this.rbBQuiz5.Name = "rbBQuiz5";
             this.rbBQuiz5.Size = new System.Drawing.Size(432, 24);
@@ -499,6 +523,7 @@ namespace Aula1
             // 
             this.rbAQuiz5.AutoSize = true;
             this.rbAQuiz5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbAQuiz5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rbAQuiz5.Location = new System.Drawing.Point(4, 13);
             this.rbAQuiz5.Name = "rbAQuiz5";
             this.rbAQuiz5.Size = new System.Drawing.Size(364, 24);
@@ -512,6 +537,7 @@ namespace Aula1
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Magenta;
             this.label4.Location = new System.Drawing.Point(135, 40);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(772, 25);
@@ -520,9 +546,11 @@ namespace Aula1
             // 
             // tabPage6
             // 
-            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.tabPage6.BackColor = System.Drawing.Color.Black;
             this.tabPage6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tabPage6.Controls.Add(this.btnReset);
+            this.tabPage6.Controls.Add(this.pictureBox7);
+            this.tabPage6.Controls.Add(this.picProximo);
+            this.tabPage6.Controls.Add(this.pictureBox6);
             this.tabPage6.Controls.Add(this.label5);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
@@ -531,71 +559,89 @@ namespace Aula1
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "resultado";
             // 
-            // btnReset
+            // pictureBox7
             // 
-            this.btnReset.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnReset.Location = new System.Drawing.Point(399, 267);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(102, 42);
-            this.btnReset.TabIndex = 1;
-            this.btnReset.Text = "Reiniciar";
-            this.btnReset.UseVisualStyleBackColor = false;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(475, 6);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(463, 183);
+            this.pictureBox7.TabIndex = 5;
+            this.pictureBox7.TabStop = false;
+            // 
+            // picProximo
+            // 
+            this.picProximo.Image = ((System.Drawing.Image)(resources.GetObject("picProximo.Image")));
+            this.picProximo.Location = new System.Drawing.Point(475, 306);
+            this.picProximo.Name = "picProximo";
+            this.picProximo.Size = new System.Drawing.Size(184, 89);
+            this.picProximo.TabIndex = 4;
+            this.picProximo.TabStop = false;
+            this.picProximo.Click += new System.EventHandler(this.picProximo_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(6, 298);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(193, 97);
+            this.pictureBox6.TabIndex = 3;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.picReiniciar_Click);
             // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(264, 161);
+            this.label5.ForeColor = System.Drawing.Color.Magenta;
+            this.label5.Location = new System.Drawing.Point(17, 234);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(19, 29);
             this.label5.TabIndex = 0;
             this.label5.Text = "l";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel6
-            // 
-            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel6.BackColor = System.Drawing.Color.Green;
-            this.panel6.Location = new System.Drawing.Point(16, -3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(944, 29);
-            this.panel6.TabIndex = 2;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Formquiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(988, 470);
-            this.Controls.Add(this.panel6);
             this.Controls.Add(this.tabControl1);
             this.Name = "Formquiz";
             this.Text = "FormQuiz";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picProximo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -634,14 +680,16 @@ namespace Aula1
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnQuiz1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox picProximo;
     }
 
 }
