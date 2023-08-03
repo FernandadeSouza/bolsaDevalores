@@ -258,7 +258,61 @@ namespace Aula1
 
         private void picProximo_Click(object sender, EventArgs e)
         {
-            Form iniciante = new frmInvest();
+            bool avan=false;
+            bool inte = false;
+            bool inic = false;
+            if (contadorAvancado > contadorIntermediario)
+            {
+                avan = true;
+                inte = false;
+            }
+            if (contadorAvancado > contadorIniciante)
+            {
+                avan = true;
+                inic = false;
+            }
+
+
+            if (contadorIntermediario > contadorAvancado)
+            {
+                inte = true;
+                avan = false;
+            }
+            if (contadorIntermediario > contadorIniciante)
+            {
+                inte = true;
+                inic = false;
+            }
+
+
+            if (contadorIniciante > contadorAvancado)
+            {
+                inic = true;
+                avan = false;
+            }
+            if (contadorIniciante > contadorIntermediario)
+            {
+                inic = true;
+                inte = false;
+            }
+
+            if (inic)
+            {
+                Form frmInic = new frmInvest();
+                frmInic.Show();
+            }
+
+            if (inte)
+            {
+                Form frmInte = new frmIntermed();
+                frmInte.Show();
+            }
+
+            if (avan)
+            {
+                Form frmAvan = new TelaInvestidorAvancado();
+                frmAvan.Show();
+            }
         }
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
@@ -281,3 +335,4 @@ namespace Aula1
         }
     }
 }
+
