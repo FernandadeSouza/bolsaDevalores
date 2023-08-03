@@ -42,7 +42,6 @@ namespace Aula1
             // 
             // picCodeInicial
             // 
-            this.picCodeInicial.Image = global::Aula1.Properties.Resources.Colorful_Futuristic_Neon_Gaming_Channel_Youtube_Outro;
             this.picCodeInicial.Location = new System.Drawing.Point(202, 22);
             this.picCodeInicial.Name = "picCodeInicial";
             this.picCodeInicial.Size = new System.Drawing.Size(1162, 633);

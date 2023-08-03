@@ -56,7 +56,7 @@ namespace Aula1
                     logado.Show();
                 } else if (Email == "avancado@gmail.com")
                 {
-                    Form logado = new InvestidorAvançado(); 
+                    Form logado = new TelaInvestidorAvancado(); 
                     logado.Show();
                 }
                 else
