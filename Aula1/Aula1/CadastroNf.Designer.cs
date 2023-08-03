@@ -37,19 +37,19 @@ namespace Aula1
             this.label2 = new System.Windows.Forms.Label();
             this.txt_Nascimento = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.picEmail = new System.Windows.Forms.PictureBox();
+            this.picSenha = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.picNome = new System.Windows.Forms.PictureBox();
+            this.picNascimento = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNascimento)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNome
@@ -131,25 +131,25 @@ namespace Aula1
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
+            // picEmail
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(88, 286);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(115, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
+            this.picEmail.Image = ((System.Drawing.Image)(resources.GetObject("picEmail.Image")));
+            this.picEmail.Location = new System.Drawing.Point(88, 286);
+            this.picEmail.Name = "picEmail";
+            this.picEmail.Size = new System.Drawing.Size(115, 30);
+            this.picEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picEmail.TabIndex = 15;
+            this.picEmail.TabStop = false;
             // 
-            // pictureBox3
+            // picSenha
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(88, 368);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 34);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
+            this.picSenha.Image = ((System.Drawing.Image)(resources.GetObject("picSenha.Image")));
+            this.picSenha.Location = new System.Drawing.Point(88, 368);
+            this.picSenha.Name = "picSenha";
+            this.picSenha.Size = new System.Drawing.Size(100, 34);
+            this.picSenha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picSenha.TabIndex = 16;
+            this.picSenha.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -171,25 +171,25 @@ namespace Aula1
             this.pictureBox5.TabIndex = 18;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox6
+            // picNome
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(93, 124);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(289, 37);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox6.TabIndex = 19;
-            this.pictureBox6.TabStop = false;
+            this.picNome.Image = ((System.Drawing.Image)(resources.GetObject("picNome.Image")));
+            this.picNome.Location = new System.Drawing.Point(93, 124);
+            this.picNome.Name = "picNome";
+            this.picNome.Size = new System.Drawing.Size(289, 37);
+            this.picNome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picNome.TabIndex = 19;
+            this.picNome.TabStop = false;
             // 
-            // pictureBox7
+            // picNascimento
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(92, 206);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(300, 38);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox7.TabIndex = 20;
-            this.pictureBox7.TabStop = false;
+            this.picNascimento.Image = ((System.Drawing.Image)(resources.GetObject("picNascimento.Image")));
+            this.picNascimento.Location = new System.Drawing.Point(92, 206);
+            this.picNascimento.Name = "picNascimento";
+            this.picNascimento.Size = new System.Drawing.Size(300, 38);
+            this.picNascimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picNascimento.TabIndex = 20;
+            this.picNascimento.TabStop = false;
             // 
             // Form2
             // 
@@ -198,12 +198,12 @@ namespace Aula1
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(933, 655);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.picNascimento);
+            this.Controls.Add(this.picNome);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.picSenha);
+            this.Controls.Add(this.picEmail);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txt_Nascimento);
             this.Controls.Add(this.label2);
@@ -217,12 +217,12 @@ namespace Aula1
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSenha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNascimento)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,11 +236,11 @@ namespace Aula1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker txt_Nascimento;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox picEmail;
+        private System.Windows.Forms.PictureBox picSenha;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox picNome;
+        private System.Windows.Forms.PictureBox picNascimento;
     }
 }
