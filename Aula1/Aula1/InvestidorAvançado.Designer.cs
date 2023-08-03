@@ -122,6 +122,7 @@ namespace Aula1
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "InvestidorAvançado";
             this.Text = "Investidor Avançado";
+            this.Load += new System.EventHandler(this.InvestidorAvançado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picAvançado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

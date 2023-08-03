@@ -33,29 +33,39 @@ namespace Aula1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
             string Email = txtEmail.Text;
             string Senha = txtPass.Text;
             Form cadastro = new Form();
-            Form logado = new frmIntermed();
 
 
-            if (Email == "")
+
+            if (Email == "" || Senha == "")
             {
-             cadastro.Show();
+                MessageBox.Show("Preencha os dados");
             }
             else
             {
-                logado.Show();
+                if (Email == "intermed@gmail.com")
+                {
+                    Form logado = new frmIntermed();
+                    logado.Show();
+                } else if (Email == "avancado@gmail.com")
+                {
+                    Form logado = new InvestidorAvançado(); 
+                    logado.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario não cadastrado");
+                }
             }
 
-            if (Senha == "")
-            {
-                 cadastro.Show();
-            }
-            else
-            {
-                 logado.Show();
-            }
+            
         }
     }
 }
