@@ -30,5 +30,23 @@ namespace Aula1
             LoginCliente.Show();
             WindowState = FormWindowState.Maximized;
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PicLogin_Click(object sender, EventArgs e)
+        {
+            Form FLogin = new frmLogin();
+            FLogin.Show();
+        }
+
+        private void picCadastro_Click(object sender, EventArgs e)
+        {
+            Form FCadastro = new Form2();
+            FCadastro.Show();
+
+        }
     }
 }
