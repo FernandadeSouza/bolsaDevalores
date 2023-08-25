@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Aula1.Models;
 
 namespace Aula1
 {
@@ -15,6 +16,8 @@ namespace Aula1
         public frmInvest()
         {
             InitializeComponent();
+
+            
         }
 
      
@@ -61,6 +64,30 @@ namespace Aula1
 
 
             MessageBox.Show("Dados Salvos: " + "\n" + "O valor a ser investido é : " + Valor + " Reais " + "\n" + "O usuáriom deseja investimentos com retorno a : " + Tempo + "\n" + "Investimentos Conhecidos: " + mSkills + "\n" + "Sugerimos como investimentos ...");
+
+            using (MyDbContext db = new MyDbContext())
+
+            {
+
+                string query = @"SELECT a.id,  FROM code_cash.acoes AS a JOIN code_cash.niveis AS n ON a.id_niveis = n.id WHERE n.nome = 'Iniciante' OR a.nome IN ('Apple');";
+                
+
+/*
+                var parameters = new[]
+
+                {
+
+                    new MySqlParameter("@name", name),
+
+                    new MySqlParameter("@birth_date", dataNascimento)
+
+                };
+
+
+
+                int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);*/
+
+            }
         }
 
         private void picLimpar_Click(object sender, EventArgs e)

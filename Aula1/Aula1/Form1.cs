@@ -17,6 +17,22 @@ namespace Aula1
             InitializeComponent();
         }
 
-        
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // frmPrincipal
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "frmPrincipal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
