@@ -1,7 +1,7 @@
 ﻿
 namespace Aula1
 {
-    partial class Acao
+    partial class frmAcao
     {
         /// <summary>
         /// Required designer variable.
@@ -36,19 +36,20 @@ namespace Aula1
             // dGVAcao
             // 
             this.dGVAcao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVAcao.Location = new System.Drawing.Point(12, 12);
+            this.dGVAcao.Location = new System.Drawing.Point(32, 38);
             this.dGVAcao.Name = "dGVAcao";
-            this.dGVAcao.Size = new System.Drawing.Size(766, 411);
+            this.dGVAcao.Size = new System.Drawing.Size(732, 370);
             this.dGVAcao.TabIndex = 0;
             // 
-            // Acao
+            // frmAcao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dGVAcao);
-            this.Name = "Acao";
+            this.Name = "frmAcao";
             this.Text = "Acao";
+            this.Load += new System.EventHandler(this.frmAcao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dGVAcao)).EndInit();
             this.ResumeLayout(false);
 

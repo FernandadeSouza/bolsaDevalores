@@ -41,7 +41,7 @@ namespace Aula1
 
         private void picDados_Click(object sender, EventArgs e)
         {
-            decimal Valor = Convert.ToDecimal(txtValor.Text);
+            string Valor = Convert.ToString(txtValor.Text);
 
             string Tempo = "";
             if (rbLongo.Checked)
@@ -65,29 +65,32 @@ namespace Aula1
 
             MessageBox.Show("Dados Salvos: " + "\n" + "O valor a ser investido é : " + Valor + " Reais " + "\n" + "O usuáriom deseja investimentos com retorno a : " + Tempo + "\n" + "Investimentos Conhecidos: " + mSkills + "\n" + "Sugerimos como investimentos ...");
 
-            using (MyDbContext db = new MyDbContext())
+            /*  using (MyDbContext db = new MyDbContext())
 
-            {
+              {
 
-                string query = @"SELECT a.id,  FROM code_cash.acoes AS a JOIN code_cash.niveis AS n ON a.id_niveis = n.id WHERE n.nome = 'Iniciante' OR a.nome IN ('Apple');";
-                
-
-/*
-                var parameters = new[]
-
-                {
-
-                    new MySqlParameter("@name", name),
-
-                    new MySqlParameter("@birth_date", dataNascimento)
-
-                };
+                  string query = @"SELECT a.id,  FROM code_cash.acoes AS a JOIN code_cash.niveis AS n ON a.id_niveis = n.id WHERE n.nome = 'Iniciante' OR a.nome IN ('Apple');";
 
 
 
-                int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);*/
+                  var parameters = new[]
 
-            }
+                  {
+
+                      new MySqlParameter("@name", name),
+
+                      new MySqlParameter("@birth_date", dataNascimento)
+
+                  };
+
+
+
+                  int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
+
+
+              }*/
+           
+
         }
 
         private void picLimpar_Click(object sender, EventArgs e)
@@ -101,7 +104,9 @@ namespace Aula1
 
         private void picFinalizar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
+            Form acao = new frmAcao();
+            acao.Show();
         }
 
         private void frmInvest_Load(object sender, EventArgs e)
