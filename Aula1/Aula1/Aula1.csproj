@@ -154,6 +154,7 @@
     <Compile Include="frmIntermed.Designer.cs">
       <DependentUpon>frmIntermed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cadastro.cs" />
     <Compile Include="MyDbContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

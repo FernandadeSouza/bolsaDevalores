@@ -124,6 +124,7 @@ namespace Aula1
             this.Controls.Add(this.txtEmail);
             this.Name = "frmLogin";
             this.Text = "Tela Login";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcbLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
