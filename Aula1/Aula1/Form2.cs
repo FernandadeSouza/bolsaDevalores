@@ -104,14 +104,19 @@ namespace Aula1
 
         private void picFinalizar_Click(object sender, EventArgs e)
         {
-            //Application.Exit();
-            Form acao = new frmAcao();
-            acao.Show();
+            Application.Exit();
+            
         }
 
         private void frmInvest_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void picInvest_Click(object sender, EventArgs e)
+        {
+            Form acao = new frmAcao("Iniciante");
+            acao.Show();
         }
     }
 }

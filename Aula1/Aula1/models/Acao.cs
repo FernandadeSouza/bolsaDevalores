@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Aula1.models
+namespace Aula1.Models
 {
     public class Acao
     {

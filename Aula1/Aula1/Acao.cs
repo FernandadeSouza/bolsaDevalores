@@ -14,22 +14,23 @@ namespace Aula1
 {
     public partial class frmAcao : Form
     {
-        public frmAcao()
+        public frmAcao(string nivel)
         {
-           
+            InitializeComponent();
+            using (MyDbContext db = new MyDbContext())
+            {
+                string query = "SELECT a.id, a.id_niveis,a.codigo, a.nome, a.variacao  FROM code_cash.acoes AS a JOIN code_cash.niveis AS n ON a.id_niveis = n.id WHERE n.nome = '"+nivel+"';";
+                List<Acao> acao = db.Database.SqlQuery<Acao>(query).ToList();
+                dGVAcao.DataSource = acao;
+
+            }
         }
 
         private void frmAcao_Load(object sender, EventArgs e)
         {
 
-            InitializeComponent();
-            using (MyDbContext db = new MyDbContext())
-            {
-                string query = @"SELECT a.id, a.id_niveis,a.codigo, a.nome, a.variacao  FROM code_cash.acoes AS a JOIN code_cash.niveis AS n ON a.id_niveis = n.id WHERE n.nome = 'Iniciante';";
-                List<frmAcao> acao = db.Database.SqlQuery<frmAcao>(query).ToList();
-                dGVAcao.DataSource = acao;
-
-            }
+            
+            
         }
     }
 }
