@@ -7,11 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
+
+
 
 namespace Aula1
 {
     public partial class TelaPrincipal : Form
     {
+        private const string V = @"INSERT INTO Users (name, datanascimento) VALUES (@name, @data_nascimento)";
+
         public TelaPrincipal()
         {
             InitializeComponent();
@@ -47,6 +54,17 @@ namespace Aula1
             Form FCadastro = new Form2();
             FCadastro.Show();
 
+            
+
+        }
         }
     }
-}
+
+
+       
+
+
+
+
+
+
