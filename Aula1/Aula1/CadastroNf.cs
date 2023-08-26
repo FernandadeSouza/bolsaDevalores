@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
 
 namespace Aula1
 {
@@ -24,11 +27,19 @@ namespace Aula1
             string data = Convert.ToString(txt_Nascimento.Text);
             string email = Convert.ToString(txtData.Text);
             string senha = Convert.ToString(txtSenha.Text);
-
+            
             Form frmquiz = new Formquiz();
 
             frmquiz.Show();
 
+            using (MyDbContext db = new MyDbContext())
+            {
+                string query = @"iNSERT INTO Users code_cash.cadastro (id, nome, nascimento, datanascimento, cpf,cnpj, telefone, email, senha) VALUES (@id,@nome,@data,@cpf,@cnpj,@telefone,@email,@senha)";
+
+                new MySqlParameter ()
+
+                
+            }
 
 
 
@@ -120,6 +131,35 @@ namespace Aula1
                 MessageBox.Show("Email inválido");
                 txtData.BackColor = Color.Red;
             }
+        }
+
+        private void cpf_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void rbCpf_CheckedChanged(object sender, EventArgs e)
+        {
+            lblcpf.Visible = true;
+            lblcnpj.Visible = false;
+
+            mskcpf.Visible = true;
+            mskcnpj.Visible = false;
+            
+        }
+
+        private void lblcpf_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbCnpj_CheckedChanged(object sender, EventArgs e)
+        {
+            lblcnpj.Visible = true;
+            lblcpf.Visible = false;
+
+            mskcnpj.Visible = true;
+            mskcpf.Visible = false;
         }
     }
 }
