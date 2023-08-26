@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Aula1.models;
 
 namespace Aula1
 {
@@ -29,7 +30,10 @@ namespace Aula1
 
         private void frmIntermed_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized; 
+            this.WindowState = FormWindowState.Maximized;
         }
-    }
-}
+    }        
+
+} 
+    
+
