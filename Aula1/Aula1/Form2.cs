@@ -63,7 +63,7 @@ namespace Aula1
             }
 
 
-            MessageBox.Show("Dados Salvos: " + "\n" + "O valor a ser investido é : " + Valor + " Reais " + "\n" + "O usuáriom deseja investimentos com retorno a : " + Tempo + "\n" + "Investimentos Conhecidos: " + mSkills + "\n" + "Sugerimos como investimentos ...");
+            MessageBox.Show("Dados Salvos: " + "\n" + "O valor a ser investido é : " + Valor + " Reais " + "\n" + "O usuário deseja investimentos com retorno a : " + Tempo + "\n" + "Investimentos Conhecidos: " + mSkills + "\n" + "Sugerimos como investimentos ...");
 
             /*  using (MyDbContext db = new MyDbContext())
 
