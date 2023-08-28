@@ -48,7 +48,7 @@ namespace Aula1
             this.lblcnpj = new System.Windows.Forms.PictureBox();
             this.mskcnpj = new System.Windows.Forms.MaskedTextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.telefone = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Telefone = new System.Windows.Forms.MaskedTextBox();
             this.rbCpf = new System.Windows.Forms.RadioButton();
             this.rbCnpj = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -252,14 +252,14 @@ namespace Aula1
             this.pictureBox6.TabIndex = 25;
             this.pictureBox6.TabStop = false;
             // 
-            // telefone
+            // txt_Telefone
             // 
-            this.telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.telefone.Location = new System.Drawing.Point(44, 480);
-            this.telefone.Mask = "(999) 000-0000";
-            this.telefone.Name = "telefone";
-            this.telefone.Size = new System.Drawing.Size(196, 22);
-            this.telefone.TabIndex = 26;
+            this.txt_Telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Telefone.Location = new System.Drawing.Point(44, 480);
+            this.txt_Telefone.Mask = "(999) 000-0000";
+            this.txt_Telefone.Name = "txt_Telefone";
+            this.txt_Telefone.Size = new System.Drawing.Size(196, 22);
+            this.txt_Telefone.TabIndex = 26;
             // 
             // rbCpf
             // 
@@ -292,7 +292,7 @@ namespace Aula1
             this.ClientSize = new System.Drawing.Size(933, 655);
             this.Controls.Add(this.rbCnpj);
             this.Controls.Add(this.rbCpf);
-            this.Controls.Add(this.telefone);
+            this.Controls.Add(this.txt_Telefone);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.mskcnpj);
             this.Controls.Add(this.lblcnpj);
@@ -350,7 +350,7 @@ namespace Aula1
         private System.Windows.Forms.PictureBox lblcnpj;
         private System.Windows.Forms.MaskedTextBox mskcnpj;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.MaskedTextBox telefone;
+        private System.Windows.Forms.MaskedTextBox txt_Telefone;
         private System.Windows.Forms.RadioButton rbCpf;
         private System.Windows.Forms.RadioButton rbCnpj;
     }
