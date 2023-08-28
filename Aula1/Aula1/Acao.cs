@@ -14,12 +14,12 @@ namespace Aula1
 {
     public partial class frmAcao : Form
     {
-        public frmAcao(string nivel)
+        public frmAcao(string nivel, string categoria )
         {
             InitializeComponent();
             using (MyDbContext db = new MyDbContext())
             {
-                string query = "SELECT a.id, a.id_niveis,a.codigo, a.nome, a.variacao  FROM code_cash.acoes AS a JOIN code_cash.niveis AS n ON a.id_niveis = n.id WHERE n.nome = '"+nivel+"';";
+                string query = "SELECT a.id, a.id_niveis,a.codigo, a.nome, a.variacao,a.categoria code_cash.acoes AS a JOIN code_cash.niveis AS n ON a.id_niveis = n.id WHERE n.nome = '"+nivel+"';";
                 List<Acao> acao = db.Database.SqlQuery<Acao>(query).ToList();
                 dGVAcao.DataSource = acao;
 
