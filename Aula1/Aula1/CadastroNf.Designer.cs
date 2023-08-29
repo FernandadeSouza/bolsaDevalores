@@ -82,6 +82,7 @@ namespace Aula1
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(478, 24);
             this.txtData.TabIndex = 4;
+            this.txtData.TextChanged += new System.EventHandler(this.txtData_TextChanged_1);
             this.txtData.Validated += new System.EventHandler(this.txtData_Validated);
             // 
             // txtSenha

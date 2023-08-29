@@ -38,14 +38,20 @@ namespace Aula1
 
             using (MyDbContext db = new MyDbContext())
             {
-                string query = @"iNSERT INTO Users code_cash.cadastro (id, nome, datanascimento, cpf,cnpj, telefone, email, senha) VALUES (@id,@nome,@data,@cpf,@cnpj,@telefone,@email,@senha)";
+                string query = @"iNSERT INTO Users code_cash.cadastro (nome, datanascimento, " + ((rbCpf.Checked) ? "cpf," : "cnpj,") + " telefone, email, senha) VALUES (@pnome,@pdata," + (rbCpf.Checked ? " @pcpf,":"@pcnpj,") + "@ptelefone,@pemail,@psenha)";
+                var parameters = new[] {
+                    new MySqlParameter("@pnome", nome),
+                    new MySqlParameter("@pdata", data),
+                    new MySqlParameter("@pemail", email),
+                    new MySqlParameter("@psenha", senha),
+                    (rbCpf.Checked)? new MySqlParameter("@pcpf", cpf): new MySqlParameter("@pcnpj", cnpj),
+                    
+                };
 
-                new MySqlParameter("@pnome", nome);
-                new MySqlParameter("@pdata", data);
-                new MySqlParameter("@pemail", email);
-                new MySqlParameter("@psenha", senha);
-                new MySqlParameter("@pcpf", cpf);
-                new MySqlParameter("@pcnpj", cnpj);
+                int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
+
+                Form Form2 = new Form2();
+                Form2.Show();
 
 
 
@@ -176,6 +182,11 @@ namespace Aula1
 
             mskcnpj.Visible = true;
             mskcpf.Visible = false;
+        }
+
+        private void txtData_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
