@@ -115,7 +115,7 @@ namespace Aula1
 
         private void picInvest_Click(object sender, EventArgs e)
         {
-            Form acao = new frmAcao("Iniciante");
+            Form acao = new frmAcao("Iniciante",null);
             acao.Show();
         }
     }
