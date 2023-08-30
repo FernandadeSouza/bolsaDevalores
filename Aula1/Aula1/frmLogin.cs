@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
 
 namespace Aula1
 {
@@ -58,14 +61,20 @@ namespace Aula1
                 {
                     Form logado = new TelaInvestidorAvancado(); 
                     logado.Show();
+                } else if (Email== "iniciante@gmail.com")
+                {
+                    Form logado = new frmInvest();
+                    logado.Show();
                 }
-                else
+
+     
+            else
                 {
                     MessageBox.Show("Usuario não cadastrado");
                 }
             }
 
-            
+            using (MyDbContext db = new MyDbContext())
         }
     }
 }
