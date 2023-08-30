@@ -24,7 +24,8 @@ namespace Aula1
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            lblResult.Text = "Tesla\nMercadoLivre\nMicroSoft\nApple\nNvidia\nGoogle";
+            Form telaBDR = new frmAcao("Avançado", "BDR");
+            telaBDR.Show();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -35,12 +36,14 @@ namespace Aula1
 
         private void picETF_Click(object sender, EventArgs e)
         {
-            lblResult.Text = "BBOV11 – Banco do Brasil\nBOVA11 – BlackRock\nBOVB11 – Bradesco\nXBOV11 – Caixa Asset\n";
+            Form telaETF = new frmAcao("Avançado", "ETF");
+            telaETF.Show();
         }
 
         private void PicFIIs_Click(object sender, EventArgs e)
         {
-            lblResult.Text = "TEPP1  Lajes Corporativas\nHGFF11	Fundos de Papel\nBBPO11	Híbrido\nXPLG11	Logística";
+          Form telaFII = new frmAcao ("Avançado", "FII");
+            telaFII.Show();
         }
     }
 }

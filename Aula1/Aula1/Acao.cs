@@ -25,5 +25,10 @@ namespace Aula1
 
             }
         }
+
+        private void frmAcao_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
