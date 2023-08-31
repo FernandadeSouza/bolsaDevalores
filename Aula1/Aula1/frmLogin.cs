@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using MySql.Data.MySqlClient;
+using Aula1.Models;
 
 namespace Aula1
 {
@@ -43,17 +44,29 @@ namespace Aula1
         {
             string Email = txtEmail.Text;
             string Senha = txtPass.Text;
-            Form cadastro = new Form();
-
 
 
             if (Email == "" || Senha == "")
             {
                 MessageBox.Show("Preencha os dados");
+                return;
             }
-            else
+
+            Login cadastro;
+            using (MyDbContext db = new MyDbContext())
             {
-                if (Email == "intermed@gmail.com")
+                string query = @"SELECT * FROM login WHERE email = @pemail and senha = @psenha;";
+                var parameters = new[]
+                {
+                    new MySqlParameter("@pemail",Email),
+                    new MySqlParameter("@psenha",Senha)
+                };
+                cadastro = db.Database.SqlQuery<Login>(query, parameters).Single();
+
+
+            }
+
+                if (quiz.nivel_id==1 )
                 {
                     Form logado = new frmIntermed();
                     logado.Show();
@@ -68,13 +81,9 @@ namespace Aula1
                 }
 
      
-            else
-                {
-                    MessageBox.Show("Usuario não cadastrado");
-                }
-            }
 
-            using (MyDbContext db = new MyDbContext())
+            
         }
     }
+    
 }
