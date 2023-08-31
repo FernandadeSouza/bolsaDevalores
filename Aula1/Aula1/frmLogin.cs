@@ -52,7 +52,7 @@ namespace Aula1
                 return;
             }
 
-            Login cadastro;
+            Quiz quiz;
             using (MyDbContext db = new MyDbContext())
             {
                 string query = @"SELECT * FROM login WHERE email = @pemail and senha = @psenha;";
@@ -61,24 +61,33 @@ namespace Aula1
                     new MySqlParameter("@pemail",Email),
                     new MySqlParameter("@psenha",Senha)
                 };
-                cadastro = db.Database.SqlQuery<Login>(query, parameters).Single();
+                Login cadastro = db.Database.SqlQuery<Login>(query, parameters).Single();
 
-
+                query = @"SELECT * FROM quiz WHERE cadastro_id = @pcadastro;";
+                parameters = new[]
+                {
+                    new MySqlParameter("@pcadastro",cadastro.Id)
+                };
+                quiz = db.Database.SqlQuery<Quiz>(query, parameters).Single();
             }
 
-                if (quiz.nivel_id==1 )
-                {
-                    Form logado = new frmIntermed();
-                    logado.Show();
-                } else if (Email == "avancado@gmail.com")
-                {
-                    Form logado = new TelaInvestidorAvancado(); 
-                    logado.Show();
-                } else if (Email== "iniciante@gmail.com")
-                {
-                    Form logado = new frmInvest();
-                    logado.Show();
-                }
+            if (quiz.Id_niveis == 1)
+            {
+                Form logado = new frmInvest();
+                logado.Show();
+
+            }
+            else if (quiz.Id_niveis== 2)
+            {
+                Form logado = new frmIntermed();
+                logado.Show();
+            }
+            else if (quiz.Id_niveis == 3)
+            {
+                Form logado = new TelaInvestidorAvancado();
+                logado.Show();
+            
+            }
 
      
 

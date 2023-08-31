@@ -165,6 +165,7 @@
     </Compile>
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\Nivel.cs" />
+    <Compile Include="Models\Quiz.cs" />
     <Compile Include="MyDbContext.cs" />
     <Compile Include="models\Nivel_acao.cs" />
     <Compile Include="MyDbContext.cs" />
