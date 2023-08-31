@@ -7,13 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
+
 
 namespace Aula1
 {
     public partial class Formquiz : Form
     {
-        public Formquiz()
+        int id_login;
+        public Formquiz(int id_login)
         {
+            this.id_login = id_login;
             InitializeComponent();
         }
 
@@ -93,6 +99,7 @@ namespace Aula1
                     cond1 = false;
                 }
             }
+
 
         }
 
@@ -298,21 +305,68 @@ namespace Aula1
 
             if (inic)
             {
+                cadastra_quiz(1);
                 Form frmInic = new frmInvest();
                 frmInic.Show();
             }
 
             if (inte)
             {
+                cadastra_quiz(2);
                 Form frmInte = new frmIntermed();
                 frmInte.Show();
             }
 
             if (avan)
             {
+                cadastra_quiz(3);
                 Form frmAvan = new TelaInvestidorAvancado();
                 frmAvan.Show();
             }
+        }
+
+        private int cadastra_quiz(int nivel)
+        {
+
+
+            using (MyDbContext db = new MyDbContext())
+
+            {
+                char p1 = (rbAQuiz1.Checked ? 'A' : (rbBQuiz1.Checked ? 'B' : 'C'));
+
+                char p2 = (rbAQuiz2.Checked ? 'A' : (rbBQuiz2.Checked ? 'B' : 'C'));
+
+                char p3 = (rbAQuiz3.Checked ? 'A' : (rbBQuiz3.Checked ? 'B' : 'C'));
+
+                char p4 = (rbAQuiz4.Checked ? 'A' : (rbBQuiz4.Checked ? 'B' : 'C'));
+
+                char p5 = (rbAQuiz5.Checked ? 'A' : (rbBQuiz5.Checked ? 'B' : 'C'));
+
+                string query = @"INSERT INTO quiz (id_login, id_niveis,questionario_1,questionario_2,questionario_3,questionario_4,questionario_5) VALUES (@plogin,@pnivel,@p1,@p2,@p3,@p4,@p5); SELECT LAST_INSERT_ID();";
+
+                var parameters = new[]
+                {
+
+                    new MySqlParameter("@plogin",this.id_login),
+
+                    new MySqlParameter("@pnivel",nivel),
+
+                    new MySqlParameter("@p1",p1),
+
+                    new MySqlParameter ("@p2",p2),
+
+                    new MySqlParameter("@p3",p3),
+
+                    new MySqlParameter("@p4",p4),
+
+                    new MySqlParameter("@p5",p5)
+                };
+
+                int idQuiz = db.Database.SqlQuery<int>(query, parameters).Single();
+                return idQuiz;
+            }
+
+            return -1;
         }
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
