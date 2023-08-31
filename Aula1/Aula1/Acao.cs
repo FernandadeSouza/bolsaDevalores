@@ -19,7 +19,7 @@ namespace Aula1
             InitializeComponent();
             using (MyDbContext db = new MyDbContext())
             {
-                string query = "SELECT a.id, a.id_niveis,a.codigo, a.nome, a.variacao,a.categoria code_cash.acoes AS a JOIN code_cash.niveis AS n ON a.id_niveis = n.id WHERE n.nome = '"+nivel+"'"+(categoria != null ? "and a.categoria = '"+categoria+"';": ";");
+                string query = "SELECT a.id, a.id_niveis,a.codigo, a.nome, a.variacao,a.categoria FROM acoes AS a JOIN niveis AS n ON a.id_niveis = n.id WHERE n.nome = '"+nivel+" ' "+(categoria != null ? "and a.categoria = '"+categoria+"';": ";");
                 List<Acao> acao = db.Database.SqlQuery<Acao>(query).ToList();
                 dGVAcao.DataSource = acao;
 
