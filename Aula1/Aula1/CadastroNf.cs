@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
 
 namespace Aula1
 {
@@ -24,17 +27,47 @@ namespace Aula1
             string data = Convert.ToString(txt_Nascimento.Text);
             string email = Convert.ToString(txtData.Text);
             string senha = Convert.ToString(txtSenha.Text);
+            string cpf = Convert.ToString(mskcpf.Text);
+            string cnpj = Convert.ToString(mskcnpj.Text);
+
+            
 
             Form frmquiz = new Formquiz();
 
             frmquiz.Show();
 
+            using (MyDbContext db = new MyDbContext())
+            {
+                string query = @"iNSERT INTO Users code_cash.cadastro (nome, datanascimento, " + ((rbCpf.Checked) ? "cpf," : "cnpj,") + " telefone, email, senha) VALUES (@pnome,@pdata," + (rbCpf.Checked ? " @pcpf,":"@pcnpj,") + "@ptelefone,@pemail,@psenha)";
+                var parameters = new[] {
+                    new MySqlParameter("@pnome", nome),
+                    new MySqlParameter("@pdata", data),
+                    new MySqlParameter("@pemail", email),
+                    new MySqlParameter("@psenha", senha),
+                    (rbCpf.Checked)? new MySqlParameter("@pcpf", cpf): new MySqlParameter("@pcnpj", cnpj),
+                    
+                };
+
+                int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
+
+                Form Form2 = new Form2();
+                Form2.Show();
 
 
 
 
 
-            
+
+
+
+
+            }
+
+
+
+
+
+
 
 
 
@@ -120,6 +153,40 @@ namespace Aula1
                 MessageBox.Show("Email inválido");
                 txtData.BackColor = Color.Red;
             }
+        }
+
+        private void cpf_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void rbCpf_CheckedChanged(object sender, EventArgs e)
+        {
+            lblcpf.Visible = true;
+            lblcnpj.Visible = false;
+
+            mskcpf.Visible = true;
+            mskcnpj.Visible = false;
+            
+        }
+
+        private void lblcpf_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbCnpj_CheckedChanged(object sender, EventArgs e)
+        {
+            lblcnpj.Visible = true;
+            lblcpf.Visible = false;
+
+            mskcnpj.Visible = true;
+            mskcpf.Visible = false;
+        }
+
+        private void txtData_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

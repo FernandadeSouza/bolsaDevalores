@@ -17,7 +17,7 @@ namespace Aula1
 {
     public partial class TelaPrincipal : Form
     {
-        private const string V = @"INSERT INTO Users (name, datanascimento) VALUES (@name, @data_nascimento)";
+        //private const string V = @"INSERT INTO Users (name, datanascimento) VALUES (@name, @data_nascimento)";
 
         public TelaPrincipal()
         {

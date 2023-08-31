@@ -8,10 +8,13 @@ using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using MySql.Data.MySqlClient;
 
+
 namespace Aula1
 {
     class MyDbContext: DbContext
-    {
+    { 
         public MyDbContext() : base ("name=MyDbContext") { }
-    }
+    } 
+        
+        
 }
