@@ -32,13 +32,11 @@ namespace Aula1
 
             
 
-            Form frmquiz = new Formquiz();
-
-            frmquiz.Show();
+        
 
             using (MyDbContext db = new MyDbContext())
             {
-                string query = @"iNSERT INTO Users code_cash.cadastro (nome, datanascimento, " + ((rbCpf.Checked) ? "cpf," : "cnpj,") + " telefone, email, senha) VALUES (@pnome,@pdata," + (rbCpf.Checked ? " @pcpf,":"@pcnpj,") + "@ptelefone,@pemail,@psenha)";
+                string query = @"iNSERT INTO Users code_cash.cadastro (nome, datanascimento, " + ((rbCpf.Checked) ? "cpf," : "cnpj,") + " telefone, email, senha) VALUES (@pnome,@pdata," + (rbCpf.Checked ? " @pcpf,":"@pcnpj,") + "@ptelefone,@pemail,@psenha); SELECT LAST_INSERT_ID();";
                 var parameters = new[] {
                     new MySqlParameter("@pnome", nome),
                     new MySqlParameter("@pdata", data),
@@ -48,10 +46,11 @@ namespace Aula1
                     
                 };
 
-                int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
+                int idu = db.Database.SqlQuery<int>(query, parameters).Single();
 
-                Form Form2 = new Form2();
-                Form2.Show();
+                Form frmquiz = new Formquiz(idu);
+
+                frmquiz.Show();
 
 
 

@@ -29,8 +29,8 @@ namespace Aula1
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Form TelaQuiz = new Formquiz();
-            TelaQuiz.Show();
+            //Form TelaQuiz = new Formquiz();
+            //TelaQuiz.Show();
         }
 
         private void picETF_Click(object sender, EventArgs e)

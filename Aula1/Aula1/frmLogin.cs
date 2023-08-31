@@ -55,20 +55,35 @@ namespace Aula1
             Quiz quiz;
             using (MyDbContext db = new MyDbContext())
             {
-                string query = @"SELECT * FROM login WHERE email = @pemail and senha = @psenha;";
+                string query = @"SELECT * FROM login WHERE email = @pemail and senha = @psenha LIMIT 1;";
                 var parameters = new[]
                 {
                     new MySqlParameter("@pemail",Email),
                     new MySqlParameter("@psenha",Senha)
                 };
-                Login cadastro = db.Database.SqlQuery<Login>(query, parameters).Single();
+                Login cadastro = db.Database.SqlQuery<Login>(query, parameters).SingleOrDefault();
 
-                query = @"SELECT * FROM quiz WHERE cadastro_id = @pcadastro;";
+                if(cadastro == null)
+                {
+                    MessageBox.Show("Usuário não encontrado!");
+                    return;
+                }
+
+                query = @"SELECT * FROM quiz WHERE id_login = @pcadastro;";
                 parameters = new[]
                 {
                     new MySqlParameter("@pcadastro",cadastro.Id)
                 };
-                quiz = db.Database.SqlQuery<Quiz>(query, parameters).Single();
+                quiz = db.Database.SqlQuery<Quiz>(query, parameters).SingleOrDefault();
+
+                if (quiz == null)
+                {
+                    MessageBox.Show("Responda o quiz!");
+                    Form teste = new Formquiz(cadastro.Id_cadastro);
+                    teste.Show();
+                    return;
+
+                }
             }
 
             if (quiz.Id_niveis == 1)
