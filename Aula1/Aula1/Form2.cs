@@ -65,30 +65,7 @@ namespace Aula1
 
             MessageBox.Show("Dados Salvos: " + "\n" + "O valor a ser investido é : " + Valor + " Reais " + "\n" + "O usuário deseja investimentos com retorno a : " + Tempo + "\n" + "Investimentos Conhecidos: " + mSkills );
 
-            /*  using (MyDbContext db = new MyDbContext())
-
-              {
-
-                  string query = @"SELECT a.id,  FROM code_cash.acoes AS a JOIN code_cash.niveis AS n ON a.id_niveis = n.id WHERE n.nome = 'Iniciante' OR a.nome IN ('Apple');";
-
-
-
-                  var parameters = new[]
-
-                  {
-
-                      new MySqlParameter("@name", name),
-
-                      new MySqlParameter("@birth_date", dataNascimento)
-
-                  };
-
-
-
-                  int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
-
-
-              }*/
+           
            
 
         }
@@ -108,15 +85,14 @@ namespace Aula1
             
         }
 
-        private void frmInvest_Load(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-        }
+    
 
         private void picInvest_Click(object sender, EventArgs e)
         {
             Form acao = new frmAcao("Iniciante",null);
+            acao.WindowState = FormWindowState.Maximized;
             acao.Show();
+            this.Hide();
         }
     }
 }

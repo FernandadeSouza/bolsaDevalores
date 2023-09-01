@@ -89,19 +89,25 @@ namespace Aula1
             if (quiz.Id_niveis == 1)
             {
                 Form logado = new frmInvest();
+                logado.WindowState = FormWindowState.Maximized;
                 logado.Show();
+                this.Hide();
 
             }
             else if (quiz.Id_niveis== 2)
             {
                 Form logado = new frmIntermed();
+                logado.WindowState = FormWindowState.Maximized;
                 logado.Show();
+                this.Hide();
             }
             else if (quiz.Id_niveis == 3)
             {
                 Form logado = new TelaInvestidorAvancado();
+                logado.WindowState = FormWindowState.Maximized;
                 logado.Show();
-            
+                this.Hide();
+
             }
 
      

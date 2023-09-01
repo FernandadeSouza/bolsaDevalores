@@ -58,8 +58,9 @@ namespace Aula1
                  
 
                 Form frmquiz = new Formquiz(idu);
-
+                frmquiz.WindowState = FormWindowState.Maximized;
                 frmquiz.Show();
+                this.Hide();
 
 
 

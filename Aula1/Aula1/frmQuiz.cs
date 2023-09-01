@@ -256,7 +256,9 @@ namespace Aula1
         private void picReiniciar_Click(object sender, EventArgs e)
         {
             Form perguntas = new Formquiz(id_login);
+            perguntas.WindowState = FormWindowState.Maximized;
             perguntas.Show();
+            this.Hide();
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -308,21 +310,27 @@ namespace Aula1
             {
                 cadastra_quiz(1);
                 Form frmInic = new frmInvest();
+                frmInic.WindowState = FormWindowState.Maximized;
                 frmInic.Show();
+                this.Hide();
             }
 
             if (inte)
             {
                 cadastra_quiz(2);
                 Form frmInte = new frmIntermed();
+                frmInte.WindowState = FormWindowState.Maximized;
                 frmInte.Show();
+                this.Hide();
             }
 
             if (avan)
             {
                 cadastra_quiz(3);
                 Form frmAvan = new TelaInvestidorAvancado();
+                frmAvan.WindowState = FormWindowState.Maximized;
                 frmAvan.Show();
+                this.Hide();
             }
         }
 
@@ -384,10 +392,8 @@ namespace Aula1
             else MessageBox.Show("Escolha uma das alternativas");
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-            label5.Text = "você é um investidor iniciante";
-        }
+        
+
     }
 }
 

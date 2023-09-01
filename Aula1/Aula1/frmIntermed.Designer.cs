@@ -200,7 +200,6 @@ namespace Aula1
             this.Controls.Add(this.label1);
             this.Name = "frmIntermed";
             this.Text = "InvestIntermed";
-            this.Load += new System.EventHandler(this.frmIntermed_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicAcoes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

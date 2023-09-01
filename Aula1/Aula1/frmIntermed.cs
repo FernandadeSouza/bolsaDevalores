@@ -21,19 +21,21 @@ namespace Aula1
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Form Imobi = new frmAcao("Intermediário", "FII");
+            Imobi.WindowState = FormWindowState.Maximized;
             Imobi.Show();
+            this.Hide();
+
         }
 
         private void PicAcoes_Click(object sender, EventArgs e)
         {
             Form Intermed = new frmAcao("Intermediário", null);
+            Intermed.WindowState = FormWindowState.Maximized;
             Intermed.Show();
+            this.Hide();
         }
 
-        private void frmIntermed_Load(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-        }
+       
     }        
 
 } 

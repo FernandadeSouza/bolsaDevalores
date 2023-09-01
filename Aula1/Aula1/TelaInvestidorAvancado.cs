@@ -25,25 +25,33 @@ namespace Aula1
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Form telaBDR = new frmAcao("Avançado", "BDR");
+            telaBDR.WindowState = FormWindowState.Maximized;
             telaBDR.Show();
+            this.Hide();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            //Form TelaQuiz = new Formquiz();
-            //TelaQuiz.Show();
+           /* Form perguntas = new Formquiz(id_login);
+            perguntas.WindowState = FormWindowState.Maximized;
+            perguntas.Show();
+            this.Hide(); */
         }
 
         private void picETF_Click(object sender, EventArgs e)
         {
             Form telaETF = new frmAcao("Avançado", "ETF");
+            telaETF.WindowState = FormWindowState.Maximized;
             telaETF.Show();
+            this.Hide();
         }
 
         private void PicFIIs_Click(object sender, EventArgs e)
         {
           Form telaFII = new frmAcao ("Avançado", "FII");
+            telaFII.WindowState = FormWindowState.Maximized;
             telaFII.Show();
+            this.Hide();
         }
     }
 }

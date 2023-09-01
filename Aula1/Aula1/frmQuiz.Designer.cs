@@ -69,7 +69,6 @@ namespace Aula1
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.picProximo = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -551,7 +550,6 @@ namespace Aula1
             this.tabPage6.Controls.Add(this.pictureBox7);
             this.tabPage6.Controls.Add(this.picProximo);
             this.tabPage6.Controls.Add(this.pictureBox6);
-            this.tabPage6.Controls.Add(this.label5);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -562,7 +560,7 @@ namespace Aula1
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(475, 6);
+            this.pictureBox7.Location = new System.Drawing.Point(213, 16);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(463, 183);
             this.pictureBox7.TabIndex = 5;
@@ -571,7 +569,7 @@ namespace Aula1
             // picProximo
             // 
             this.picProximo.Image = ((System.Drawing.Image)(resources.GetObject("picProximo.Image")));
-            this.picProximo.Location = new System.Drawing.Point(475, 306);
+            this.picProximo.Location = new System.Drawing.Point(518, 281);
             this.picProximo.Name = "picProximo";
             this.picProximo.Size = new System.Drawing.Size(184, 89);
             this.picProximo.TabIndex = 4;
@@ -581,26 +579,12 @@ namespace Aula1
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(6, 298);
+            this.pictureBox6.Location = new System.Drawing.Point(164, 281);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(193, 97);
             this.pictureBox6.TabIndex = 3;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.picReiniciar_Click);
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Magenta;
-            this.label5.Location = new System.Drawing.Point(17, 234);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 29);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "l";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Formquiz
             // 
@@ -638,7 +622,6 @@ namespace Aula1
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProximo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -679,7 +662,6 @@ namespace Aula1
         private System.Windows.Forms.RadioButton rbAQuiz5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox3;
