@@ -29,6 +29,7 @@ namespace Aula1
             string senha = Convert.ToString(txtSenha.Text);
             string cpf = Convert.ToString(mskcpf.Text);
             string cnpj = Convert.ToString(mskcnpj.Text);
+            string telefone = Convert.ToString(mskTelefone.Text);
 
             
 
@@ -36,17 +37,26 @@ namespace Aula1
 
             using (MyDbContext db = new MyDbContext())
             {
-                string query = @"INSERT INTO Users code_cash.cadastro (nome, datanascimento, " + ((rbCpf.Checked) ? "cpf," : "cnpj,") + " telefone, email, senha) VALUES (@pnome,@pdata," + (rbCpf.Checked ? " @pcpf,":"@pcnpj,") + "@ptelefone,@pemail,@psenha); SELECT LAST_INSERT_ID();";
-                var parameters = new[] {
+                string query = @"INSERT INTO Users cadastro (nome, datanascimento, " + ((rbCpf.Checked) ? "cpf," : "cnpj,") + " telefone, email, senha) VALUES (@pnome,@pdata," + (rbCpf.Checked ? " @pcpf,":"@pcnpj,") + "@ptelefone,@pemail,@psenha); SELECT LAST_INSERT_ID();";
+                var parameters = new[] 
+                {
                     new MySqlParameter("@pnome", nome),
                     new MySqlParameter("@pdata", data),
                     new MySqlParameter("@pemail", email),
                     new MySqlParameter("@psenha", senha),
+                    new MySqlParameter("@ptelefone", telefone),
                     (rbCpf.Checked)? new MySqlParameter("@pcpf", cpf): new MySqlParameter("@pcnpj", cnpj),
                     
                 };
 
-                int idu = db.Database.SqlQuery<int>(query, parameters).Single();
+                int idu = db.Database.SqlQuery<int>(query, parameters).SingleOrDefault();
+
+                if (idu==null)
+                {
+                    MessageBox.Show("Favor conferir os dados!");
+                }
+                 
+              
 
                 Form frmquiz = new Formquiz(idu);
 
