@@ -24,7 +24,7 @@ namespace Aula1
         private void btnAvancar_Click(object sender, EventArgs e)
         {
             string nome = Convert.ToString(txtNome.Text);
-            string data = Convert.ToString(txt_Nascimento.Text);
+            string data = dtNascimento.Value.ToString("yyyy-MM-dd");
             string email = Convert.ToString(txtData.Text);
             string senha = Convert.ToString(txtSenha.Text);
             string cpf = Convert.ToString(mskcpf.Text);
@@ -37,7 +37,7 @@ namespace Aula1
 
             using (MyDbContext db = new MyDbContext())
             {
-                string query = @"INSERT INTO Users cadastro (nome, datanascimento, " + ((rbCpf.Checked) ? "cpf," : "cnpj,") + " telefone, email, senha) VALUES (@pnome,@pdata," + (rbCpf.Checked ? " @pcpf,":"@pcnpj,") + "@ptelefone,@pemail,@psenha); SELECT LAST_INSERT_ID();";
+                string query = @"INSERT INTO  cadastro (nome, datanascimento, " + ((rbCpf.Checked) ? "cpf," : "cnpj,") + " telefone, email, senha) VALUES (@pnome,@pdata," + (rbCpf.Checked ? " @pcpf,":"@pcnpj,") + "@ptelefone,@pemail,@psenha); SELECT LAST_INSERT_ID();";
                 var parameters = new[] 
                 {
                     new MySqlParameter("@pnome", nome),
@@ -56,7 +56,6 @@ namespace Aula1
                     MessageBox.Show("Favor conferir os dados!");
                 }
                  
-              
 
                 Form frmquiz = new Formquiz(idu);
 
@@ -122,10 +121,10 @@ namespace Aula1
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            string dataNascimento = txt_Nascimento.Value.ToString("yyyy-MM-dd");
+            string dataNascimento = dtNascimento.Value.ToString("yyyy-MM-dd");
             
             DateTime today = DateTime.Now;
-            DateTime birthDate = txt_Nascimento.Value;
+            DateTime birthDate = dtNascimento.Value;
             int age = (int)((today - birthDate).TotalDays / 365.25);
         }
 

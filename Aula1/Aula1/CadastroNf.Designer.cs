@@ -35,7 +35,7 @@ namespace Aula1
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnAvancar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_Nascimento = new System.Windows.Forms.DateTimePicker();
+            this.dtNascimento = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picEmail = new System.Windows.Forms.PictureBox();
             this.picSenha = new System.Windows.Forms.PictureBox();
@@ -123,14 +123,14 @@ namespace Aula1
             this.label2.Text = "Para começar, informe os dados que você vai usar para acessar sua conta CodeCash:" +
     "";
             // 
-            // txt_Nascimento
+            // dtNascimento
             // 
-            this.txt_Nascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Nascimento.Location = new System.Drawing.Point(55, 269);
-            this.txt_Nascimento.Name = "txt_Nascimento";
-            this.txt_Nascimento.Size = new System.Drawing.Size(390, 26);
-            this.txt_Nascimento.TabIndex = 13;
-            this.txt_Nascimento.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dtNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtNascimento.Location = new System.Drawing.Point(55, 269);
+            this.dtNascimento.Name = "dtNascimento";
+            this.dtNascimento.Size = new System.Drawing.Size(390, 26);
+            this.dtNascimento.TabIndex = 13;
+            this.dtNascimento.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // pictureBox1
             // 
@@ -257,7 +257,7 @@ namespace Aula1
             // 
             this.mskTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mskTelefone.Location = new System.Drawing.Point(50, 522);
-            this.mskTelefone.Mask = "(99) 0000-00000";
+            this.mskTelefone.Mask = "(99)0000-00000";
             this.mskTelefone.Name = "mskTelefone";
             this.mskTelefone.Size = new System.Drawing.Size(133, 22);
             this.mskTelefone.TabIndex = 26;
@@ -306,7 +306,7 @@ namespace Aula1
             this.Controls.Add(this.picSenha);
             this.Controls.Add(this.picEmail);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txt_Nascimento);
+            this.Controls.Add(this.dtNascimento);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAvancar);
             this.Controls.Add(this.txtSenha);
@@ -338,7 +338,7 @@ namespace Aula1
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnAvancar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker txt_Nascimento;
+        private System.Windows.Forms.DateTimePicker dtNascimento;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox picEmail;
         private System.Windows.Forms.PictureBox picSenha;
