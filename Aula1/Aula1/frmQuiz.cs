@@ -255,7 +255,8 @@ namespace Aula1
 
         private void picReiniciar_Click(object sender, EventArgs e)
         {
-
+            Form perguntas = new Formquiz(id_login);
+            perguntas.Show();
         }
 
         private void btnReset_Click(object sender, EventArgs e)
