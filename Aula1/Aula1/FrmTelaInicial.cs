@@ -27,15 +27,18 @@ namespace Aula1
         private void btnsignup_Click(object sender, EventArgs e)
         {
            Form CadastroCliente = new Form2();
+            CadastroCliente.WindowState = FormWindowState.Maximized;
             CadastroCliente.Show();
-            WindowState = FormWindowState.Maximized;
+            this.Hide();
+           
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Form LoginCliente = new frmLogin();
+            LoginCliente.WindowState = FormWindowState.Maximized;
             LoginCliente.Show();
-            WindowState = FormWindowState.Maximized;
+            this.Hide();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -46,13 +49,17 @@ namespace Aula1
         private void PicLogin_Click(object sender, EventArgs e)
         {
             Form FLogin = new frmLogin();
+            FLogin.WindowState = FormWindowState.Maximized;
             FLogin.Show();
+            this.Hide();
         }
 
         private void picCadastro_Click(object sender, EventArgs e)
         {
             Form FCadastro = new Form2();
+            FCadastro.WindowState = FormWindowState.Maximized;
             FCadastro.Show();
+            this.Hide();
 
             
 
