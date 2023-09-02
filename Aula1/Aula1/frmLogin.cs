@@ -61,25 +61,25 @@ namespace Aula1
                     new MySqlParameter("@pemail",Email),
                     new MySqlParameter("@psenha",Senha)
                 };
-                Login cadastro = db.Database.SqlQuery<Login>(query, parameters).SingleOrDefault();
+                Login login = db.Database.SqlQuery<Login>(query, parameters).SingleOrDefault();
 
-                if(cadastro == null)
+                if(login == null)
                 {
                     MessageBox.Show("Usuário não encontrado!");
                     return;
                 }
 
-                query = @"SELECT * FROM quiz WHERE id_login = @pcadastro;";
+                query = @"SELECT * FROM quiz WHERE id_login = @pcadastro LIMIT 1;";
                 parameters = new[]
                 {
-                    new MySqlParameter("@pcadastro",cadastro.Id)
+                    new MySqlParameter("@pcadastro",login.Id)
                 };
                 quiz = db.Database.SqlQuery<Quiz>(query, parameters).SingleOrDefault();
 
                 if (quiz == null)
                 {
                     MessageBox.Show("Responda o quiz!");
-                    Form teste = new Formquiz(cadastro.Id_cadastro);
+                    Form teste = new Formquiz(login.Id_cadastro);
                     teste.Show();
                     return;
 
