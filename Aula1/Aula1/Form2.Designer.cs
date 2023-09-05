@@ -38,26 +38,11 @@ namespace Aula1
             this.lblTRes = new System.Windows.Forms.Label();
             this.lblResp2 = new System.Windows.Forms.Label();
             this.lblTu = new System.Windows.Forms.Label();
-            this.lblValor = new System.Windows.Forms.Label();
-            this.txtValor = new System.Windows.Forms.TextBox();
             this.lblFim = new System.Windows.Forms.Label();
-            this.lblInicio = new System.Windows.Forms.Label();
-            this.grbTempo = new System.Windows.Forms.GroupBox();
-            this.rbCurto = new System.Windows.Forms.RadioButton();
-            this.rbLongo = new System.Windows.Forms.RadioButton();
-            this.lblTempo = new System.Windows.Forms.Label();
-            this.lblTipo = new System.Windows.Forms.Label();
-            this.txtTipo = new System.Windows.Forms.TextBox();
-            this.libTipo = new System.Windows.Forms.ListBox();
             this.picFinalizar = new System.Windows.Forms.PictureBox();
-            this.picLimpar = new System.Windows.Forms.PictureBox();
-            this.picDados = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picInvest = new System.Windows.Forms.PictureBox();
-            this.grbTempo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFinalizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLimpar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picInvest)).BeginInit();
             this.SuspendLayout();
@@ -157,25 +142,6 @@ namespace Aula1
             this.lblTu.TabIndex = 8;
             this.lblTu.Text = "Tutorial:";
             // 
-            // lblValor
-            // 
-            this.lblValor.AutoSize = true;
-            this.lblValor.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValor.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblValor.Location = new System.Drawing.Point(126, 485);
-            this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(382, 21);
-            this.lblValor.TabIndex = 9;
-            this.lblValor.Text = "Quanto você pretende investir ?";
-            // 
-            // txtValor
-            // 
-            this.txtValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValor.Location = new System.Drawing.Point(874, 480);
-            this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(201, 26);
-            this.txtValor.TabIndex = 10;
-            // 
             // lblFim
             // 
             this.lblFim.AutoSize = true;
@@ -186,122 +152,15 @@ namespace Aula1
             this.lblFim.Size = new System.Drawing.Size(0, 21);
             this.lblFim.TabIndex = 11;
             // 
-            // lblInicio
-            // 
-            this.lblInicio.AutoSize = true;
-            this.lblInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInicio.ForeColor = System.Drawing.Color.Magenta;
-            this.lblInicio.Location = new System.Drawing.Point(73, 433);
-            this.lblInicio.Name = "lblInicio";
-            this.lblInicio.Size = new System.Drawing.Size(240, 31);
-            this.lblInicio.TabIndex = 12;
-            this.lblInicio.Text = "Vamos começar ...";
-            // 
-            // grbTempo
-            // 
-            this.grbTempo.Controls.Add(this.rbCurto);
-            this.grbTempo.Controls.Add(this.rbLongo);
-            this.grbTempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbTempo.ForeColor = System.Drawing.SystemColors.Control;
-            this.grbTempo.Location = new System.Drawing.Point(874, 525);
-            this.grbTempo.Name = "grbTempo";
-            this.grbTempo.Size = new System.Drawing.Size(201, 70);
-            this.grbTempo.TabIndex = 13;
-            this.grbTempo.TabStop = false;
-            this.grbTempo.Text = "Tempo:";
-            // 
-            // rbCurto
-            // 
-            this.rbCurto.AutoSize = true;
-            this.rbCurto.ForeColor = System.Drawing.SystemColors.Control;
-            this.rbCurto.Location = new System.Drawing.Point(20, 42);
-            this.rbCurto.Name = "rbCurto";
-            this.rbCurto.Size = new System.Drawing.Size(80, 17);
-            this.rbCurto.TabIndex = 1;
-            this.rbCurto.TabStop = true;
-            this.rbCurto.Text = "Curto Prazo";
-            this.rbCurto.UseVisualStyleBackColor = true;
-            // 
-            // rbLongo
-            // 
-            this.rbLongo.AutoSize = true;
-            this.rbLongo.ForeColor = System.Drawing.SystemColors.Control;
-            this.rbLongo.Location = new System.Drawing.Point(20, 19);
-            this.rbLongo.Name = "rbLongo";
-            this.rbLongo.Size = new System.Drawing.Size(85, 17);
-            this.rbLongo.TabIndex = 0;
-            this.rbLongo.TabStop = true;
-            this.rbLongo.Text = "Longo Prazo";
-            this.rbLongo.UseVisualStyleBackColor = true;
-            // 
-            // lblTempo
-            // 
-            this.lblTempo.AutoSize = true;
-            this.lblTempo.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTempo.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblTempo.Location = new System.Drawing.Point(126, 541);
-            this.lblTempo.Name = "lblTempo";
-            this.lblTempo.Size = new System.Drawing.Size(730, 21);
-            this.lblTempo.TabIndex = 14;
-            this.lblTempo.Text = "Você tem interesse em investimentos de longo ou curto prazo?";
-            // 
-            // lblTipo
-            // 
-            this.lblTipo.AutoSize = true;
-            this.lblTipo.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblTipo.Location = new System.Drawing.Point(126, 611);
-            this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(514, 21);
-            this.lblTipo.TabIndex = 16;
-            this.lblTipo.Text = "Quais tipos de investimentos você conhece?";
-            // 
-            // txtTipo
-            // 
-            this.txtTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTipo.Location = new System.Drawing.Point(874, 601);
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(201, 26);
-            this.txtTipo.TabIndex = 17;
-            this.txtTipo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtTipo_MouseClick);
-            // 
-            // libTipo
-            // 
-            this.libTipo.FormattingEnabled = true;
-            this.libTipo.Location = new System.Drawing.Point(874, 642);
-            this.libTipo.Name = "libTipo";
-            this.libTipo.Size = new System.Drawing.Size(201, 95);
-            this.libTipo.TabIndex = 18;
-            // 
             // picFinalizar
             // 
             this.picFinalizar.Image = ((System.Drawing.Image)(resources.GetObject("picFinalizar.Image")));
-            this.picFinalizar.Location = new System.Drawing.Point(1078, 763);
+            this.picFinalizar.Location = new System.Drawing.Point(655, 558);
             this.picFinalizar.Name = "picFinalizar";
-            this.picFinalizar.Size = new System.Drawing.Size(189, 93);
+            this.picFinalizar.Size = new System.Drawing.Size(550, 171);
             this.picFinalizar.TabIndex = 20;
             this.picFinalizar.TabStop = false;
             this.picFinalizar.Click += new System.EventHandler(this.picFinalizar_Click);
-            // 
-            // picLimpar
-            // 
-            this.picLimpar.Image = ((System.Drawing.Image)(resources.GetObject("picLimpar.Image")));
-            this.picLimpar.Location = new System.Drawing.Point(852, 763);
-            this.picLimpar.Name = "picLimpar";
-            this.picLimpar.Size = new System.Drawing.Size(195, 95);
-            this.picLimpar.TabIndex = 21;
-            this.picLimpar.TabStop = false;
-            this.picLimpar.Click += new System.EventHandler(this.picLimpar_Click);
-            // 
-            // picDados
-            // 
-            this.picDados.Image = ((System.Drawing.Image)(resources.GetObject("picDados.Image")));
-            this.picDados.Location = new System.Drawing.Point(12, 742);
-            this.picDados.Name = "picDados";
-            this.picDados.Size = new System.Drawing.Size(193, 112);
-            this.picDados.TabIndex = 22;
-            this.picDados.TabStop = false;
-            this.picDados.Click += new System.EventHandler(this.picDados_Click);
             // 
             // pictureBox1
             // 
@@ -315,9 +174,9 @@ namespace Aula1
             // picInvest
             // 
             this.picInvest.Image = ((System.Drawing.Image)(resources.GetObject("picInvest.Image")));
-            this.picInvest.Location = new System.Drawing.Point(241, 742);
+            this.picInvest.Location = new System.Drawing.Point(68, 558);
             this.picInvest.Name = "picInvest";
-            this.picInvest.Size = new System.Drawing.Size(188, 112);
+            this.picInvest.Size = new System.Drawing.Size(463, 163);
             this.picInvest.TabIndex = 24;
             this.picInvest.TabStop = false;
             this.picInvest.Click += new System.EventHandler(this.picInvest_Click);
@@ -330,18 +189,8 @@ namespace Aula1
             this.ClientSize = new System.Drawing.Size(1291, 866);
             this.Controls.Add(this.picInvest);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.picDados);
-            this.Controls.Add(this.picLimpar);
             this.Controls.Add(this.picFinalizar);
-            this.Controls.Add(this.libTipo);
-            this.Controls.Add(this.txtTipo);
-            this.Controls.Add(this.lblTipo);
-            this.Controls.Add(this.lblTempo);
-            this.Controls.Add(this.grbTempo);
-            this.Controls.Add(this.lblInicio);
             this.Controls.Add(this.lblFim);
-            this.Controls.Add(this.txtValor);
-            this.Controls.Add(this.lblValor);
             this.Controls.Add(this.lblTu);
             this.Controls.Add(this.lblResp2);
             this.Controls.Add(this.lblTRes);
@@ -353,11 +202,7 @@ namespace Aula1
             this.Name = "frmInvest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Investidor Iniciante ";
-            this.grbTempo.ResumeLayout(false);
-            this.grbTempo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFinalizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLimpar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picInvest)).EndInit();
             this.ResumeLayout(false);
@@ -375,20 +220,8 @@ namespace Aula1
         private System.Windows.Forms.Label lblTRes;
         private System.Windows.Forms.Label lblResp2;
         private System.Windows.Forms.Label lblTu;
-        private System.Windows.Forms.Label lblValor;
-        private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Label lblFim;
-        private System.Windows.Forms.Label lblInicio;
-        private System.Windows.Forms.GroupBox grbTempo;
-        private System.Windows.Forms.RadioButton rbCurto;
-        private System.Windows.Forms.RadioButton rbLongo;
-        private System.Windows.Forms.Label lblTempo;
-        private System.Windows.Forms.Label lblTipo;
-        private System.Windows.Forms.TextBox txtTipo;
-        private System.Windows.Forms.ListBox libTipo;
         private System.Windows.Forms.PictureBox picFinalizar;
-        private System.Windows.Forms.PictureBox picLimpar;
-        private System.Windows.Forms.PictureBox picDados;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox picInvest;
     }

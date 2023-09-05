@@ -124,9 +124,9 @@ namespace Aula1
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(140, 260);
+            this.pictureBox1.Location = new System.Drawing.Point(155, 260);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(195, 99);
+            this.pictureBox1.Size = new System.Drawing.Size(566, 139);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
@@ -219,9 +219,9 @@ namespace Aula1
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(136, 260);
+            this.pictureBox2.Location = new System.Drawing.Point(171, 260);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(195, 99);
+            this.pictureBox2.Size = new System.Drawing.Size(586, 139);
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.picConfirmar2_Click);
@@ -304,9 +304,9 @@ namespace Aula1
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(136, 260);
+            this.pictureBox3.Location = new System.Drawing.Point(163, 256);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(195, 99);
+            this.pictureBox3.Size = new System.Drawing.Size(602, 139);
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.picConfirmar3_Click);
@@ -389,9 +389,9 @@ namespace Aula1
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(136, 260);
+            this.pictureBox4.Location = new System.Drawing.Point(161, 256);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(195, 99);
+            this.pictureBox4.Size = new System.Drawing.Size(609, 139);
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.picConfirmar4_Click);
@@ -474,9 +474,9 @@ namespace Aula1
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(136, 260);
+            this.pictureBox5.Location = new System.Drawing.Point(169, 256);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(195, 99);
+            this.pictureBox5.Size = new System.Drawing.Size(599, 139);
             this.pictureBox5.TabIndex = 12;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.picConfirmar5_Click);
@@ -569,9 +569,9 @@ namespace Aula1
             // picProximo
             // 
             this.picProximo.Image = ((System.Drawing.Image)(resources.GetObject("picProximo.Image")));
-            this.picProximo.Location = new System.Drawing.Point(518, 281);
+            this.picProximo.Location = new System.Drawing.Point(443, 213);
             this.picProximo.Name = "picProximo";
-            this.picProximo.Size = new System.Drawing.Size(184, 89);
+            this.picProximo.Size = new System.Drawing.Size(486, 176);
             this.picProximo.TabIndex = 4;
             this.picProximo.TabStop = false;
             this.picProximo.Click += new System.EventHandler(this.picProximo_Click);
@@ -579,9 +579,9 @@ namespace Aula1
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(164, 281);
+            this.pictureBox6.Location = new System.Drawing.Point(-57, 235);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(193, 97);
+            this.pictureBox6.Size = new System.Drawing.Size(494, 135);
             this.pictureBox6.TabIndex = 3;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.picReiniciar_Click);

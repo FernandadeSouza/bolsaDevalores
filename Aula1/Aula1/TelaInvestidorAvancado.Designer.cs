@@ -86,7 +86,7 @@ namespace Aula1
             // 
             this.picitulo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picitulo.BackgroundImage")));
             this.picitulo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picitulo.Location = new System.Drawing.Point(760, 28);
+            this.picitulo.Location = new System.Drawing.Point(775, -13);
             this.picitulo.Name = "picitulo";
             this.picitulo.Size = new System.Drawing.Size(356, 122);
             this.picitulo.TabIndex = 5;
@@ -96,9 +96,10 @@ namespace Aula1
             // 
             this.picETF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picETF.BackgroundImage")));
             this.picETF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picETF.Location = new System.Drawing.Point(837, 466);
+            this.picETF.Image = ((System.Drawing.Image)(resources.GetObject("picETF.Image")));
+            this.picETF.Location = new System.Drawing.Point(588, 281);
             this.picETF.Name = "picETF";
-            this.picETF.Size = new System.Drawing.Size(163, 83);
+            this.picETF.Size = new System.Drawing.Size(502, 137);
             this.picETF.TabIndex = 6;
             this.picETF.TabStop = false;
             this.picETF.Click += new System.EventHandler(this.picETF_Click);
@@ -107,9 +108,10 @@ namespace Aula1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1019, 466);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(563, 424);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(163, 83);
+            this.pictureBox1.Size = new System.Drawing.Size(527, 112);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -118,9 +120,10 @@ namespace Aula1
             // 
             this.PicFIIs.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PicFIIs.BackgroundImage")));
             this.PicFIIs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PicFIIs.Location = new System.Drawing.Point(651, 466);
+            this.PicFIIs.Image = ((System.Drawing.Image)(resources.GetObject("PicFIIs.Image")));
+            this.PicFIIs.Location = new System.Drawing.Point(614, 115);
             this.PicFIIs.Name = "PicFIIs";
-            this.PicFIIs.Size = new System.Drawing.Size(163, 83);
+            this.PicFIIs.Size = new System.Drawing.Size(517, 159);
             this.PicFIIs.TabIndex = 8;
             this.PicFIIs.TabStop = false;
             this.PicFIIs.Click += new System.EventHandler(this.PicFIIs_Click);
@@ -129,9 +132,10 @@ namespace Aula1
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(837, 555);
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(589, 542);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(163, 72);
+            this.pictureBox3.Size = new System.Drawing.Size(558, 182);
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
@@ -151,7 +155,7 @@ namespace Aula1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1194, 630);
+            this.ClientSize = new System.Drawing.Size(1194, 736);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.PicFIIs);

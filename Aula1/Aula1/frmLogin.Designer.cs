@@ -46,7 +46,7 @@ namespace Aula1
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(489, 155);
+            this.txtEmail.Location = new System.Drawing.Point(498, 271);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(368, 39);
@@ -54,7 +54,7 @@ namespace Aula1
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(489, 256);
+            this.txtPass.Location = new System.Drawing.Point(498, 370);
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
@@ -65,9 +65,9 @@ namespace Aula1
             // 
             this.pbPass.BackColor = System.Drawing.Color.White;
             this.pbPass.Image = global::Aula1.Properties.Resources.hide;
-            this.pbPass.Location = new System.Drawing.Point(922, 265);
+            this.pbPass.Location = new System.Drawing.Point(926, 381);
             this.pbPass.Name = "pbPass";
-            this.pbPass.Size = new System.Drawing.Size(26, 19);
+            this.pbPass.Size = new System.Drawing.Size(21, 18);
             this.pbPass.TabIndex = 6;
             this.pbPass.TabStop = false;
             this.pbPass.Click += new System.EventHandler(this.pbPass_Click);
@@ -75,9 +75,9 @@ namespace Aula1
             // PcbLogin
             // 
             this.PcbLogin.Image = ((System.Drawing.Image)(resources.GetObject("PcbLogin.Image")));
-            this.PcbLogin.Location = new System.Drawing.Point(461, 343);
+            this.PcbLogin.Location = new System.Drawing.Point(521, 451);
             this.PcbLogin.Name = "PcbLogin";
-            this.PcbLogin.Size = new System.Drawing.Size(368, 166);
+            this.PcbLogin.Size = new System.Drawing.Size(307, 126);
             this.PcbLogin.TabIndex = 8;
             this.PcbLogin.TabStop = false;
             this.PcbLogin.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -85,7 +85,7 @@ namespace Aula1
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(336, 146);
+            this.pictureBox3.Location = new System.Drawing.Point(336, 243);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(136, 67);
             this.pictureBox3.TabIndex = 9;
@@ -94,7 +94,7 @@ namespace Aula1
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(336, 236);
+            this.pictureBox4.Location = new System.Drawing.Point(336, 353);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(136, 67);
             this.pictureBox4.TabIndex = 10;

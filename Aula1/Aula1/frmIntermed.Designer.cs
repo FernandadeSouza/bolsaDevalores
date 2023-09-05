@@ -153,9 +153,9 @@ namespace Aula1
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1253, 346);
+            this.pictureBox1.Location = new System.Drawing.Point(1189, 324);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 84);
+            this.pictureBox1.Size = new System.Drawing.Size(410, 178);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -163,9 +163,9 @@ namespace Aula1
             // PicAcoes
             // 
             this.PicAcoes.Image = ((System.Drawing.Image)(resources.GetObject("PicAcoes.Image")));
-            this.PicAcoes.Location = new System.Drawing.Point(885, 346);
+            this.PicAcoes.Location = new System.Drawing.Point(783, 324);
             this.PicAcoes.Name = "PicAcoes";
-            this.PicAcoes.Size = new System.Drawing.Size(136, 71);
+            this.PicAcoes.Size = new System.Drawing.Size(400, 175);
             this.PicAcoes.TabIndex = 13;
             this.PicAcoes.TabStop = false;
             this.PicAcoes.Click += new System.EventHandler(this.PicAcoes_Click);
