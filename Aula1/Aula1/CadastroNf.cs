@@ -21,67 +21,7 @@ namespace Aula1
             InitializeComponent();
         }
 
-        private void btnAvancar_Click(object sender, EventArgs e)
-        {
-            string nome = Convert.ToString(txtNome.Text);
-            string data = dtNascimento.Value.ToString("yyyy-MM-dd");
-            string email = Convert.ToString(txtData.Text);
-            string senha = Convert.ToString(txtSenha.Text);
-            string cpf = Convert.ToString(mskcpf.Text);
-            string cnpj = Convert.ToString(mskcnpj.Text);
-            string telefone = Convert.ToString(mskTelefone.Text);
-
-            
-
-        
-
-            using (MyDbContext db = new MyDbContext())
-            {
-                string query = @"INSERT INTO  cadastro (nome, datanascimento, " + ((rbCpf.Checked) ? "cpf," : "cnpj,") + " telefone, email, senha) VALUES (@pnome,@pdata," + (rbCpf.Checked ? " @pcpf,":"@pcnpj,") + "@ptelefone,@pemail,@psenha); SELECT LAST_INSERT_ID();";
-                var parameters = new[] 
-                {
-                    new MySqlParameter("@pnome", nome),
-                    new MySqlParameter("@pdata", data),
-                    new MySqlParameter("@pemail", email),
-                    new MySqlParameter("@psenha", senha),
-                    new MySqlParameter("@ptelefone", telefone),
-                    (rbCpf.Checked)? new MySqlParameter("@pcpf", cpf): new MySqlParameter("@pcnpj", cnpj),
-                    
-                };
-
-                int idu = db.Database.SqlQuery<int>(query, parameters).SingleOrDefault();
-
-                if (idu==null)
-                {
-                    MessageBox.Show("Favor conferir os dados!");
-                }
-                 
-
-                Form frmquiz = new Formquiz(idu);
-                frmquiz.WindowState = FormWindowState.Maximized;
-                frmquiz.Show();
-                this.Hide();
-
-
-
-
-
-
-
-
-
-            }
-
-
-
-
-
-
-
-
-
-
-        }
+      
 
         private void txtSenha_TextChanged(object sender, EventArgs e)
         {
@@ -196,6 +136,63 @@ namespace Aula1
         private void txtData_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pctbCadastrar_Click(object sender, EventArgs e)
+        {
+            string nome = Convert.ToString(txtNome.Text);
+            string data = dtNascimento.Value.ToString("yyyy-MM-dd");
+            string email = Convert.ToString(txtData.Text);
+            string senha = Convert.ToString(txtSenha.Text);
+            string cpf = Convert.ToString(mskcpf.Text);
+            string cnpj = Convert.ToString(mskcnpj.Text);
+            string telefone = Convert.ToString(mskTelefone.Text);
+
+
+
+
+
+            using (MyDbContext db = new MyDbContext())
+            {
+                string query = @"INSERT INTO  cadastro (nome, datanascimento, " + ((rbCpf.Checked) ? "cpf," : "cnpj,") + " telefone, email, senha) VALUES (@pnome,@pdata," + (rbCpf.Checked ? " @pcpf," : "@pcnpj,") + "@ptelefone,@pemail,@psenha); SELECT LAST_INSERT_ID();";
+                var parameters = new[]
+                {
+                    new MySqlParameter("@pnome", nome),
+                    new MySqlParameter("@pdata", data),
+                    new MySqlParameter("@pemail", email),
+                    new MySqlParameter("@psenha", senha),
+                    new MySqlParameter("@ptelefone", telefone),
+                    (rbCpf.Checked)? new MySqlParameter("@pcpf", cpf): new MySqlParameter("@pcnpj", cnpj),
+
+                };
+
+                int idu = db.Database.SqlQuery<int>(query, parameters).SingleOrDefault();
+
+                if (idu == null)
+                {
+                    MessageBox.Show("Favor conferir os dados!");
+                }
+
+
+                Form frmquiz = new Formquiz(idu);
+                frmquiz.WindowState = FormWindowState.Maximized;
+                frmquiz.Show();
+                this.Hide();
+
+
+
+
+
+
+
+
+
+            }
         }
     }
 }
