@@ -46,7 +46,7 @@ namespace Aula1
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(498, 271);
+            this.txtEmail.Location = new System.Drawing.Point(770, 353);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(368, 39);
@@ -54,7 +54,7 @@ namespace Aula1
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(498, 370);
+            this.txtPass.Location = new System.Drawing.Point(770, 509);
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
@@ -65,7 +65,7 @@ namespace Aula1
             // 
             this.pbPass.BackColor = System.Drawing.Color.White;
             this.pbPass.Image = global::Aula1.Properties.Resources.hide;
-            this.pbPass.Location = new System.Drawing.Point(926, 381);
+            this.pbPass.Location = new System.Drawing.Point(1196, 518);
             this.pbPass.Name = "pbPass";
             this.pbPass.Size = new System.Drawing.Size(21, 18);
             this.pbPass.TabIndex = 6;
@@ -75,7 +75,7 @@ namespace Aula1
             // PcbLogin
             // 
             this.PcbLogin.Image = ((System.Drawing.Image)(resources.GetObject("PcbLogin.Image")));
-            this.PcbLogin.Location = new System.Drawing.Point(521, 451);
+            this.PcbLogin.Location = new System.Drawing.Point(770, 666);
             this.PcbLogin.Name = "PcbLogin";
             this.PcbLogin.Size = new System.Drawing.Size(307, 126);
             this.PcbLogin.TabIndex = 8;
@@ -85,7 +85,7 @@ namespace Aula1
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(336, 243);
+            this.pictureBox3.Location = new System.Drawing.Point(601, 325);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(136, 67);
             this.pictureBox3.TabIndex = 9;
@@ -94,7 +94,7 @@ namespace Aula1
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(336, 353);
+            this.pictureBox4.Location = new System.Drawing.Point(601, 490);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(136, 67);
             this.pictureBox4.TabIndex = 10;
@@ -103,7 +103,7 @@ namespace Aula1
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, -12);
+            this.pictureBox1.Location = new System.Drawing.Point(731, 53);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(407, 167);
             this.pictureBox1.TabIndex = 11;
@@ -114,7 +114,7 @@ namespace Aula1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1377, 656);
+            this.ClientSize = new System.Drawing.Size(1804, 851);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
