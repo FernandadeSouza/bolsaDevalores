@@ -50,9 +50,9 @@ namespace Aula1
             // picCadastro
             // 
             this.picCadastro.Image = ((System.Drawing.Image)(resources.GetObject("picCadastro.Image")));
-            this.picCadastro.Location = new System.Drawing.Point(147, 511);
+            this.picCadastro.Location = new System.Drawing.Point(94, 499);
             this.picCadastro.Name = "picCadastro";
-            this.picCadastro.Size = new System.Drawing.Size(484, 116);
+            this.picCadastro.Size = new System.Drawing.Size(511, 147);
             this.picCadastro.TabIndex = 2;
             this.picCadastro.TabStop = false;
             this.picCadastro.Click += new System.EventHandler(this.picCadastro_Click);
