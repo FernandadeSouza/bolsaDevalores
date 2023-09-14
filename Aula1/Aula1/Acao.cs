@@ -54,54 +54,36 @@ namespace Aula1
                     // Extrair dados relevantes do JSON
                     JObject timeSeries = json["Time Series ("+ interval + ")"].ToObject<JObject>();
 
-                    // Calcular a variação e classificar a ação
-                    double somaVariacao = 0;
-                    double somaVolume = 0;
-                    int cont = 0;
+                    List<double> prices = new List<double>();
 
                     foreach (var item in timeSeries)
                     {
                         JObject data = item.Value.ToObject<JObject>();
-                        double openPrice = double.Parse(data["1. open"].ToString());
-                        double closePrice = double.Parse(data["4. close"].ToString());
-                        double volume = double.Parse(data["5. volume"].ToString());
+                        double close = double.Parse(data["4. close"].ToString());
 
-                        double variacao = closePrice - openPrice;
-
-                        somaVariacao += variacao * variacao; // Soma dos quadrados das variações
-                        somaVolume += volume;
-                        cont++;
+                        prices.Add(close);
                     }
 
-                    // Calcula a variância amostral
-                    double mediaVariacao = somaVariacao / cont;
-                    double mediaVolume = somaVolume / cont;
 
-                    double variancia = somaVariacao / (cont - 1);
 
-                    // Definir regras para classificação
-                    int classificacao;
+                    double mean = Mean(prices);
+                    MessageBox.Show($"Média: {mean}");
 
-                    if (variancia > 0.1)
+
+
+                    double stdDev = StdDev(prices, mean);
+                    MessageBox.Show($"Desvio padrão: {stdDev}");
+
+
+
+                    double confidence = CalculateConfidence(mean, stdDev, prices.Count, prices);
+                    MessageBox.Show($"Confidence Level: {confidence}");
+
+                    using (MyDbContext db = new MyDbContext())
                     {
-                        classificacao = 3;
-                    }
-                    else if (variancia < -0.1)
-                    {
-                        classificacao = 1;
-                    }
-                    else
-                    {
-                        classificacao = 2;
-                    }
-
-                    MessageBox.Show("v: "+ variancia);
-
-                    /*using (MyDbContext db = new MyDbContext())
-                    {
-                        string query = "UPDATE acoes SET id_niveis= " + classificacao + " WHERE codigo = '" + symbol + "';";
+                        string query = "UPDATE acoes SET id_niveis= " + confidence + " WHERE codigo = '" + symbol + "';";
                         db.Database.ExecuteSqlCommand(query);
-                    }*/
+                    }
                 }
                 catch (HttpRequestException e)
                 {
@@ -110,9 +92,62 @@ namespace Aula1
             }
         }
 
-        private void frmAcao_Load(object sender, EventArgs e)
+        private double Mean(List<double> data)
+        {
+            double sum = 0;
+
+            foreach (double val in data)
+            {
+                sum += val;
+            }
+
+            return sum / data.Count;
+        }
+
+
+
+        private double StdDev(List<double> data, double mean)
+        {
+            double variance = 0;
+
+            foreach (double val in data)
+            {
+                variance += Math.Pow(val - mean, 2);
+            }
+
+            variance /= (data.Count - 1);
+
+            return Math.Sqrt(variance);
+
+        }
+
+        private double CalculateConfidence(double mean, double stdDev, int n, List<double> data)
+
         {
 
+            // Usando valor z de 1.96 para 95% de confiança 
+
+            double marginOfError = 1.96 * (stdDev / Math.Sqrt(n));
+            MessageBox.Show($"marginOfError: {marginOfError}");
+
+            double lowerBound = mean - marginOfError;
+            MessageBox.Show($"lowerBound: {lowerBound}");
+            double upperBound = mean + marginOfError;
+
+            // Calcula a porcentagem de preços dentro do intervalo de confiança 
+            double percentInside = data.Count(val => val >= lowerBound && val <= upperBound) / (double)n;
+
+            if (percentInside >= 0.95)
+                return 1;
+            else if (percentInside >= 0.50)
+                return 2;
+            else
+                return 3;
+
+        }
+
+        private void frmAcao_Load(object sender, EventArgs e)
+        {
         }
     }
 }
