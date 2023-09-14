@@ -52,7 +52,7 @@ namespace Aula1
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.Magenta;
-            this.lblTitulo.Location = new System.Drawing.Point(414, 63);
+            this.lblTitulo.Location = new System.Drawing.Point(706, 70);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(320, 32);
             this.lblTitulo.TabIndex = 0;
@@ -63,73 +63,80 @@ namespace Aula1
             this.lblUm.AutoSize = true;
             this.lblUm.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUm.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblUm.Location = new System.Drawing.Point(95, 160);
+            this.lblUm.Location = new System.Drawing.Point(75, 176);
             this.lblUm.Name = "lblUm";
             this.lblUm.Size = new System.Drawing.Size(334, 21);
             this.lblUm.TabIndex = 1;
             this.lblUm.Text = "O que é a Bolsa de Valores?";
+            this.lblUm.Click += new System.EventHandler(this.lblUm_Click);
             // 
             // lblResp
             // 
             this.lblResp.AutoSize = true;
             this.lblResp.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblResp.Location = new System.Drawing.Point(172, 192);
+            this.lblResp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblResp.Location = new System.Drawing.Point(75, 214);
             this.lblResp.Name = "lblResp";
-            this.lblResp.Size = new System.Drawing.Size(1011, 42);
+            this.lblResp.Size = new System.Drawing.Size(1605, 21);
             this.lblResp.TabIndex = 2;
             this.lblResp.Text = "É um ambiente onde são negociados ações, títulos e outros ativos. A Bolsa funcion" +
-    "a como um \r\nponto de encontro entre as empresas e os investidores.";
+    "a como um ponto de encontro entre as empresas e os investidores.";
             this.lblResp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblResp.Click += new System.EventHandler(this.lblResp_Click);
             // 
             // lblDois
             // 
             this.lblDois.AutoSize = true;
             this.lblDois.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDois.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblDois.Location = new System.Drawing.Point(95, 234);
+            this.lblDois.Location = new System.Drawing.Point(75, 272);
             this.lblDois.Name = "lblDois";
             this.lblDois.Size = new System.Drawing.Size(406, 21);
             this.lblDois.TabIndex = 3;
             this.lblDois.Text = "Como funciona a Bolsa de Valores?";
+            this.lblDois.Click += new System.EventHandler(this.lblDois_Click);
             // 
             // lblResp1
             // 
             this.lblResp1.AutoSize = true;
             this.lblResp1.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp1.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblResp1.Location = new System.Drawing.Point(163, 267);
+            this.lblResp1.Location = new System.Drawing.Point(75, 309);
             this.lblResp1.Name = "lblResp1";
-            this.lblResp1.Size = new System.Drawing.Size(857, 42);
+            this.lblResp1.Size = new System.Drawing.Size(1682, 21);
             this.lblResp1.TabIndex = 4;
-            this.lblResp1.Text = "Uma empresa abre o capital e oferece ações em troca de valores. Com  isso, o \r\nin" +
-    "vestidor pode ter um rendimento variável através do investimento inicial.";
+            this.lblResp1.Text = "Uma empresa abre o capital e oferece ações em troca de valores. Com  isso, o inve" +
+    "stidor pode ter um rendimento variável através do investimento inicial.";
             this.lblResp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblResp1.Click += new System.EventHandler(this.lblResp1_Click);
             // 
             // lblTRes
             // 
             this.lblTRes.AutoSize = true;
             this.lblTRes.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTRes.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblTRes.Location = new System.Drawing.Point(95, 323);
+            this.lblTRes.Location = new System.Drawing.Point(75, 389);
             this.lblTRes.Name = "lblTRes";
             this.lblTRes.Size = new System.Drawing.Size(430, 21);
             this.lblTRes.TabIndex = 6;
             this.lblTRes.Text = "Como investir na Bolsa de Valores ?";
+            this.lblTRes.Click += new System.EventHandler(this.lblTRes_Click);
             // 
             // lblResp2
             // 
             this.lblResp2.AutoSize = true;
             this.lblResp2.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResp2.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblResp2.Location = new System.Drawing.Point(117, 363);
+            this.lblResp2.Location = new System.Drawing.Point(75, 427);
             this.lblResp2.Name = "lblResp2";
-            this.lblResp2.Size = new System.Drawing.Size(1110, 42);
+            this.lblResp2.Size = new System.Drawing.Size(2012, 21);
             this.lblResp2.TabIndex = 7;
             this.lblResp2.Text = "Primeiramente, deve-se criar uma conta gratuita em uma boa  corretora de valores;" +
-    " \r\nter dinheiro para investir  e além disso, é necessário saber  qual é o melhor" +
-    " momento para investir.";
+    " ter dinheiro para investir  e além disso, é necessário saber  qual é o melhor m" +
+    "omento para investir.";
             this.lblResp2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblResp2.Click += new System.EventHandler(this.lblResp2_Click);
             // 
             // lblTu
             // 
@@ -155,9 +162,9 @@ namespace Aula1
             // picFinalizar
             // 
             this.picFinalizar.Image = ((System.Drawing.Image)(resources.GetObject("picFinalizar.Image")));
-            this.picFinalizar.Location = new System.Drawing.Point(655, 558);
+            this.picFinalizar.Location = new System.Drawing.Point(1036, 567);
             this.picFinalizar.Name = "picFinalizar";
-            this.picFinalizar.Size = new System.Drawing.Size(550, 171);
+            this.picFinalizar.Size = new System.Drawing.Size(550, 222);
             this.picFinalizar.TabIndex = 20;
             this.picFinalizar.TabStop = false;
             this.picFinalizar.Click += new System.EventHandler(this.picFinalizar_Click);
@@ -165,7 +172,7 @@ namespace Aula1
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(902, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1448, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(365, 146);
             this.pictureBox1.TabIndex = 23;
@@ -174,9 +181,9 @@ namespace Aula1
             // picInvest
             // 
             this.picInvest.Image = ((System.Drawing.Image)(resources.GetObject("picInvest.Image")));
-            this.picInvest.Location = new System.Drawing.Point(68, 558);
+            this.picInvest.Location = new System.Drawing.Point(79, 525);
             this.picInvest.Name = "picInvest";
-            this.picInvest.Size = new System.Drawing.Size(463, 163);
+            this.picInvest.Size = new System.Drawing.Size(591, 241);
             this.picInvest.TabIndex = 24;
             this.picInvest.TabStop = false;
             this.picInvest.Click += new System.EventHandler(this.picInvest_Click);
@@ -186,7 +193,7 @@ namespace Aula1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1291, 866);
+            this.ClientSize = new System.Drawing.Size(1825, 866);
             this.Controls.Add(this.picInvest);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picFinalizar);

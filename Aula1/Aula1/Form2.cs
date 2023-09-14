@@ -38,5 +38,35 @@ namespace Aula1
             acao.Show();
             this.Hide();
         }
+
+        private void lblUm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTRes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblResp2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDois_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblResp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblResp1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
