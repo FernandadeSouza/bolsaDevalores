@@ -153,12 +153,13 @@ namespace Aula1
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1320, 648);
+            this.pictureBox4.Location = new System.Drawing.Point(1452, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(351, 170);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox4.TabIndex = 17;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox5
             // 
@@ -275,7 +276,7 @@ namespace Aula1
             // pctbCadastrar
             // 
             this.pctbCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("pctbCadastrar.Image")));
-            this.pctbCadastrar.Location = new System.Drawing.Point(547, 648);
+            this.pctbCadastrar.Location = new System.Drawing.Point(606, 662);
             this.pctbCadastrar.Name = "pctbCadastrar";
             this.pctbCadastrar.Size = new System.Drawing.Size(535, 156);
             this.pctbCadastrar.TabIndex = 29;
@@ -288,7 +289,7 @@ namespace Aula1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1683, 830);
+            this.ClientSize = new System.Drawing.Size(1815, 830);
             this.Controls.Add(this.pctbCadastrar);
             this.Controls.Add(this.rbCnpj);
             this.Controls.Add(this.rbCpf);
