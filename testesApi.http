@@ -1,0 +1,2 @@
+### teste para trazer o hitorico da acao
+GET https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=15min&apikey=J854WIN0BCURLXTV HTTP/1.1
