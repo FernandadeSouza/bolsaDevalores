@@ -41,7 +41,7 @@ namespace Aula1
             // picCodeInicial
             // 
             this.picCodeInicial.Image = ((System.Drawing.Image)(resources.GetObject("picCodeInicial.Image")));
-            this.picCodeInicial.Location = new System.Drawing.Point(113, -44);
+            this.picCodeInicial.Location = new System.Drawing.Point(218, 12);
             this.picCodeInicial.Name = "picCodeInicial";
             this.picCodeInicial.Size = new System.Drawing.Size(1162, 633);
             this.picCodeInicial.TabIndex = 0;
@@ -50,7 +50,7 @@ namespace Aula1
             // picCadastro
             // 
             this.picCadastro.Image = ((System.Drawing.Image)(resources.GetObject("picCadastro.Image")));
-            this.picCadastro.Location = new System.Drawing.Point(94, 499);
+            this.picCadastro.Location = new System.Drawing.Point(218, 549);
             this.picCadastro.Name = "picCadastro";
             this.picCadastro.Size = new System.Drawing.Size(511, 147);
             this.picCadastro.TabIndex = 2;
@@ -60,7 +60,7 @@ namespace Aula1
             // PicLogin
             // 
             this.PicLogin.Image = ((System.Drawing.Image)(resources.GetObject("PicLogin.Image")));
-            this.PicLogin.Location = new System.Drawing.Point(794, 511);
+            this.PicLogin.Location = new System.Drawing.Point(949, 571);
             this.PicLogin.Name = "PicLogin";
             this.PicLogin.Size = new System.Drawing.Size(368, 116);
             this.PicLogin.TabIndex = 4;
@@ -73,7 +73,7 @@ namespace Aula1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::Aula1.Properties.Resources.hide;
-            this.ClientSize = new System.Drawing.Size(1364, 687);
+            this.ClientSize = new System.Drawing.Size(1543, 852);
             this.Controls.Add(this.PicLogin);
             this.Controls.Add(this.picCadastro);
             this.Controls.Add(this.picCodeInicial);
