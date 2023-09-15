@@ -2684,7 +2684,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAH/9k=
 </value>
   </data>
-  <data name="pictureBox3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picRefaz.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALEAAABlCAIAAACN5JWrAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAQfFJREFUeF7tXQVYk2v/3pEaHWMbbGyDsRFiYYBiUKIooIASAiqNBSrWsVvE7gIM
@@ -2971,7 +2971,7 @@
         +PsByVMqgC4ovdBKqi/1pb7Ul/pSX+pLfakv9eWfLgzG/wGTijW0G7VW+AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picRefaz.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAYABgAAD/4Q4mRXhpZgAATU0AKgAAAAgACQESAAMAAAABAAEAAAEaAAUAAAAB
         AAAAegEbAAUAAAABAAAAggEoAAMAAAABAAIAAAExAAIAAAAmAAAAigEyAAIAAAAUAAAAsAITAAMAAAAB

@@ -30,14 +30,6 @@ namespace Aula1
             this.Hide();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-           /* Form perguntas = new Formquiz(id_login);
-            perguntas.WindowState = FormWindowState.Maximized;
-            perguntas.Show();
-            this.Hide(); */
-        }
-
         private void picETF_Click(object sender, EventArgs e)
         {
             Form telaETF = new frmAcao("Avançado", "ETF");
@@ -52,6 +44,11 @@ namespace Aula1
             telaFII.WindowState = FormWindowState.Maximized;
             telaFII.Show();
             this.Hide();
+        }
+
+        private void picRefaz_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

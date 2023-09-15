@@ -37,11 +37,13 @@ namespace Aula1
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picVoltar1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcbLogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVoltar1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtEmail
@@ -109,12 +111,23 @@ namespace Aula1
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
+            // picVoltar1
+            // 
+            this.picVoltar1.Image = ((System.Drawing.Image)(resources.GetObject("picVoltar1.Image")));
+            this.picVoltar1.Location = new System.Drawing.Point(1410, 686);
+            this.picVoltar1.Name = "picVoltar1";
+            this.picVoltar1.Size = new System.Drawing.Size(339, 106);
+            this.picVoltar1.TabIndex = 12;
+            this.picVoltar1.TabStop = false;
+            this.picVoltar1.Click += new System.EventHandler(this.picVoltar1_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1804, 851);
+            this.Controls.Add(this.picVoltar1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -129,6 +142,7 @@ namespace Aula1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVoltar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,5 +156,6 @@ namespace Aula1
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picVoltar1;
     }
 }

@@ -136,6 +136,7 @@ namespace Aula1
 
             // Calcula a porcentagem de preços dentro do intervalo de confiança 
             double percentInside = data.Count(val => val >= lowerBound && val <= upperBound) / (double)n;
+            MessageBox.Show($"percentInside: {percentInside}");
 
             if (percentInside >= 0.95)
                 return 1;
@@ -144,10 +145,6 @@ namespace Aula1
             else
                 return 3;
 
-        }
-
-        private void frmAcao_Load(object sender, EventArgs e)
-        {
         }
     }
 }

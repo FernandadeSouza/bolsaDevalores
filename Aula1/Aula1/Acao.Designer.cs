@@ -49,7 +49,6 @@ namespace Aula1
             this.Controls.Add(this.dGVAcao);
             this.Name = "frmAcao";
             this.Text = "Acao";
-            this.Load += new System.EventHandler(this.frmAcao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dGVAcao)).EndInit();
             this.ResumeLayout(false);
 

@@ -26,7 +26,7 @@ namespace Aula1
 
         private void btnsignup_Click(object sender, EventArgs e)
         {
-           Form CadastroCliente = new Form2();
+           Form CadastroCliente = new FrmCadastro();
             CadastroCliente.WindowState = FormWindowState.Maximized;
             CadastroCliente.Show();
             this.Hide();
@@ -56,7 +56,7 @@ namespace Aula1
 
         private void picCadastro_Click(object sender, EventArgs e)
         {
-            Form FCadastro = new Form2();
+            Form FCadastro = new FrmCadastro();
             FCadastro.WindowState = FormWindowState.Maximized;
             FCadastro.Show();
             this.Hide();

@@ -14,9 +14,9 @@ using MySql.Data.MySqlClient;
 
 namespace Aula1
 {
-    public partial class Form2 : Form
+    public partial class FrmCadastro : Form
     {
-        public Form2()
+        public FrmCadastro()
         {
             InitializeComponent();
         }
@@ -198,6 +198,12 @@ namespace Aula1
         private void pictureBox4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void picVoltar_Click(object sender, EventArgs e)
+        {
+            Form voltar = new frmLogin();
+            voltar.Show();
         }
     }
 }

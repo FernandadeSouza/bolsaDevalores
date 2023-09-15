@@ -42,7 +42,7 @@ namespace Aula1
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            string Email = txtEmail.Text;
+             string Email = txtEmail.Text;
             string Senha = txtPass.Text;
 
 
@@ -113,6 +113,12 @@ namespace Aula1
      
 
             
+        }
+
+        private void picVoltar1_Click(object sender, EventArgs e)
+        {
+            Form voltar_1 = new frmPrincipal();
+            voltar_1.Show();
         }
     }
     

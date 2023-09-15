@@ -37,13 +37,13 @@ namespace Aula1
             this.picETF = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PicFIIs = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.picRefaz = new System.Windows.Forms.PictureBox();
             this.lblResult = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picitulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picETF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicFIIs)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRefaz)).BeginInit();
             this.SuspendLayout();
             // 
             // InvestidorAvancado
@@ -128,17 +128,17 @@ namespace Aula1
             this.PicFIIs.TabStop = false;
             this.PicFIIs.Click += new System.EventHandler(this.PicFIIs_Click);
             // 
-            // pictureBox3
+            // picRefaz
             // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1300, 609);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(508, 179);
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.picRefaz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picRefaz.BackgroundImage")));
+            this.picRefaz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picRefaz.Image = ((System.Drawing.Image)(resources.GetObject("picRefaz.Image")));
+            this.picRefaz.Location = new System.Drawing.Point(1300, 609);
+            this.picRefaz.Name = "picRefaz";
+            this.picRefaz.Size = new System.Drawing.Size(508, 179);
+            this.picRefaz.TabIndex = 9;
+            this.picRefaz.TabStop = false;
+            this.picRefaz.Click += new System.EventHandler(this.picRefaz_Click);
             // 
             // lblResult
             // 
@@ -157,7 +157,7 @@ namespace Aula1
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1820, 846);
             this.Controls.Add(this.lblResult);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.picRefaz);
             this.Controls.Add(this.PicFIIs);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picETF);
@@ -172,7 +172,7 @@ namespace Aula1
             ((System.ComponentModel.ISupportInitialize)(this.picETF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicFIIs)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRefaz)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,7 +187,7 @@ namespace Aula1
         private System.Windows.Forms.PictureBox picETF;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox PicFIIs;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox picRefaz;
         private System.Windows.Forms.Label lblResult;
     }
 }

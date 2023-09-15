@@ -1,7 +1,7 @@
 ﻿
 namespace Aula1
 {
-    partial class Form2
+    partial class FrmCadastro
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Aula1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadastro));
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtData = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
@@ -51,6 +51,7 @@ namespace Aula1
             this.rbCpf = new System.Windows.Forms.RadioButton();
             this.rbCnpj = new System.Windows.Forms.RadioButton();
             this.pctbCadastrar = new System.Windows.Forms.PictureBox();
+            this.picVoltar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSenha)).BeginInit();
@@ -62,6 +63,7 @@ namespace Aula1
             ((System.ComponentModel.ISupportInitialize)(this.lblcnpj)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbCadastrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVoltar)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNome
@@ -276,20 +278,31 @@ namespace Aula1
             // pctbCadastrar
             // 
             this.pctbCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("pctbCadastrar.Image")));
-            this.pctbCadastrar.Location = new System.Drawing.Point(606, 662);
+            this.pctbCadastrar.Location = new System.Drawing.Point(624, 678);
             this.pctbCadastrar.Name = "pctbCadastrar";
-            this.pctbCadastrar.Size = new System.Drawing.Size(535, 156);
+            this.pctbCadastrar.Size = new System.Drawing.Size(499, 125);
             this.pctbCadastrar.TabIndex = 29;
             this.pctbCadastrar.TabStop = false;
             this.pctbCadastrar.Click += new System.EventHandler(this.pctbCadastrar_Click);
             // 
-            // Form2
+            // picVoltar
+            // 
+            this.picVoltar.Image = ((System.Drawing.Image)(resources.GetObject("picVoltar.Image")));
+            this.picVoltar.Location = new System.Drawing.Point(1276, 706);
+            this.picVoltar.Name = "picVoltar";
+            this.picVoltar.Size = new System.Drawing.Size(349, 97);
+            this.picVoltar.TabIndex = 30;
+            this.picVoltar.TabStop = false;
+            this.picVoltar.Click += new System.EventHandler(this.picVoltar_Click);
+            // 
+            // FrmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1815, 830);
+            this.Controls.Add(this.picVoltar);
             this.Controls.Add(this.pctbCadastrar);
             this.Controls.Add(this.rbCnpj);
             this.Controls.Add(this.rbCpf);
@@ -313,7 +326,7 @@ namespace Aula1
             this.Controls.Add(this.txtNome);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.Name = "Form2";
+            this.Name = "FrmCadastro";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -327,6 +340,7 @@ namespace Aula1
             ((System.ComponentModel.ISupportInitialize)(this.lblcnpj)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbCadastrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVoltar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,5 +368,6 @@ namespace Aula1
         private System.Windows.Forms.RadioButton rbCpf;
         private System.Windows.Forms.RadioButton rbCnpj;
         private System.Windows.Forms.PictureBox pctbCadastrar;
+        private System.Windows.Forms.PictureBox picVoltar;
     }
 }
