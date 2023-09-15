@@ -202,7 +202,7 @@ namespace Aula1
 
         private void picVoltar_Click(object sender, EventArgs e)
         {
-            Form voltar = new frmLogin();
+            Form voltar = new TelaPrincipal();
             voltar.Show();
         }
     }
