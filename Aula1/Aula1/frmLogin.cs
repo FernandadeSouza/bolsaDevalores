@@ -53,6 +53,7 @@ namespace Aula1
             }
 
             Quiz quiz;
+            Login login;
             using (MyDbContext db = new MyDbContext())
             {
                 string query = @"SELECT * FROM login WHERE email = @pemail and senha = @psenha LIMIT 1;";
@@ -61,7 +62,7 @@ namespace Aula1
                     new MySqlParameter("@pemail",Email),
                     new MySqlParameter("@psenha",Senha)
                 };
-                Login login = db.Database.SqlQuery<Login>(query, parameters).SingleOrDefault();
+                login = db.Database.SqlQuery<Login>(query, parameters).SingleOrDefault();
 
                 if(login == null)
                 {
@@ -103,7 +104,7 @@ namespace Aula1
             }
             else if (quiz.Id_niveis == 3)
             {
-                Form logado = new TelaInvestidorAvancado();
+                Form logado = new TelaInvestidorAvancado(login.Isd);
                 logado.WindowState = FormWindowState.Maximized;
                 logado.Show();
                 this.Hide();

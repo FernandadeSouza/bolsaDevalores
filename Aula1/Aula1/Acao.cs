@@ -16,8 +16,10 @@ namespace Aula1
 {
     public partial class frmAcao : Form
     {
+        string nivel;
         public frmAcao(string nivel, string categoria )
         {
+            this.nivel = nivel;
             InitializeComponent();
             using (MyDbContext db = new MyDbContext())
             {
@@ -145,6 +147,32 @@ namespace Aula1
             else
                 return 3;
 
+        }
+
+        private void frmAcao_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            switch (this.nivel)
+            {
+                case "1":
+                    Form f1 = new frmInvest();
+                    f1.Show();
+                    break;
+
+                case "2":
+                    Form f2 = new frmIntermed();
+                    f2.Show();
+                    break;
+                 case "3":
+                    Form f3 = new TelaInvestidorAvancado(Login.Id);
+                    f3.Show();
+                    break;
+
+            }
         }
     }
 }

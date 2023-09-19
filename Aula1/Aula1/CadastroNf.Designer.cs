@@ -278,7 +278,7 @@ namespace Aula1
             // pctbCadastrar
             // 
             this.pctbCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("pctbCadastrar.Image")));
-            this.pctbCadastrar.Location = new System.Drawing.Point(624, 678);
+            this.pctbCadastrar.Location = new System.Drawing.Point(12, 693);
             this.pctbCadastrar.Name = "pctbCadastrar";
             this.pctbCadastrar.Size = new System.Drawing.Size(499, 125);
             this.pctbCadastrar.TabIndex = 29;
@@ -288,7 +288,7 @@ namespace Aula1
             // picVoltar
             // 
             this.picVoltar.Image = ((System.Drawing.Image)(resources.GetObject("picVoltar.Image")));
-            this.picVoltar.Location = new System.Drawing.Point(1276, 706);
+            this.picVoltar.Location = new System.Drawing.Point(691, 712);
             this.picVoltar.Name = "picVoltar";
             this.picVoltar.Size = new System.Drawing.Size(349, 97);
             this.picVoltar.TabIndex = 30;
@@ -327,6 +327,7 @@ namespace Aula1
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.Name = "FrmCadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

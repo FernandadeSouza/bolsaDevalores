@@ -12,8 +12,10 @@ namespace Aula1
 {
     public partial class TelaInvestidorAvancado : Form
     {
-        public TelaInvestidorAvancado()
+        int id_login;
+        public TelaInvestidorAvancado(int id_login)
         {
+            this.id_login = id_login;
             InitializeComponent();
         }
 
@@ -48,7 +50,10 @@ namespace Aula1
 
         private void picRefaz_Click(object sender, EventArgs e)
         {
-            
+            Form perguntas = new Formquiz(id_login);
+            perguntas.WindowState = FormWindowState.Maximized;
+            perguntas.Show();
+            this.Hide();
         }
     }
 }
