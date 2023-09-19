@@ -104,7 +104,7 @@ namespace Aula1
             }
             else if (quiz.Id_niveis == 3)
             {
-                Form logado = new TelaInvestidorAvancado(login.Isd);
+                Form logado = new TelaInvestidorAvancado(login.Id);
                 logado.WindowState = FormWindowState.Maximized;
                 logado.Show();
                 this.Hide();
