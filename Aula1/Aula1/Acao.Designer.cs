@@ -30,7 +30,7 @@ namespace Aula1
         private void InitializeComponent()
         {
             this.dGVAcao = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAcoes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dGVAcao)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,25 +39,27 @@ namespace Aula1
             this.dGVAcao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGVAcao.Location = new System.Drawing.Point(32, 38);
             this.dGVAcao.Name = "dGVAcao";
-            this.dGVAcao.Size = new System.Drawing.Size(732, 370);
+            this.dGVAcao.Size = new System.Drawing.Size(1143, 563);
             this.dGVAcao.TabIndex = 0;
             // 
-            // button1
+            // btnAcoes
             // 
-            this.button1.Location = new System.Drawing.Point(847, 462);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAcoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcoes.Location = new System.Drawing.Point(1148, 615);
+            this.btnAcoes.Name = "btnAcoes";
+            this.btnAcoes.Size = new System.Drawing.Size(124, 35);
+            this.btnAcoes.TabIndex = 1;
+            this.btnAcoes.Text = "Voltar";
+            this.btnAcoes.UseVisualStyleBackColor = true;
+            this.btnAcoes.Click += new System.EventHandler(this.btnAcoes_Click);
             // 
             // frmAcao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 575);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(1311, 662);
+            this.Controls.Add(this.btnAcoes);
             this.Controls.Add(this.dGVAcao);
             this.Name = "frmAcao";
             this.Text = "Acao";
@@ -70,6 +72,6 @@ namespace Aula1
         #endregion
 
         private System.Windows.Forms.DataGridView dGVAcao;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAcoes;
     }
 }

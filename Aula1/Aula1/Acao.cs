@@ -157,7 +157,7 @@ namespace Aula1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAcoes_Click(object sender, EventArgs e)
         {
             
             switch (this.nivel)

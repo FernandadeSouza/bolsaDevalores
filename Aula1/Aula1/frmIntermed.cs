@@ -18,24 +18,22 @@ namespace Aula1
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void PicFinan_Click(object sender, EventArgs e)
         {
-            Form Imobi = new frmAcao("Intermediário", "FII");
-            Imobi.WindowState = FormWindowState.Maximized;
-            Imobi.Show();
+            Form Financeiro = new frmAcao("Intermediário", "Financeira");
+            Financeiro.WindowState = FormWindowState.Maximized;
+            Financeiro.Show();
             this.Hide();
 
         }
 
-        private void PicAcoes_Click(object sender, EventArgs e)
+        private void PicTec_Click(object sender, EventArgs e)
         {
-            Form Intermed = new frmAcao("Intermediário", null);
-            Intermed.WindowState = FormWindowState.Maximized;
-            Intermed.Show();
+            Form Tecnologia = new frmAcao("Intermediário", null);
+            Tecnologia.WindowState = FormWindowState.Maximized;
+            Tecnologia.Show();
             this.Hide();
         }
-
-       
     }        
 
 } 

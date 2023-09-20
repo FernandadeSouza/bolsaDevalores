@@ -31,13 +31,18 @@ namespace Aula1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInvestidorAvancado));
             this.InvestidorAvancado = new System.Windows.Forms.Label();
-            this.lblAvançado = new System.Windows.Forms.Label();
+            this.lblFinanceira = new System.Windows.Forms.Label();
             this.picitulo = new System.Windows.Forms.PictureBox();
             this.picrefaz = new System.Windows.Forms.PictureBox();
             this.lblResult = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.picIndustria = new System.Windows.Forms.PictureBox();
             this.picTecnologia = new System.Windows.Forms.PictureBox();
+            this.lblIndustria = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picitulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picrefaz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -56,17 +61,16 @@ namespace Aula1
             this.InvestidorAvancado.TabIndex = 0;
             this.InvestidorAvancado.Text = "Investidor Avançado";
             // 
-            // lblAvançado
+            // lblFinanceira
             // 
-            this.lblAvançado.AutoSize = true;
-            this.lblAvançado.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAvançado.ForeColor = System.Drawing.Color.White;
-            this.lblAvançado.Location = new System.Drawing.Point(32, 127);
-            this.lblAvançado.Name = "lblAvançado";
-            this.lblAvançado.Size = new System.Drawing.Size(1340, 27);
-            this.lblAvançado.TabIndex = 1;
-            this.lblAvançado.Text = "O Investidor Avançado, na comparação com outros perfis, é o mais tolerante ao ris" +
-    "co. Essas são as opções recomendadas para o seu perfil:";
+            this.lblFinanceira.AutoSize = true;
+            this.lblFinanceira.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFinanceira.ForeColor = System.Drawing.Color.Magenta;
+            this.lblFinanceira.Location = new System.Drawing.Point(50, 106);
+            this.lblFinanceira.Name = "lblFinanceira";
+            this.lblFinanceira.Size = new System.Drawing.Size(380, 29);
+            this.lblFinanceira.TabIndex = 1;
+            this.lblFinanceira.Text = "Ações de Categoria Financeira:";
             // 
             // picitulo
             // 
@@ -83,24 +87,12 @@ namespace Aula1
             this.picrefaz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picrefaz.BackgroundImage")));
             this.picrefaz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picrefaz.Image = ((System.Drawing.Image)(resources.GetObject("picrefaz.Image")));
-            this.picrefaz.Location = new System.Drawing.Point(1278, 609);
+            this.picrefaz.Location = new System.Drawing.Point(1280, 637);
             this.picrefaz.Name = "picrefaz";
             this.picrefaz.Size = new System.Drawing.Size(498, 179);
             this.picrefaz.TabIndex = 9;
             this.picrefaz.TabStop = false;
             this.picrefaz.Click += new System.EventHandler(this.picrefaz_Click);
-            // 
-            // picRefaz
-            // 
-           /* this.picRefaz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picRefaz.BackgroundImage")));
-            this.picRefaz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picRefaz.Image = ((System.Drawing.Image)(resources.GetObject("picRefaz.Image")));
-            this.picRefaz.Location = new System.Drawing.Point(1300, 609);
-            this.picRefaz.Name = "picRefaz";
-            this.picRefaz.Size = new System.Drawing.Size(508, 179);
-            this.picRefaz.TabIndex = 9;
-            this.picRefaz.TabStop = false;
-            this.picRefaz.Click += new System.EventHandler(this.picRefaz_Click);*/
             // 
             // lblResult
             // 
@@ -115,7 +107,7 @@ namespace Aula1
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(55, 609);
+            this.pictureBox2.Location = new System.Drawing.Point(56, 719);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(383, 97);
             this.pictureBox2.TabIndex = 11;
@@ -125,7 +117,7 @@ namespace Aula1
             // picIndustria
             // 
             this.picIndustria.Image = ((System.Drawing.Image)(resources.GetObject("picIndustria.Image")));
-            this.picIndustria.Location = new System.Drawing.Point(466, 609);
+            this.picIndustria.Location = new System.Drawing.Point(468, 719);
             this.picIndustria.Name = "picIndustria";
             this.picIndustria.Size = new System.Drawing.Size(345, 97);
             this.picIndustria.TabIndex = 12;
@@ -135,28 +127,89 @@ namespace Aula1
             // picTecnologia
             // 
             this.picTecnologia.Image = ((System.Drawing.Image)(resources.GetObject("picTecnologia.Image")));
-            this.picTecnologia.Location = new System.Drawing.Point(848, 609);
+            this.picTecnologia.Location = new System.Drawing.Point(862, 719);
             this.picTecnologia.Name = "picTecnologia";
             this.picTecnologia.Size = new System.Drawing.Size(368, 97);
             this.picTecnologia.TabIndex = 13;
             this.picTecnologia.TabStop = false;
             this.picTecnologia.Click += new System.EventHandler(this.picTecnologia_Click);
             // 
-            // picFinanceira
+            // lblIndustria
+            // 
+            this.lblIndustria.AutoSize = true;
+            this.lblIndustria.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIndustria.ForeColor = System.Drawing.Color.Magenta;
+            this.lblIndustria.Location = new System.Drawing.Point(50, 248);
+            this.lblIndustria.Name = "lblIndustria";
+            this.lblIndustria.Size = new System.Drawing.Size(357, 29);
+            this.lblIndustria.TabIndex = 14;
+            this.lblIndustria.Text = "Ações de Categoria Indústria:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Magenta;
+            this.label2.Location = new System.Drawing.Point(50, 419);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(389, 29);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Ações de Categoria Tecnologia:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(51, 157);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1820, 58);
+            this.label1.TabIndex = 16;
+            this.label1.Text = resources.GetString("label1.Text");
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(51, 461);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(1930, 58);
+            this.label3.TabIndex = 17;
+            this.label3.Text = resources.GetString("label3.Text");
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(51, 304);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(1684, 58);
+            this.label4.TabIndex = 18;
+            this.label4.Text = resources.GetString("label4.Text");
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // TelaInvestidorAvancado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1820, 846);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblIndustria);
             this.Controls.Add(this.picTecnologia);
             this.Controls.Add(this.picIndustria);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.picrefaz);
             this.Controls.Add(this.picitulo);
-            this.Controls.Add(this.lblAvançado);
+            this.Controls.Add(this.lblFinanceira);
             this.Controls.Add(this.InvestidorAvancado);
-            this.Name = "picFinanceira";
+            this.Name = "TelaInvestidorAvancado";
             this.Text = "TelaInvestidorAvancado";
             this.Load += new System.EventHandler(this.TelaInvestidorAvancado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picitulo)).EndInit();
@@ -172,12 +225,17 @@ namespace Aula1
         #endregion
 
         private System.Windows.Forms.Label InvestidorAvancado;
-        private System.Windows.Forms.Label lblAvançado;
+        private System.Windows.Forms.Label lblFinanceira;
         private System.Windows.Forms.PictureBox picitulo;
         private System.Windows.Forms.PictureBox picrefaz;
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox picIndustria;
         private System.Windows.Forms.PictureBox picTecnologia;
+        private System.Windows.Forms.Label lblIndustria;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

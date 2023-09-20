@@ -40,11 +40,11 @@ namespace Aula1
             this.lblResultado = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.PicAcoes = new System.Windows.Forms.PictureBox();
+            this.PicFinan = new System.Windows.Forms.PictureBox();
+            this.PicTec = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicAcoes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicFinan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTec)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,11 +76,11 @@ namespace Aula1
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Magenta;
-            this.label3.Location = new System.Drawing.Point(76, 139);
+            this.label3.Location = new System.Drawing.Point(78, 139);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(226, 25);
+            this.label3.Size = new System.Drawing.Size(345, 25);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Ações de empresas:";
+            this.label3.Text = "Ações de categoria Tecnologia:";
             // 
             // label4
             // 
@@ -97,9 +97,9 @@ namespace Aula1
             this.label5.ForeColor = System.Drawing.Color.Magenta;
             this.label5.Location = new System.Drawing.Point(76, 330);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(285, 25);
+            this.label5.Size = new System.Drawing.Size(340, 25);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Fundos Imobiliários (FIIs):";
+            this.label5.Text = "Ações de categoria Financeira:";
             // 
             // label6
             // 
@@ -111,14 +111,13 @@ namespace Aula1
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Magenta;
-            this.label7.Location = new System.Drawing.Point(381, 535);
+            this.label7.Location = new System.Drawing.Point(162, 512);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(1241, 47);
+            this.label7.Size = new System.Drawing.Size(528, 47);
             this.label7.TabIndex = 6;
-            this.label7.Text = "De acordo com as informações citadas pelos nossos profissionais, quais opções voc" +
-    "ê mais se encaixa?";
+            this.label7.Text = "Escolha uma das categorias:";
             // 
             // lblResultado
             // 
@@ -132,43 +131,43 @@ namespace Aula1
             // 
             // label8
             // 
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label8.Location = new System.Drawing.Point(78, 186);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(1360, 135);
+            this.label8.Size = new System.Drawing.Size(1460, 135);
             this.label8.TabIndex = 10;
             this.label8.Text = resources.GetString("label8.Text");
             // 
             // label9
             // 
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label9.Location = new System.Drawing.Point(78, 383);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(1657, 142);
+            this.label9.Size = new System.Drawing.Size(1657, 93);
             this.label9.TabIndex = 11;
             this.label9.Text = resources.GetString("label9.Text");
             // 
-            // pictureBox1
+            // PicFinan
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(989, 600);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(504, 193);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.PicFinan.Image = ((System.Drawing.Image)(resources.GetObject("PicFinan.Image")));
+            this.PicFinan.Location = new System.Drawing.Point(800, 639);
+            this.PicFinan.Name = "PicFinan";
+            this.PicFinan.Size = new System.Drawing.Size(426, 83);
+            this.PicFinan.TabIndex = 12;
+            this.PicFinan.TabStop = false;
+            this.PicFinan.Click += new System.EventHandler(this.PicFinan_Click);
             // 
-            // PicAcoes
+            // PicTec
             // 
-            this.PicAcoes.Image = ((System.Drawing.Image)(resources.GetObject("PicAcoes.Image")));
-            this.PicAcoes.Location = new System.Drawing.Point(271, 600);
-            this.PicAcoes.Name = "PicAcoes";
-            this.PicAcoes.Size = new System.Drawing.Size(486, 193);
-            this.PicAcoes.TabIndex = 13;
-            this.PicAcoes.TabStop = false;
-            this.PicAcoes.Click += new System.EventHandler(this.PicAcoes_Click);
+            this.PicTec.Image = ((System.Drawing.Image)(resources.GetObject("PicTec.Image")));
+            this.PicTec.Location = new System.Drawing.Point(249, 639);
+            this.PicTec.Name = "PicTec";
+            this.PicTec.Size = new System.Drawing.Size(396, 74);
+            this.PicTec.TabIndex = 13;
+            this.PicTec.TabStop = false;
+            this.PicTec.Click += new System.EventHandler(this.PicTec_Click);
             // 
             // pictureBox2
             // 
@@ -186,8 +185,8 @@ namespace Aula1
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1791, 854);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.PicAcoes);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PicTec);
+            this.Controls.Add(this.PicFinan);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblResultado);
@@ -200,8 +199,8 @@ namespace Aula1
             this.Controls.Add(this.label1);
             this.Name = "frmIntermed";
             this.Text = "InvestIntermed";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicAcoes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicFinan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTec)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -220,8 +219,8 @@ namespace Aula1
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox PicAcoes;
+        private System.Windows.Forms.PictureBox PicFinan;
+        private System.Windows.Forms.PictureBox PicTec;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

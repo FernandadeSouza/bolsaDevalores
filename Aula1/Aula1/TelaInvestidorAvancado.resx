@@ -2874,4 +2874,16 @@
         X9ar5ozRzFWRY84+tM86os0lFwJ/ONN8w1Hk0lLmYEm7PXmmZpKKG7gFFFFSAUUUUAf/2Q==
 </value>
   </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Referem-se a ações de empresas que operam no setor financeiro, incluindo instituições bancárias, companhias de seguros, empresas de gestão de ativos,
+ corretoras de valores, firmas de consultoria financeira e outras organizações relacionadas com serviços financeiros.</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Referem-se às ações de empresas que atuam no setor de tecnologia, desenvolvendo, produzindo ou comercializando produtos e serviços relacionados à tecnologia
+ da informação, eletrônicos, software, hardware, telecomunicações, internet, inteligência artificial, biotecnologia e outras áreas afins</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Referem-se às ações de empresas que operam no setor industrial, também conhecidas como setor de fabricação ou produção. 
+Essas empresas estão envolvidas na produção de bens tangíveis, transformando materiais primários em produtos acabados ou semi-acabados.</value>
+  </data>
 </root>
