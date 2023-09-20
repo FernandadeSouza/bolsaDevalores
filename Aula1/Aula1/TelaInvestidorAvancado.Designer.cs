@@ -1,7 +1,7 @@
 ﻿
 namespace Aula1
 {
-    partial class picFinanceira
+    partial class TelaInvestidorAvancado
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Aula1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(picFinanceira));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInvestidorAvancado));
             this.InvestidorAvancado = new System.Windows.Forms.Label();
             this.lblAvançado = new System.Windows.Forms.Label();
             this.picitulo = new System.Windows.Forms.PictureBox();
@@ -92,7 +92,7 @@ namespace Aula1
             // 
             // picRefaz
             // 
-            this.picRefaz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picRefaz.BackgroundImage")));
+           /* this.picRefaz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picRefaz.BackgroundImage")));
             this.picRefaz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picRefaz.Image = ((System.Drawing.Image)(resources.GetObject("picRefaz.Image")));
             this.picRefaz.Location = new System.Drawing.Point(1300, 609);
@@ -100,7 +100,7 @@ namespace Aula1
             this.picRefaz.Size = new System.Drawing.Size(508, 179);
             this.picRefaz.TabIndex = 9;
             this.picRefaz.TabStop = false;
-            this.picRefaz.Click += new System.EventHandler(this.picRefaz_Click);
+            this.picRefaz.Click += new System.EventHandler(this.picRefaz_Click);*/
             // 
             // lblResult
             // 

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Aula1
 {
-    public partial class picFinanceira : Form
+    public partial class TelaInvestidorAvancado : Form
     {
         int id_login;
         public TelaInvestidorAvancado(int id_login)
@@ -28,10 +28,10 @@ namespace Aula1
 
         private void picrefaz_Click(object sender, EventArgs e)
         {
-           /* Form perguntas = new Formquiz(id_login);
+            Form perguntas = new Formquiz(id_login);
             perguntas.WindowState = FormWindowState.Maximized;
             perguntas.Show();
-            this.Hide(); */
+            this.Hide(); 
         }
 
         
