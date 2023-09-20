@@ -1,7 +1,7 @@
 ﻿
 namespace Aula1
 {
-    partial class TelaInvestidorAvancado
+    partial class picFinanceira
     {
         /// <summary>
         /// Required designer variable.
@@ -29,21 +29,20 @@ namespace Aula1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInvestidorAvancado));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(picFinanceira));
             this.InvestidorAvancado = new System.Windows.Forms.Label();
             this.lblAvançado = new System.Windows.Forms.Label();
-            this.lblInvestimentosAvan = new System.Windows.Forms.Label();
             this.picitulo = new System.Windows.Forms.PictureBox();
-            this.picETF = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.PicFIIs = new System.Windows.Forms.PictureBox();
-            this.picRefaz = new System.Windows.Forms.PictureBox();
+            this.picrefaz = new System.Windows.Forms.PictureBox();
             this.lblResult = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picIndustria = new System.Windows.Forms.PictureBox();
+            this.picTecnologia = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picitulo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picETF)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicFIIs)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picRefaz)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picrefaz)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIndustria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTecnologia)).BeginInit();
             this.SuspendLayout();
             // 
             // InvestidorAvancado
@@ -69,19 +68,6 @@ namespace Aula1
             this.lblAvançado.Text = "O Investidor Avançado, na comparação com outros perfis, é o mais tolerante ao ris" +
     "co. Essas são as opções recomendadas para o seu perfil:";
             // 
-            // lblInvestimentosAvan
-            // 
-            this.lblInvestimentosAvan.AutoSize = true;
-            this.lblInvestimentosAvan.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInvestimentosAvan.ForeColor = System.Drawing.Color.White;
-            this.lblInvestimentosAvan.Location = new System.Drawing.Point(31, 196);
-            this.lblInvestimentosAvan.Name = "lblInvestimentosAvan";
-            this.lblInvestimentosAvan.Size = new System.Drawing.Size(449, 341);
-            this.lblInvestimentosAvan.TabIndex = 2;
-            this.lblInvestimentosAvan.Text = "- Ações.\r\n\r\n- Commodities ( como café,milho, etc).\r\n\r\n- Moedas ( dólar, euro etc)" +
-    ".\r\n\r\n- Brazillian Depositary Receipts (BDR).\r\n\r\n- Exchange Traded Funds (ETF).\r\n" +
-    "\r\n- FIIs e Fundos de Investimento.";
-            // 
             // picitulo
             // 
             this.picitulo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picitulo.BackgroundImage")));
@@ -92,41 +78,17 @@ namespace Aula1
             this.picitulo.TabIndex = 5;
             this.picitulo.TabStop = false;
             // 
-            // picETF
+            // picrefaz
             // 
-            this.picETF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picETF.BackgroundImage")));
-            this.picETF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picETF.Image = ((System.Drawing.Image)(resources.GetObject("picETF.Image")));
-            this.picETF.Location = new System.Drawing.Point(908, 609);
-            this.picETF.Name = "picETF";
-            this.picETF.Size = new System.Drawing.Size(367, 159);
-            this.picETF.TabIndex = 6;
-            this.picETF.TabStop = false;
-            this.picETF.Click += new System.EventHandler(this.picETF_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(472, 609);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(413, 159);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // PicFIIs
-            // 
-            this.PicFIIs.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PicFIIs.BackgroundImage")));
-            this.PicFIIs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PicFIIs.Image = ((System.Drawing.Image)(resources.GetObject("PicFIIs.Image")));
-            this.PicFIIs.Location = new System.Drawing.Point(37, 609);
-            this.PicFIIs.Name = "PicFIIs";
-            this.PicFIIs.Size = new System.Drawing.Size(414, 159);
-            this.PicFIIs.TabIndex = 8;
-            this.PicFIIs.TabStop = false;
-            this.PicFIIs.Click += new System.EventHandler(this.PicFIIs_Click);
+            this.picrefaz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picrefaz.BackgroundImage")));
+            this.picrefaz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picrefaz.Image = ((System.Drawing.Image)(resources.GetObject("picrefaz.Image")));
+            this.picrefaz.Location = new System.Drawing.Point(1278, 609);
+            this.picrefaz.Name = "picrefaz";
+            this.picrefaz.Size = new System.Drawing.Size(498, 179);
+            this.picrefaz.TabIndex = 9;
+            this.picrefaz.TabStop = false;
+            this.picrefaz.Click += new System.EventHandler(this.picrefaz_Click);
             // 
             // picRefaz
             // 
@@ -150,29 +112,58 @@ namespace Aula1
             this.lblResult.Size = new System.Drawing.Size(0, 27);
             this.lblResult.TabIndex = 10;
             // 
-            // TelaInvestidorAvancado
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(55, 609);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(383, 97);
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.picFinanceira_Click);
+            // 
+            // picIndustria
+            // 
+            this.picIndustria.Image = ((System.Drawing.Image)(resources.GetObject("picIndustria.Image")));
+            this.picIndustria.Location = new System.Drawing.Point(466, 609);
+            this.picIndustria.Name = "picIndustria";
+            this.picIndustria.Size = new System.Drawing.Size(345, 97);
+            this.picIndustria.TabIndex = 12;
+            this.picIndustria.TabStop = false;
+            this.picIndustria.Click += new System.EventHandler(this.picIndustria_Click);
+            // 
+            // picTecnologia
+            // 
+            this.picTecnologia.Image = ((System.Drawing.Image)(resources.GetObject("picTecnologia.Image")));
+            this.picTecnologia.Location = new System.Drawing.Point(848, 609);
+            this.picTecnologia.Name = "picTecnologia";
+            this.picTecnologia.Size = new System.Drawing.Size(368, 97);
+            this.picTecnologia.TabIndex = 13;
+            this.picTecnologia.TabStop = false;
+            this.picTecnologia.Click += new System.EventHandler(this.picTecnologia_Click);
+            // 
+            // picFinanceira
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1820, 846);
+            this.Controls.Add(this.picTecnologia);
+            this.Controls.Add(this.picIndustria);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblResult);
-            this.Controls.Add(this.picRefaz);
-            this.Controls.Add(this.PicFIIs);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.picETF);
+            this.Controls.Add(this.picrefaz);
             this.Controls.Add(this.picitulo);
-            this.Controls.Add(this.lblInvestimentosAvan);
             this.Controls.Add(this.lblAvançado);
             this.Controls.Add(this.InvestidorAvancado);
-            this.Name = "TelaInvestidorAvancado";
+            this.Name = "picFinanceira";
             this.Text = "TelaInvestidorAvancado";
             this.Load += new System.EventHandler(this.TelaInvestidorAvancado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picitulo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picETF)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicFIIs)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picRefaz)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picrefaz)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIndustria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTecnologia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,12 +173,11 @@ namespace Aula1
 
         private System.Windows.Forms.Label InvestidorAvancado;
         private System.Windows.Forms.Label lblAvançado;
-        private System.Windows.Forms.Label lblInvestimentosAvan;
         private System.Windows.Forms.PictureBox picitulo;
-        private System.Windows.Forms.PictureBox picETF;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox PicFIIs;
-        private System.Windows.Forms.PictureBox picRefaz;
+        private System.Windows.Forms.PictureBox picrefaz;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picIndustria;
+        private System.Windows.Forms.PictureBox picTecnologia;
     }
 }
