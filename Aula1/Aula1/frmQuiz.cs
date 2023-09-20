@@ -327,7 +327,7 @@ namespace Aula1
             if (avan)
             {
                 cadastra_quiz(3);
-                Form frmAvan = new TelaInvestidorAvancado();
+                Form frmAvan = new picFinanceira();
                 frmAvan.WindowState = FormWindowState.Maximized;
                 frmAvan.Show();
                 this.Hide();

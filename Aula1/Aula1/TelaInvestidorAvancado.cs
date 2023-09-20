@@ -10,10 +10,12 @@ using System.Windows.Forms;
 
 namespace Aula1
 {
-    public partial class TelaInvestidorAvancado : Form
+    public partial class picFinanceira : Form
     {
-        public TelaInvestidorAvancado()
+     
+        public picFinanceira()
         {
+            
             InitializeComponent();
         }
 
@@ -22,15 +24,9 @@ namespace Aula1
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Form telaBDR = new frmAcao("Avançado", "BDR");
-            telaBDR.WindowState = FormWindowState.Maximized;
-            telaBDR.Show();
-            this.Hide();
-        }
+      
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void picrefaz_Click(object sender, EventArgs e)
         {
            /* Form perguntas = new Formquiz(id_login);
             perguntas.WindowState = FormWindowState.Maximized;
@@ -38,19 +34,29 @@ namespace Aula1
             this.Hide(); */
         }
 
-        private void picETF_Click(object sender, EventArgs e)
+        
+
+        private void picFinanceira_Click(object sender, EventArgs e)
         {
-            Form telaETF = new frmAcao("Avançado", "ETF");
-            telaETF.WindowState = FormWindowState.Maximized;
-            telaETF.Show();
+            Form telaFinanceira = new frmAcao("Avançado", "Financeira");
+            telaFinanceira.WindowState = FormWindowState.Maximized;
+            telaFinanceira.Show();
             this.Hide();
         }
 
-        private void PicFIIs_Click(object sender, EventArgs e)
+        private void picIndustria_Click(object sender, EventArgs e)
         {
-          Form telaFII = new frmAcao ("Avançado", "FII");
-            telaFII.WindowState = FormWindowState.Maximized;
-            telaFII.Show();
+            Form telaIndustria = new frmAcao("Avançado", "Indústria");
+            telaIndustria.WindowState = FormWindowState.Maximized;
+            telaIndustria.Show();
+            this.Hide();
+        }
+
+        private void picTecnologia_Click(object sender, EventArgs e)
+        {
+            Form telaTecnologia = new frmAcao("Avançado", "Tecnologia");
+            telaTecnologia.WindowState = FormWindowState.Maximized;
+            telaTecnologia.Show();
             this.Hide();
         }
     }
