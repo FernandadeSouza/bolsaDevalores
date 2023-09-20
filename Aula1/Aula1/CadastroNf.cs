@@ -79,12 +79,12 @@ namespace Aula1
             if (txtSenha.PasswordChar == '*')
             {
                 txtSenha.PasswordChar = '\0'; // Mostrar a senha
-                pictureBox1.Image = Image.FromFile(@"..\..\Images\view.png");
+                pictureBox1.Image = Image.FromFile(@"..\..\Resources\view.png");
             }
             else
             {
                 txtSenha.PasswordChar = '*'; // Ocultar a senha
-                pictureBox1.Image = Image.FromFile(@"..\..\Images\hide.png");
+                pictureBox1.Image = Image.FromFile(@"..\..\Resources\hide.png");
             }
         }
 
